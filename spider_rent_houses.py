@@ -1,7 +1,7 @@
 #This is a spider for web albertlet.hu
 #properties for rent
-#type: apartment
-#Scrape the first 126 pages. Can be changed later
+#type: houses
+#Scrape the first 2 pages. Can be changed later
 
 
 from requests import get
@@ -15,25 +15,11 @@ import re
 import pandas as pd 
 #import matplotlib.pyplot as plt
 
-
-#Python Requests doe not necessarily need a request headers while sending requests
-#but there are few smart websites that does not let you to 
-#get read anything important unless cerain heaers are not set in it.
-#Also, it is a good idea to scrape with a header that has your name and emial so that a website can identigy you
-#And follow up if they have any questions. 
-#So, it is always good to make you requests as legitimate as you can.
-#The least you should do is to set a User-Agent
-
 #header = {'User-Agent': 'Client Name, ClientWeb.com',
 #			'From': 'ClientEmail@example.com'}
 
-#By analysing the urls
-#e.g. https://www.alberlet.hu/en/sublet_to_let/county:budapest/property-type:apartment/search:normal/limit:24
-#https://www.alberlet.hu/en/sublet_to_let/page:2/county:budapest/property-type:apartment/search:normal/limit:24
-#One can easily see that by changing the 'page' parameter, we can scrape over multiple pages
-
 #Changing the URL's parameter
-pages = [str(i) for i in range(1, 11)]
+pages = [str(i) for i in range(1, 3)]
 
 #Lists to store the scraped data in
 prices_per_month = []
@@ -73,21 +59,12 @@ start_time = time()
 requests = 0
 
 #Scrape the pages
-#For every page in range 1 to 4
 for page in pages:
 	#Make a request
-	response = get('https://www.alberlet.hu/en/sublet_to_let/page:' + page + '/county:budapest/property-type:apartment/search:normal/limit:24')
+	response = get('https://www.alberlet.hu/en/sublet_to_let/page:' + page + '/county:budapest/property-type:house/search:normal/limit:24')
 	#Alternatively, including the header:
 	#response = get('https://www.alberlet.hu/en/sublet_to_let/page:' + page + '/county:budapest/property-type:apartment/search:normal/limit:24', headers = headers)
 
-	#Controlling the rate of craling is beneficial for us and for the website that we are scraping.
-	#If we avoid hammering the server with tens of requests per second,
-	#then we are much less likely to get our IP ADDRESS BANNED.
-	#We also avoid disrupting the activity of the website we scrape by allowing the server to respond to other users' requests too
-
-	#To mimic human behaviour, we will vary the amout of waiting time between requests by
-	#using the randint() function from  random module.
-	'''
 	#Pause the loop
 	sleep(randint(3,8))
 
@@ -95,14 +72,7 @@ for page in pages:
 	requests += 1
 	elapsed_time = time() - start_time
 	print('Request: {}; Frequency: {} requests/s'.format(requests, requests/elapsed_time))
-	
-	#Our work will look a bit messy as the output accumulates.
-	#To avoid that, we will clear the output after each iteration, and replace it with info
-	#about the most recent request.
-	clear_output(wait = True)'''
-
-	#To monitor the status code, we wil set the program to warn us if there is something off
-	#A successful request is indicated by a status code of 200.
+	clear_output(wait = True)
 
 	#Throw a warning if the status code is not 200
 	if response.status_code != 200:
@@ -115,9 +85,6 @@ for page in pages:
 
 	#Parse the html with a BeautifulSoup object
 	page_html = BeautifulSoup(response.text, 'html.parser')
-
-	#By analysing the website we find that each page contains several (usually 4) class = boxes-grid row advert-list
-	#in which we can find the item list
 
 	#Select all the item lists
 	property_containers = page_html.find_all('div', class_ = 'boxes-grid row advert-list')
@@ -198,23 +165,11 @@ for page in pages:
 			
 				#The type of the building
 				if sub_page_html.find('td', text = "Type of the building") is not None:
-					if sub_page_html.find('td', text = "Type of the building").find_next_sibling() is not None:
-						type_of_building = sub_page_html.find('td', text = "Deposit").find_next_sibling().text
-						#print(type_of_building)
-						type_of_buildings.append(type_of_building)
-					else:
-						type_of_buildings.append(NOTFOUND)
+					type_of_building = sub_page_html.find('td', text = "Type of the building").find_next_sibling().text
+					#print(type_of_building)
+					type_of_buildings.append(type_of_building)
 				else:
 					type_of_buildings.append(NOTFOUND)
-
-				#The rental price 
-				#Already scraped from the main page
-				'''if sub_page_html.find('td', text = "New rental price") is not None:
-					rental_price = sub_page_html.find('td', text = "New rental price").find_next_sibling().text
-					print(rental_price)
-				else:
-					rental_price = sub_page_html.find('td', text = "Rental price").find_next_sibling().text
-					print(rental_price)'''
 
 				#The deposit
 				if sub_page_html.find('td', text = "Deposit") is not None:
@@ -239,24 +194,6 @@ for page in pages:
 					common_costs.append(common_cost)
 				else:
 					common_costs.append(NOTFOUND)
-
-				#The size
-				#Already scraped from the main page
-				'''if sub_page_html.find('td', text = "Size") is not None:
-					property_size = sub_page_html.find('td', text = "Size").find_next_sibling().text
-					print(property_size)
-
-					else:
-					property_size.append(NOTFOUND)'''
-
-				#The number of rooms
-				#Already scraped from the main page
-				'''if sub_page_html.find('td', text = "Number of rooms") is not None:
-					property_rooms = sub_page_html.find('td', text = "Number of rooms").find_next_sibling().text
-					print(property_rooms)
-
-					else:
-					property_rooms.append(NOTFOUND)'''
 
 				#The number of separate rooms
 				if sub_page_html.find('td', text = "Separate rooms") is not None:
@@ -363,8 +300,6 @@ for page in pages:
 
 				#Details
 				#Attributes for natural language processing later
-				#By analysing the website, we find that the description right after the 'detail' title is just a repitition of the table
-				#So, we'll just extract data about the transportation and near university here
 				if sub_page_html.find('div', class_ = "profile__text") is not None:
 					if sub_page_html.find('div', class_ = "profile__text").p is not None:
 						detail = sub_page_html.find('div', class_ = "profile__text").p.text
@@ -402,10 +337,6 @@ for page in pages:
 
 				#Attributes for the heatmap later
 				latitude_longitude = sub_page_html.find('a', class_ = 'btn btn--primary btn--small btn-get-direction')['onclick']
-				#print(latitude_longitude)
-				#Since all of the latitude and longitude follow the same format
-				#e.g. CP.MapDirections.deploy("47.489264600000", "19.069734900000", "0");
-				#by counting and slicing the string, we can get the pair of latitude and longitude
 				location = latitude_longitude[25:40] + "," + latitude_longitude[44:59]
 				#print(location)
 				locations.append(location)
@@ -478,7 +409,7 @@ properties = pd.DataFrame.from_dict(my_dict, orient='index')
 	#'Longitude and latitude', 
 	'District', 'Size', 'Price per month', 'Street', 'Number of rooms', 'Type of the building', 'Deposit', 'Utilities',
 	'Foreigners welcomed', 'Children welcomed', 'Can be an office', 'Common cost', 'Number of separate rooms', 'Furniture', 
-	'Floor', 'Balconies', 'View', 'Shortest rental period', 'Details']] 
+	'Floor', 'Balconies', 'View', 'Shortest rental period', 'Details', 'Area', 'Transportation', 'Near universities']] 
 
 #Convert price to int
 for p in properties['Price per month']:
@@ -493,12 +424,7 @@ for p in properties['Number of rooms']:
 '''
 
 #Produce a .csv file
-properties.to_csv('alberlet_rent.csv')
-
-#Draw a simple graph
-#x-axis: price
-#y-axis: number of houses
-#fig, axes = plt.subplot(nrows = 1, ncols = 1, figsize = (16, 4))
+properties.to_csv('alberlet_rent_houses.csv')
 
 
 		
