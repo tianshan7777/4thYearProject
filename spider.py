@@ -391,12 +391,8 @@ for page in pages:
 
 				#Near universities
 				if sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Near universities: ") is not None:
-					university = sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Near universities: ").find_all('br')
-					uni_list = ""
-					for uni in university:
-						uni_list = uni_list + uni.next_sibling
-					#print(university)
-					universities.append(uni_list)
+					university = sub_page_html.find('b', text = "Near universities: ").find_next_sibling().text
+					universities.append(university)
 				else:
 					universities.append(NOTFOUND)
 
