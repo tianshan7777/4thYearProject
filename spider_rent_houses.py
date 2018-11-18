@@ -1,6 +1,6 @@
 #This is a spider for web albertlet.hu
 #properties for rent
-#type: houses
+#Type: houses
 #Scrape the first 2 pages. Can be changed later
 
 
@@ -124,9 +124,9 @@ for page in pages:
 			num_of_room = item.find('span', class_ = 'advert__rooms').text
 			num_of_rooms.append(num_of_room)
 
-			#In order to gather more detailed information we dive into the sub website by the link listed
+			#In order to gather more detailed information we dive into the child website by the link of the picture
 
-			#Find the link to its detailed web
+			#Find the link to its child web
 			sub_url = str(item.a['href'])
 
 			#Some urls are not completed so we need to examine them

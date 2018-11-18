@@ -1,7 +1,7 @@
 #This is a spider for web albertlet.hu
 #properties for rent
 #type: apartment
-#Scrape the first 126 pages. Can be changed later
+#Scrape the first 70 pages. Can be changed later
 
 
 from requests import get
@@ -33,7 +33,7 @@ import pandas as pd
 #One can easily see that by changing the 'page' parameter, we can scrape over multiple pages
 
 #Changing the URL's parameter
-pages = [str(i) for i in range(1, 11)]
+pages = [str(i) for i in range(1, 71)]
 
 #Lists to store the scraped data in
 prices_per_month = []
@@ -161,10 +161,23 @@ for page in pages:
 
 			#Find the link to its detailed web
 			sub_url = str(item.a['href'])
+			print(sub_url)
 
 			#Some urls are not completed so we need to examine them
 			if "https://www.alberlet.hu" not in sub_url:
-				sub_url = "https://www.alberlet.hu" + sub_url
+				if "alberlet.hu" in sub_url:
+					#split the url address by "/"
+					url_part = []
+					url_part = sub_url.split("/")
+					#Select the last part which indicates the child location
+					print(url_part)
+
+					sub_url = "https://www.alberlet.hu/en/sublet_to_let" + url_part[-1]
+					print("adjust url is :" + sub_url)
+				else:
+					#Sometimes it just does not have the heading part
+					sub_url = "https://www.alberlet.hu" + sub_url
+					print("adjust url is :" + sub_url)
 
 			#Repeat the previous steps for data scraping on the sub website
 			sub_response = get(sub_url)
@@ -199,7 +212,7 @@ for page in pages:
 				#The type of the building
 				if sub_page_html.find('td', text = "Type of the building") is not None:
 					if sub_page_html.find('td', text = "Type of the building").find_next_sibling() is not None:
-						type_of_building = sub_page_html.find('td', text = "Deposit").find_next_sibling().text
+						type_of_building = sub_page_html.find('td', text = "Type of the building").find_next_sibling().text
 						#print(type_of_building)
 						type_of_buildings.append(type_of_building)
 					else:
