@@ -33,7 +33,7 @@ import pandas as pd
 #One can easily see that by changing the 'page' parameter, we can scrape over multiple pages
 
 #Changing the URL's parameter
-pages = [str(i) for i in range(1, 71)]
+pages = [str(i) for i in range(1, 3)]
 
 #Lists to store the scraped data in
 prices_per_month = []
@@ -65,8 +65,13 @@ transportations = []
 universities = []
 
 #Define strings used when the value is not available
-NOTFOUND = "No info available"
-YES = "yes"
+
+#Use -1 to represent the none value
+NOTFOUND = -1
+#Use 0 to represent NO
+NO = 0
+#Use 1 to represent YES
+YES = 1
 
 #Mornitoring the loop as it is still going
 start_time = time()
@@ -170,7 +175,7 @@ for page in pages:
 					url_part = []
 					url_part = sub_url.split("/")
 					#Select the last part which indicates the child location
-					print(url_part)
+					#print(url_part)
 
 					sub_url = "https://www.alberlet.hu/en/sublet_to_let" + url_part[-1]
 					print("adjust url is :" + sub_url)
@@ -388,36 +393,42 @@ for page in pages:
 					details.append(NOTFOUND)
 
 				#Area
-				if sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Area: ") is not None:
-					area = sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Area: ").next_sibling
-					areas.append(area)
+				if sub_page_html.find('div', class_ = 'profile__text'):
+					if sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Area: ") is not None:
+						area = sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Area: ").next_sibling
+						areas.append(area)
 				else:
 					areas.append(NOTFOUND)
 
 				#Transportation
-				if sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Transportation: ") is not None:
-					transportation = sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Transportation: ").next_sibling
-					#print(transportation)
-					transportations.append(transportation)
+				if sub_page_html.find('div', class_ = 'profile__text')is not None:
+					if sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Transportation: ") is not None:
+						transportation = sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Transportation: ").next_sibling
+						#print(transportation)
+						transportations.append(transportation)
 				else:
 					transportations.append(NOTFOUND)
 
 				#Near universities
-				if sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Near universities: ") is not None:
-					university = sub_page_html.find('b', text = "Near universities: ").find_next_sibling().text
-					universities.append(university)
+				if sub_page_html.find('div', class_ = 'profile__text') is not None:
+					if sub_page_html.find('div', class_ = 'profile__text').find('b', text = "Near universities: ") is not None:
+						university = sub_page_html.find('b', text = "Near universities: ").find_next_sibling().text
+						universities.append(university)
 				else:
 					universities.append(NOTFOUND)
-
+				'''
 				#Attributes for the heatmap later
-				latitude_longitude = sub_page_html.find('a', class_ = 'btn btn--primary btn--small btn-get-direction')['onclick']
+				if sub_page_html.find('a', class_ = 'btn btn--primary btn--small btn-get-direction') is not None:
+					latitude_longitude = sub_page_html.find('a', class_ = 'btn btn--primary btn--small btn-get-direction')['onclick']
+				else:
+					latitude_longitude = NOTFOUND
 				#print(latitude_longitude)
 				#Since all of the latitude and longitude follow the same format
 				#e.g. CP.MapDirections.deploy("47.489264600000", "19.069734900000", "0");
 				#by counting and slicing the string, we can get the pair of latitude and longitude
 				location = latitude_longitude[25:40] + "," + latitude_longitude[44:59]
 				#print(location)
-				locations.append(location)
+				locations.append(location)'''
 
 #If want vertically arranged
 '''properties = pd.DataFrame({
@@ -450,7 +461,7 @@ my_dict = {
 	'Price per month': prices_per_month,
 	'District': districts,
 	'Street': streets,
-	'Size': sizes,
+	'Size(sqm)': sizes,
 	'Number of rooms': num_of_rooms,
 	'Type of the building': type_of_buildings,
 	'Deposit': deposits,
@@ -487,19 +498,24 @@ properties = pd.DataFrame.from_dict(my_dict, orient='index')
 	#'Longitude and latitude', 
 	'District', 'Size', 'Price per month', 'Street', 'Number of rooms', 'Type of the building', 'Deposit', 'Utilities',
 	'Foreigners welcomed', 'Children welcomed', 'Can be an office', 'Common cost', 'Number of separate rooms', 'Furniture', 
-	'Floor', 'Balconies', 'View', 'Shortest rental period', 'Details']] 
+	'Floor', 'Balconies', 'View', 'Shortest rental period', 'Details']] '''
 
 #Convert price to int
-for p in properties['Price per month']:
+for p in properties.loc["Price per month", : ]:
 	p = int(p.replace(" ", ""))
+	print(p)
 
 #Delete the white space in size and number of rooms
-for p in properties['Size']:
-	p = p.strip()
+for p in properties.loc["Size(sqm)", : ]:
+	p = int(p.strip()[ :-4])
+	print(p)
 
-for p in properties['Number of rooms']:
-	p = p.strip()
-'''
+for p in properties.loc["Number of separate rooms", : ]:
+	if p.is_integer():
+		p = p
+	else:
+		p = int(p.strip())
+	print(p)
 
 #Produce a .csv file
 properties.to_csv('alberlet_rent.csv')
