@@ -13,6 +13,8 @@ from IPython.core.display import clear_output
 
 import re
 import pandas as pd 
+#For converting the district numbers into int
+import roman
 #import matplotlib.pyplot as plt
 
 
@@ -419,19 +421,20 @@ for page in pages:
 						universities.append(university)
 				else:
 					universities.append(NOTFOUND)
-				'''
+				
 				#Attributes for the heatmap later
 				if sub_page_html.find('a', class_ = 'btn btn--primary btn--small btn-get-direction') is not None:
 					latitude_longitude = sub_page_html.find('a', class_ = 'btn btn--primary btn--small btn-get-direction')['onclick']
+					location = latitude_longitude[25:40] + "," + latitude_longitude[44:59]
+					locations.append(location)
 				else:
-					latitude_longitude = NOTFOUND
+					#Use -1 to represent fake maps
+					locations.append(NOTFOUND)
 				#print(latitude_longitude)
 				#Since all of the latitude and longitude follow the same format
 				#e.g. CP.MapDirections.deploy("47.489264600000", "19.069734900000", "0");
 				#by counting and slicing the string, we can get the pair of latitude and longitude
-				location = latitude_longitude[25:40] + "," + latitude_longitude[44:59]
 				#print(location)
-				locations.append(location)'''
 
 #If want vertically arranged
 '''properties = pd.DataFrame({
@@ -511,7 +514,11 @@ for p in properties.loc["Price per month", : ]:
 
 properties.loc["Price per month", : ] = properties.loc["Price per month", : ].apply(lambda x:str(x).replace(" ", "")).astype(int)
 
+def district_helper(district):
+	return district.replace("Budapest,", "").replace(". District", "").replace(" ","")
+
 #Convert district number to int
+properties.loc["District", : ] = properties.loc["District", : ].apply(lambda x: roman.fromRoman(district_helper(x)))
 
 
 #Convert the size to int
@@ -520,19 +527,11 @@ for p in properties.loc["Size(sqm)", : ]:
 
 properties.loc["Size(sqm)", : ] = properties.loc["Size(sqm)", : ].apply(lambda x:str(x).strip()[ :-4]).astype(int)
 
-'''for p in properties.loc["Number of rooms", : ]:
-	print(p)
-	if "No" in str(p):
-		p = 0
-	else:
-		p = int(p.strip()[ :-5])
-	print("Number of rooms:", p)'''
-
 #Convert deposit to int
 for p in properties.loc["Deposit", : ]:
 	print("deposit: ", p)
 
-properties.loc["Deposit", : ] = properties.loc["Deposit", : ].apply(lambda x:str(x).replace(" ","").strip()[ :-4]).astype(int)
+properties.loc["Deposit", : ] = properties.loc["Deposit", : ].apply(lambda x: x if x == -1 else str(x).replace(" ","").strip()[ :-4]).astype(int)
 
 #Convert utilities to int
 for p in properties.loc["Utilities", : ]:
