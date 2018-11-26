@@ -10,12 +10,15 @@ from time import time, sleep
 from warnings import warn
 from random import randint
 from IPython.core.display import clear_output
+from mpl_toolkits import mplot3d
+#Once this submodule is imported, a three-dimensional axes can be created by passing the keyword projection='3d' to any of the normal axes creation routines:
 
 import re
 import pandas as pd 
 #For converting the district numbers into int
 import roman
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+
 
 
 #Python Requests doe not necessarily need a request headers while sending requests
@@ -559,10 +562,22 @@ properties.to_csv('alberlet_rent.csv')
 #Draw a simple graph
 #x-axis: price
 #y-axis: number of houses
-#fig, axes = plt.subplot(nrows = 1, ncols = 1, figsize = (16, 4))
 
+# This import registers the 3D projection, but is otherwise unused.
+fig = plt.figure()
+ax = plt.axes(projection='3d')
+zdata = properties.loc["Price per month", : ]
+xdata = properties.loc["District", : ]
+ydata = properties.loc["Number of separate rooms", : ]
+ax.scatter3D(xdata, ydata, zdata, c=zdata)
 
-		
+ax.set_xlabel("District")
+ax.set_ylabel("Number of seperate rooms")
+ax.set_zlabel("Price per month")
+
+plt.show()
+
+	
 
 
 
