@@ -1,494 +1,296 @@
-,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47
-Price per month,559,404,1 100,1 100,932,342,373,559,435,1 428,1 087,652,466,450,342,373,621,466,497,776,683,497,512,466,497,497,342,342,404,388,932,497,776,606,373,373,606,525,435,497,373,606,559,373,1 242,1 211,850,543
-District,"Budapest, I. District","Budapest, V. District","Budapest, I. District","Budapest, V. District","Budapest, VI. District","Budapest, XI. District","Budapest, VII. District","Budapest, XIV. District","Budapest, IX. District","Budapest, VI. District","Budapest, XIV. District","Budapest, XI. District","Budapest, XIV. District","Budapest, VII. District","Budapest, XII. District","Budapest, VIII. District","Budapest, XIV. District","Budapest, VI. District","Budapest, XIV. District","Budapest, V. District","Budapest, XI. District","Budapest, VI. District","Budapest, V. District","Budapest, VI. District","Budapest, XIV. District","Budapest, VIII. District","Budapest, XX. District","Budapest, XIV. District","Budapest, VII. District","Budapest, VIII. District","Budapest, II. District","Budapest, IX. District","Budapest, I. District","Budapest, II. District","Budapest, VII. District","Budapest, VI. District","Budapest, VI. District","Budapest, XI. District","Budapest, III. District","Budapest, XI. District","Budapest, XIII. District","Budapest, V. District","Budapest, VI. District","Budapest, VII. District","Budapest, V. District","Budapest, VI. District","Budapest, V. District","Budapest, VI. District"
-Street,Iskola utca,Nádor utca,Bérc utca,Nyáry Pál utca,Andrássy út,Nagyszeben tér,Cserhát utca,Ilosvai Selymes utca,Epreserdő utca,Székely Mihály utca,Vezér utca,Vásárhelyi Pál utca,Szugló utca,Barcsay utca,Nárcisz utca,Fecske utca,Ilka utca,Aradi utca,Kerékgyártó utca,Garibaldi utca,Bertalan Lajos utca,Hegedű utca,Aranykéz utca,Király utca,Kerékgyártó utca,Nap utca,Baross utca,Gyarmat utca,Munkás utca,Harminckettesek tere,Pusztaszeri út,Tűzoltó utca,Váralja utca,Horvát utca,Erzsébet körút,Bajza utca,Szondi utca,Kapolcs utca,Váradi utca,Bánk bán utca,Szabolcs utca,Hercegprímás utca,Lovag utca,Hernád utca,Hercegprímás utca,Andrássy út,Honvéd tér,Rippl Rónai utca
-Size,"
-                            47 sqm                        ","
-                            30 sqm                        ","
-                            50 sqm                        ","
-                            67 sqm                        ","
-                            103 sqm                        ","
-                            30 sqm                        ","
-                            30 sqm                        ","
-                            69 sqm                        ","
-                            55 sqm                        ","
-                            97 sqm                        ","
-                            112 sqm                        ","
-                            56 sqm                        ","
-                            47 sqm                        ","
-                            64 sqm                        ","
-                            42 sqm                        ","
-                            30 sqm                        ","
-                            68 sqm                        ","
-                            40 sqm                        ","
-                            48 sqm                        ","
-                            66 sqm                        ","
-                            72 sqm                        ","
-                            45 sqm                        ","
-                            45 sqm                        ","
-                            47 sqm                        ","
-                            42 sqm                        ","
-                            47 sqm                        ","
-                            43 sqm                        ","
-                            42 sqm                        ","
-                            42 sqm                        ","
-                            52 sqm                        ","
-                            110 sqm                        ","
-                            47 sqm                        ","
-                            65 sqm                        ","
-                            68 sqm                        ","
-                            45 sqm                        ","
-                            40 sqm                        ","
-                            47 sqm                        ","
-                            54 sqm                        ","
-                            57 sqm                        ","
-                            77 sqm                        ","
-                            38 sqm                        ","
-                            50 sqm                        ","
-                            45 sqm                        ","
-                            35 sqm                        ","
-                            67 sqm                        ","
-                            90 sqm                        ","
-                            81 sqm                        ","
-                            75 sqm                        "
+,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
+Price per month,823,621,559,466,745,404,807,373,652,683,404,714,1180,800,512,373,497,1087,1860,1798,0,683,404,559
+District,"Budapest, VI. District","Budapest, V. District","Budapest, VIII. District","Budapest, XIII. District","Budapest, VIII. District","Budapest, V. District","Budapest, VI. District","Budapest, VI. District","Budapest, XI. District","Budapest, XII. District","Budapest, VIII. District","Budapest, VII. District","Budapest, VI. District","Budapest, V. District","Budapest, VI. District","Budapest, VIII. District","Budapest, IX. District","Budapest, I. District","Budapest, II. District","Budapest, IX. District","Budapest, II. District","Budapest, XI. District","Budapest, VIII. District","Budapest, XII. District"
+Street,Ó utca,Párizsi utca,Jázmin utca,Mór utca,Bródy Sándor utca,Zoltán utca,Bajcsy-Zsilinszky köz,Felső erdősor,Vásárhelyi Pál utca,Böszörményi út,Baross utca,Jósika utca,Rózsa utca,Nádor utca,Rózsa utca,Fecske utca,Tűzoltó utca,Pauler utca,Zöldkő utca,Lechner Ödön fasor,Pázsit utca,Hamzsabégi út,Baross utca,Rege út
+Size(sqm),58,60,54,65,124,35,80,38,56,63,40,90,95,60,40,30,47,95,180,79,114,61,37,52
 Number of rooms,"
-                2 rooms                            ","
-                1 room                            ","
-                2 rooms                 + 1 half room            ","
-                3 rooms                            ","
-                3 rooms                            ","
-                1 room                            ","
-                1 room                 + 1 half room            ","
-                2 rooms                 + 1 half room            ","
-                1 room                 + 1 half room            ","
-                3 rooms                            ","
-                2 rooms                 + 2 half room            ","
-                1 room                 + 1 half room            ","
-                2 rooms                            ","
-                2 rooms                            ","
-                1 room                            ","
-                1 room                            ","
-                2 rooms                 + 1 half room            ","
-                1 room                 + 1 half room            ","
-                2 rooms                            ","
-                3 rooms                            ","
                 2 rooms                 + 1 half room            ","
                 2 rooms                            ","
-                1 room                 + 1 half room            ","
-                1 room                 + 1 half room            ","
-                1 room                 + 1 half room            ","
-                2 rooms                            ","
-                1 room                 + 1 half room            ","
-                1 room                            ","
-                1 room                            ","
-                1 room                 + 1 half room            ","
-                4 rooms                            ","
-                2 rooms                            ","
-                3 rooms                            ","
-                2 rooms                            ","
-                1 room                            ","
-                1 room                            ","
-                1 room                 + 1 half room            ","
                 2 rooms                            ","
                 1 room                 + 2 half room            ","
-                2 rooms                            ","
-                1 room                            ","
-                2 rooms                            ","
-                2 rooms                            ","
-                1 room                            ","
                 3 rooms                            ","
+                1 room                            ","
                 2 rooms                 + 1 half room            ","
+                1 room                 + 1 half room            ","
+                2 rooms                            ","
+                2 rooms                 + 1 half room            ","
+                1 room                            ","
                 3 rooms                            ","
-                2 rooms                 + 1 half room            "
-Type of the building,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Block Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment
-Deposit,1 118 EURO,807 EURO,2 200 EURO,2 200 EURO,1 863 EURO,683 EURO,745 EURO,1 118 EURO,869 EURO,2 857 EURO,1 553 EURO,1 956 EURO,932 EURO,901 EURO,683 EURO,745 EURO,1 242 EURO,932 EURO,994 EURO,1 553 EURO,1 366 EURO,994 EURO,1 025 EURO,466 EURO,994 EURO,994 EURO,683 EURO,683 EURO,807 EURO,776 EURO,1 863 EURO,994 EURO,1 553 EURO,1 211 EURO,745 EURO,745 EURO,1 211 EURO,1 050 EURO,869 EURO,994 EURO,745 EURO,1 211 EURO,1 298 EURO,745 EURO,2 484 EURO,2 422 EURO,1 700 EURO,1 087 EURO
-Utilities,37 EURO / month,19 EURO / month,31 EURO / month,93 EURO / month,78 EURO / month,37 EURO / month,37 EURO / month,62 EURO / month,31 EURO / month,78 EURO / month,93 EURO / month,62 EURO / month,78 EURO / month,43 EURO / month,37 EURO / month,62 EURO / month,47 EURO / month,31 EURO / month,47 EURO / month,62 EURO / month,93 EURO / month,31 EURO / month,16 EURO / month,31 EURO / month,62 EURO / month,12 EURO / month,47 EURO / month,47 EURO / month,62 EURO / month,16 EURO / month,62 EURO / month,56 EURO / month,93 EURO / month,62 EURO / month,62 EURO / month,16 EURO / month,47 EURO / month,53 EURO / month,62 EURO / month,68 EURO / month,25 EURO / month,31 EURO / month,62 EURO / month,47 EURO / month,16 EURO / month,62 EURO / month,78 EURO / month,93 EURO / month
-Common cost,37 EURO / month,37 EURO / month,93 EURO / month,93 EURO / month,93 EURO / month,16 EURO / month,22 EURO / month,34 EURO / month,65 EURO / month,78 EURO / month,78 EURO / month,31 EURO / month,28 EURO / month,43 EURO / month,22 EURO / month,28 EURO / month,50 EURO / month,31 EURO / month,31 EURO / month,71 EURO / month,34 EURO / month,78 EURO / month,90 EURO / month,43 EURO / month,34 EURO / month,59 EURO / month,31 EURO / month,31 EURO / month,40 EURO / month,68 EURO / month,No info available,37 EURO / month,56 EURO / month,62 EURO / month,22 EURO / month,31 EURO / month,37 EURO / month,71 EURO / month,31 EURO / month,62 EURO / month,71 EURO / month,71 EURO / month,71 EURO / month,34 EURO / month,140 EURO / month,47 EURO / month,47 EURO / month,47 EURO / month
-Number of separate rooms,2,No info available,1,2,2,No,2,2,1,2,No info available,1,1,1,No info available,No info available,2,2,2,No,2,No,No info available,1,1,No info available,2,No info available,No info available,2,3,1,2,No info available,No info available,No info available,No info available,No,3,2,No info available,1,1,No info available,2,2,3,3
-Furniture,"Partly furnished, equipped","Furnished, equipped",Luxury,Luxury,"Empty, equipped",Partly furnished,"Partly furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Partly furnished, equipped","Partly furnished, equipped","Furnished, equipped","Furnished, equipped","Empty, equipped","Furnished, equipped",Furnished by designer,"Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Empty, equipped","Furnished, equipped","Furnished, IKEA, KIKA","Empty, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Empty, furnished as well","Empty, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped",Furnished by designer,"Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped",Furnished or unfurnished,"Partly furnished, equipped","Furnished, equipped","Empty, furnished as well","Furnished, equipped",Empty
-Floor,1,3,1,5,2,7,1,Half floor,1,5,4,4,3,3,1,2,3,1,1,3,1,4,6,1,1,5,2,Semi basement,2,1,1,3,1,6,4,Ground floor,4,Ground floor,5,3,4,1,1,2,2,2,5,2
-Balconies,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available
-View,"Street, sunny",To the courtyard,Panoramic,"Courtyard, sunny",Street and courtyard,Park view,To the courtyard,"Street, sunny",Overlooking the garden,Panoramic,Panoramic,"Street, quiet","Courtyard, sunny",Street and courtyard,Overlooking the garden,"Courtyard, sunny","Courtyard, sunny",To the courtyard,"Street, sunny","Courtyard, sunny",To the courtyard,"Street, sunny","Street, sunny","Street, quiet",To the street,"Courtyard, sunny","Courtyard, sunny","Courtyard, sunny",To the courtyard,"Street, sunny",Panoramic,"Courtyard, sunny",To the courtyard,Panoramic,To the street,Overlooking the garden,"Courtyard, sunny",Overlooking the garden,View to the hills,"Street, sunny","Street, sunny",To the courtyard,Overlooking the garden,To the courtyard,Overlooking the square,Street and courtyard,Overlooking the garden,"Courtyard, sunny"
-Shortest rental period,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,No info available,11 months,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,6 months,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year
-Children welcomed,No info available,No info available,No info available,No info available,Yes,No info available,No info available,Yes,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,Yes,No info available,No info available,Yes,Yes,No info available,Yes,No info available,No info available,No info available,No info available,No info available,No info available,Yes,Yes,No info available,Yes,Yes,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,Yes,Yes,Yes
-American kitchen,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,yes,No info available,yes,No info available,No info available,No info available,No info available,No info available,No info available,No info available,yes,No info available,No info available,No info available,No info available,No info available,No info available,yes,No info available,yes,No info available,No info available,No info available,yes,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available
-Can be an office,No info available,No info available,No info available,No info available,Yes,Yes,No info available,Yes,No info available,No info available,No info available,No info available,No info available,Yes,No info available,No info available,No info available,No info available,Yes,Yes,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,Yes,No info available,No info available,No info available,No info available,No info available,Yes,No info available,No info available,No info available,Yes,No info available,No info available,Yes,No info available,No info available,Yes,No info available,No info available
-Foreigners welcomed,No info available,No info available,Yes,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,Yes,No info available,No info available,Yes,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,No info available,Yes,No info available,Yes,No info available,No info available,No info available,No info available,Yes,Yes,No info available,No info available,Yes,No info available,Yes,Yes
-Washing machine,yes,yes,yes,No info available,yes,yes,yes,No info available,No info available,No info available,No info available,No info available,No info available,yes,No info available,No info available,No info available,yes,No info available,No info available,No info available,No info available,No info available,No info available,yes,No info available,No info available,No info available,No info available,No info available,yes,No info available,No info available,No info available,yes,No info available,No info available,No info available,No info available,yes,No info available,yes,yes,No info available,No info available,yes,yes,No info available
-Details,"Cosy FLAT FOR RENT in the 1st district in Iskola street just a few minute walk away from Batthyany square.          
+                3 rooms                            ","
+                1 room                            ","
+                1 room                            ","
+                1 room                            ","
+                2 rooms                            ","
+                3 rooms                            ","
+                5 rooms                            ","
+                1 room                 + 1 half room            ","
+                2 rooms                 + 2 half room            ","
+                2 rooms                 + 1 half room            ","
+                1 room                            ","
+                1 room                            "
+Type of the building,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment,Brick Apartment
+Deposit,1646,1242,1118,932,1491,807,1615,745,1304,1366,807,1428,2360,1600,1025,807,994,2174,4037,3596,2174,1491,807,1118
+Utilities,53,47,47,19,124,31,31,78,47,62,31,62,31,62,62,47,56,183,78,12,78,62,16,78
+Common cost,78,37,31,59,68,37,102,25,31,47,68,68,84,34,25,28,37,3,99,217,53,37,62,56
+Number of separate rooms,2,2,1,3,3,-1,2,1,2,3,-1,0,2,-1,-1,-1,1,2,0,1,3,2,-1,-1
+Furniture,"Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped","Empty, furnished as well","Furnished, equipped","Furnished, equipped","Partly furnished, equipped",Furnished or unfurnished,"Furnished, equipped","Furnished, equipped","Furnished, equipped","Empty, equipped","Furnished, equipped","Furnished, equipped","Furnished, equipped",Partly furnished,"Empty, equipped","Empty, furnished as well","Furnished, equipped"
+Floor,4,3,4,1,3,4,1,3,4,4,3,1,7,1,4,2,3,4,Ground floor,8,1,3,3,3
+Balconies,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+View,"Street, sunny",To the street,"Street, sunny",To the street,Street and courtyard,"Courtyard, sunny","Street, sunny","Courtyard, sunny",To the street,"Street, sunny",To the courtyard,To the courtyard,View to the city,"Street, quiet","Courtyard, sunny","Courtyard, sunny","Courtyard, sunny",To the street,Overlooking the garden,Danube,"Courtyard, sunny",Overlooking the garden,"Courtyard, sunny",Park view
+Shortest rental period,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year
+Children welcomed,Yes,-1,-1,-1,-1,-1,-1,-1,Yes,-1,-1,Yes,Yes,-1,Yes,-1,-1,Yes,Yes,-1,Yes,-1,Yes,-1
+American kitchen,-1,-1,-1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,-1,1,1,1,-1,1
+Can be an office,-1,-1,-1,-1,-1,-1,-1,-1,Yes,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes
+Foreigners welcomed,-1,-1,Yes,-1,Yes,-1,Yes,-1,-1,-1,-1,-1,-1,Yes,Yes,-1,-1,-1,Yes,-1,Yes,-1,-1,-1
+Washing machine,1,1,1,-1,-1,-1,-1,-1,1,-1,-1,1,-1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Details,"FAMILY FRIENDLY FLAT WITH BALCONY AND 2 SEPARATE BEDROOMS+LIVING ROOM, CLOSE TO OPERA!       
 
-The freshly renovated and furnished apartment is 47 sqm with livingroom, kitchen, bathroom and 2 Separated bedrooms.          
+In the 6th district in O street, on the 4th floor, a 58 sqm flat with 2+1 rooms (2 SEPARATE) is waiting for a new tenant for LONG TERM (min 1 year).                                   
+THE FLAT IS TOTALLY FURNISHED and EQUIPPED (washing maschine, stove, oven, fridge, microwave, diswasher, tv) located in a NEWLY building.                                   
 
-Can be moved in immediately by paying deposit (2months rent fee) and one month rent fee.          
-LONG TERM ONLY, at least 1 year.          
+Rental fee: 265,000 HUF / month                                   
+Common costs: 25,000 HUF/ month.                     
+The all utilites are 17,000 Huf/month (heating, water, electricity consumption)                               
 
-Sorry NO smoking and pets allowed.          
+The apartment is in the HEART OF THE CITY, the public transport is excellent - metroline M1, M3 tram nr. 4-6, and many bus lines running there.                                   
 
-Only for demanding tenants with reference.          
-Please feel free to contact me on weekends as well.","FLAT FOR RENT! 5th district flat is available immedietely at Nador utca          
-Bedroom/living-room with a sleeping Gallery, separate kitchen. 30 sqm.          
-Within metro subway distance from SOTE,. and other Universities. Close to Deak sqr and  few min walk from Basilica , metro station nearby.         
-Equipped with double bed mattress , dining table and chairs, fridge, stove, washing machine,Gas Convector heating.          
-For a single person or a couple. Wifi internet available. Priority for Long term.          
-Rent: 130.000 HUF (380 Euros) per month (+bills)          
-Sorry no Pets and Smoking. "," 
+Several supermarkets and shops are all around. With 2 month deposit and one month rental fee, the flat can be moved in IMMEDIATELY!                             
+Don't hesitate to call me, if you are interested!                                  
+","FLAT WITH 2 SEPARATED ROOMS CLOSE TO FERENCIEK SQUARE!
 
-","For rent a minute from downtown, the V. ker. In a Nyári Pál street, a 67m2, living room plus 2 bedrooms, luxuriously renewed and equiped, air-conditioned, individual heating, unique, bright and quiet high quality finishes for a demanding tenant.       
-Rental fee: 1200euro / month       
-Deposit: 2400euró       
-Viewers are FREE to view.       
-Call me with confidence, at the weekend too.       
-"," 
-",No info available,"In district 7, in Cserhat street, on the 1st floor of a classical building, a 30 sqm, RENOVATED flat is for rent. 
-The flat is PARTLY FURNISHED (further furnishing is a matter of negotiation) and EQUIPPED (stove, oven, fridge, washing machine). 
-It consists of 2 rooms, a kitchen, and a bathroom (with tub). 
+In the 5th district in Parizsi street, on 3rd floor a 60 sqm flat with 2 rooms is waiting for a new tenant for LONG TERM (min 1 year).                                          
+THE FLAT IS TOTALLY FURNISHED and EQUIPPED (washing maschine, stove, oven, microwave, fridge, air conditioner) located in a classical building.                                          
 
-The windows of the flat look to the silent courtyard.
+Rental fee: 200,000 HUF / month                                          
+Common costs: 12,000 HUF/ month.                   
+The electricity, the gas and the water are paid according to consumption.                             
 
-Sophisticated, small sized dog is accepted.
+Several supermarkets and shops are all around. With 2 month deposit and one month rental fee, the flat can be moved in IMMEDIATELY!                                    
+Don't hesitate to call me, if you are interested!       ","In the 8th district, close to CORVIN ALLEY, in Jazmin street, a 54 sqm, RENOVATED flat with 1 bedroom and 1 living room is waiting for a new tenant for LONG TERM (min 1 year).   
+THE FLAT IS TOTALLY FURNISHED and EQUIPPED, located in a NEWLY building.   
 
-150 metres from the house, a parking garage takes place.
+Rental fee: 180,000 HUF / month   
+Common costs: 10,000 HUF. LOW UTILITIES!   
+The overhead shall be PAID ACCORDING TO CONSUMPTION.  
 
-The common cost is 7,500 HUF, and the overhead is an average of around 12,000.  
+The apartment is in the HEART OF THE CITY, the public transport is excellent - metroline M3,  and many bus lines running there.   
 
-The public transport connection is good: Metro line M2, M4, Bus nr. 5, 7, Trolley nr. 70, 74, and most night buses are accessible within 10 minutes.
+Several supermarkets and shops are all around. With 2 month deposit and one month rental fee, the flat can be moved in.   
+Don't hesitate to call me, if you are interested!  
+","1 +2 half-roomed- 65 m2 - tastefully furnished and equipped apartment in a new condominium is for rent for long term (min 1 year) in Mór utca, district 13. The flat is on the 1st floor, there is an elevator in the house.
+The apartment is air conditioned, with balcony and street view, consists of a living room with a dining room (fully equipped kitchen), a bedroom, a wardrobe room, a bathroom and a separate toilet. The rooms are completely separate. We come to the balcony from the dining room. The bathroom has a bathtub, a washing machine.
+Monthly Common Cost: 19.660 Ft (Including Water Consumption and Heating Base Fee). Heating is in the house central, in addition electricity is payable.
+Parking space available in the garage area, on request (18.000 HUF / month)
+UPC subscription in the apartment: 8.200 HUF / month (TV, internet)
+2 months deposit and the first month rental fee is needed (notarial contract).
+","FLAT FOR RENT CENTER OF BUDAPEST!            
+Located in the heart of a palace district of Budapest on a quiet street, 15 min walk to the pedestrian heart of downtown, 5 min of walk from the National Museum and Italian Institute and minutes away from public transportation (Metro, tram, buses) a 124 sq m completely renovated partially furnished flat offers ultimate comfort and space. The flat is designed as a blend of Mediterranean style in combination with modern accents. It consists of large master bedroom (25 sq m) with spacious in-suite bathroom (oval bathtub), smaller second bedroom or study, second bathroom with shower, separate toilet, large hallway, American kitchen with dining room, spacious living room potentially convertible into third bedroom and spacious walk-in storage / closet. Bedroom is quiet as it is located on the inner courtyard side.            
+Additional monthly costs:            
+•	Condomenium charges (kozoskoltseg): HUF 21.400,- (fixed price)            
+•	Water + canalization (Viz+csatorna): HUF 8000,-*             
+•	Gaz/ Heating: approx. HUF 20 000,-**            
+•	Electricity (ELMU): HUF 10 000,- *            
+Total: approx. HUF 70 000,- / month (cca EUR 225 / month). •	Internet, telephone, Cable TV – all possible through any provider (T-HOME or UPC).            
+",diamond.alberlet.hu,"FOR RENT: nice 2 bedroom apartment in 2 minutes from ARANY JANOS metro station, closed to Basilica!     
+The apartment is renovated, quiet, furnished and equiped, air conditioned with balcony (viewing of the Bacilica) and excellent location.     
+There are 2 bedrooms and 1 living room with opened kitchen.      
 
-The flat can IMMEDIATELY be moved in for long-term, by paying 2 month deposit and the 1st month’s rental fee in advance.
-Show-around is free of charge. Callings are accepted during daytime.
-",ujotthon.alberlet.hu,"This fully FURNISHED, EQUIPPED 2 room apartment is ready for rent in Epreserdo street, in district IX.        
-130.000 HUF/month        
+EXTRAS:
+- wine fridge
+- balcony
+- in the batroom: bathtube and shower 
+- AC
+- high quality furnitures
+- closed staircase
+- dishwasher
 
-ONLY FOR LONG TERM! MINIMUM 2 years!  
+Common cost: 33,000 Ft (also include the heating and unlimited water consumption)     
+Average utilities: 10,000 - 15.000 Ft (only electricity - depend on the air conditoner usage)     
+It's available right now!     
+For rent needs 2 months deposit and 1 month rental fee.     
+ONLY FOR LONG TERM (min 1 year)!!!     
+","In the immediate vicinity of the Lovolde square, in the VI district, Felsoerdosor street there is a quiet apartment.
+It is 38square meters, it has a big livingroom and a comfy bedroom.
+The apartment is furnished and mechanized. 
 
--55 sqm        
--furnished, mechanized        
--bathroom with bathtub         
-
-Rental fee: 130.000 HUF/month        
-Common cost: 21.400 HUF/month        
-Electricity, and water should be paid after the individual consumption. (cc. 10-15.000.- HUF)     
-
-Location:        
-Near to Ecserii way        
-Metro line M3
-Bus: 181, 281        
-Tram: 3    
-
-Two months deposit is needed.",www.renthungary.hu,No info available,No info available,"This fully FURNISHED, EQUIPPED 2 room apartment is ready for rent in Szuglo street, in district XIV.              
-150.000 HUF/month              
-
-ONLY FOR LONG TERM!              
-
--47 sqm              
--furnished, mechanized              
--bathroom with bathtub               
-
-Rental fee: 150.000 HUF/month              
-Common cost: 9.000 HUF/month              
-Gas, heating, electricity, water should be paid after the individual consumption. (cc. 20-30.000.- HUF)           
-
-Location:              
-
-Troli: 82, 77       
-Bus: 7, 8E, 32, 108E, 112, 133E, 907, 979       
-Tram: 3, 28, 28A, 62, 2A        
-
-Two months deposit is needed.","On Barcsay Street in the 7th District, there is a renovated, bright 64 sqm, 3rd Floor (no elevator), 2 bedroom flat (living room with gallery, which opens in the bedroom) and is individually furnished and mechanised.
-There is a horseshoe heater, with a common cost of 13.590 HUF. You can immediately move with 2 monthly deposit and 1 month's rental fee."," 
-","Studio flat for rent at a perfect location for employees staying in Bp.                               
-With one room.                             
-The flat is furnished and equipped with machines.                              
-Public transport is excellent, next to the Rakoczi Square.                               
-Available immediately.                               
-Only for long term. Two month deposit and first month rental price.","Near the Városliget in the newly built house in Ilka Street, with a 68sqm living room + 2 mesh, 8sqm, balcony.
-The property's interior decorator furnished the furniture uniquely for the apartment.
-Mechanization: cooling, exhaust fan, dishwasher, microwave, oven (on request, washing machine) The apartment is composed of a garage and a storage room, which costs 20.000 HUF.
-Child-Friendly.
-
-The common cost is HUF 16,000, payable according to overhead consumption. You can move immediately for a minimum of 1 year with a monthly deposit and 1 month's rent.                  
-----call with confidence, from morning to evening and don't miss out, check out the rental property ASAP.                                                       
-
-Mediation is free of charge for our clients.                                                        
-
-If I can not add the phone, I recall!                                                       
+Common cost: 8.500 HUF.
+ Overhead is around: 25.000 HUF
 
 
-","The IP. In the district of Arad Street rent a 40 sqm, 1.5 room (separate slots), 1. Floor, bright, freshly painted, gallery apartment.                      
+ 2 months deposit neccessary to move in  immediately.
+", ,"My beautiful home is now available for rent:   
+- 12. district, Böszörményi Road   
+- 63 sqm, 4th floor   
+- In a well maintained living block with elevator   
+- FULLY RENOVATED, air-conditioned apartment with FURNITURE and technical equipment (washing machine, oven, microwave)   
+- Non-smoking   
+- 1 spacious living room with dining area, 1 big sleeping room, 1 small room (can also be used as sleeping room)   
+- IKEA kitchen   
+- Bathroom with shower; separated toilet   
+- Built-in wardrobes with sliding doors    
+- Balcony with furniture   
+- Plenty of sunlight during the day    
+- Low utility cost   
+- Own parking facilities (free of charge)   
+- Excellent public transportation options (tram 59, 61, bus 21, 102, metro M2)   
+- Grocery stores, pharmacy, banks, restaurants within 100 meter distance. International schools and kindergardens closeby.   
+- MOM Park and Mammut Shopping Centers in 5-10 mins distance   
+- For non-smoking tenants only   
+- Pets are not permitted   
+- 2 months deposit and 1 month rental fee required upon contracting   
+- Rental fee: HUF 220.000 / EUR 680 + utility cost","Apartment for Rent in Baross street, NEWLY BUILDING, (built was 2007)  on 3th floor, ( elevator ) 37 sqm + 3 sqm TERRACE, with Furnitures and EQUIPPED ( fridge, washing machine, cooker plate, oven ) SAMSUNG INVERTER AC . 
+Common fee: 20 000 HUF includeded the UNLIMITED WATER. 
+Heating: House Central System. Utilites are for consumption, meter numbers. INTERNET, TV UPC provider.
+Deposit: 2 months. IMMEDIATELY AVAILABLE! For long term period min. 1 year.","In the 7th district, in Josika street, close to the ringroad and Kiraly street, a 90 sqm flat, on the 1st floor (no elevator) is waiting for a new tenant for min. 1 year. LIVING ROOM+BEDROOM!       
+EQUIPPED (dishwasher too)! PARTLY FURNISHED!   
 
-The property is furnished and mechanized!           
+Common cost: 22.000 HUF       
+Utilities: after your consumption.       
 
-The kitchen has built-in kitchen furniture, gas cooker, fridge, microwave and washing machine.                      
-The bathroom and the toilet are separated with the bathtub.                                    
+With 2 month deposit and with the first rental fee, the flat can be moved in IMMEDIATELY! Call me if you are interested in it!","In the 6th district, in Rozsa street, in an ECO-BUILDING, a RENOVATED, BRIGHT, 95 sqm flat (70sqm+25sqm balcony), on the 7th floor is waiting for a new tenant. A BIG BALCONY and a GARAGE belong to the flat. 
+FURNISHED and EQUIPPED (now you can not see it on the pictures), but you can rent it without furniture too. 
 
-Couples, friends and singles are outstanding.      
+AMERICAN KITCHEN+2 SEPARATED BEDROOMS! 
 
-Pets are allowed in the apartment (only small dogs) and smoking is forbidden.                      
+GEOTHERMAL HEATING-COOLING! The UTILITY COSTS are VERY LOW! 
+Common cost: 27.000 HUF, including HEATING!
 
-Public utility fees are payable on the basis of monthly dictation and are equipped with individual meters.                      
+With 2 month deposit and with the first rental fee, the flat can be moved in from 11th DECEMBER! 
+Do not hesitate to call me if you are interested in it!","In the CITY CENTER, in Nador street, close to St. Stephen's Basilica, an EXCLUSIVE 60 sqm, AIR CONDITIONED, TOTALLY EQUIPPED and FURNISHED LUXURY flat is waiting for a  New tenant.                 
 
-Common cost: 10.000 HUF
-Overhead: 10.000 HUF 
+The flat is TOTALLY FURNISHED with DESIGN FURNITURE by a professional decorator.               
 
-The apartment can be moved immediately, with a 2-month deposit and with the current monthly rental, for a long term (min. 1 year).                      
+It consists of a big LIVING ROOM + GALLERY with special GLASS WALL , a BATHROOM,  a separated TOILET and a separated KITCHEN.          
 
-If you are interested in call for confidence, even on weekends!    ",ujotthon.alberlet.hu,skyholdingatlan.alberlet.hu,"In the vicinity of the Gellert Square and the Moric Zsigmond square on the Bertalan Lajos Street, there is a living room with kitchen, which is an American and 2 bedrooms, cozy and quiet apartment.    
-The property is furnished and mechanized (equipped with fridge, dishwasher, washing machine, hifi system and flat-screen TV).    
-Ideal for families with children.    
-Small animals may be brought.    
-The common cost is 11,000 ft, which includes unlimited cold water usage and heating. is payable on the basis of additional overhead consumption. You can move immediately for a minimum of 1 year with a monthly deposit and 1 month's rent.                                 
-----call with confidence, from morning to evening and don't miss out, check out the rental property ASAP.                                                                      
+Rental Fee: 800 EUR / month                   
+Common cost: 10.760 HUF 
+UPC wifi: 4925 HUF 
+Overhead is measured according to consumption.                
 
-Mediation is free of charge for our clients.                                                                       
+With 2 month deposit and one month rental fee the flat can be moved in IMMEDIATELY!             
+Don't hesitate to call me, if you are interested!","In the 6th discrict, in Rozsa street, close to Podmaniczky street, a 40 sqm, FURNISHED, EQUIPPED and AIR-CONDITIONED STUDIO flat, on the 4th floor, in  a NEWLY-BUILT BUILDING is waiting for a new tenant.    
 
-If I can not add the phone, I recall!                                                                      
+Common cost: 8.500 HUF   
+Utilities: after your usage, but very low cost!   
 
+With 2 month deposit and with the first rental fee, the flat can be moved in IMMEDIATELY! Call me if you are interested in it.","In the 8th district, in Fecske street, close to Blaha Lujza square, a 30 sqm STUDIO flat, on the 2nd floor is waiting for a new tenant, for min. 1 year. FURNISHED and EQUIPPED! BRIGHT nad QUIET! The building was built in 2009.   
 
+Common cost: 9.130 HUF   
 
-"," 
-
-
-","Near the FAMOUS VACI street, in the QUIET ARANYKEZ street 2 rooms RENOVATED flat for rent!   
-
-6th floor, the building has 2 elevator + 1 goods lift.   
-
-The living room's windows look to the street, very SUNNY. American kitchen.   
-The bedroom's window looks to the inner court, very QUIET!   
-AIR CONDITIONED!   
-
-Fully furnished and equipped! (Other furniture can be solved.)   
-BOSCH economy washing machine (uses the central hot water by the house).  
-
-The parking for the Lessee is FREE for 1 car in the street.   
-
-Good publis transport: metro M1, M2, M3 just some minutes walk, and the tram 47-49 and 2 too.   
-
-Common cost: 29 000 HUF which includes the unlimited water, water heating and heating.   
-Utilities: only eletricity, based on usage.   
-Available immediately!","In King Street, even with immediate relocation, a 47 sqm mechanized, quiet and tidy condominium 1. Floor flat.
-Excellent transport options (4-6 Tram, trolleybus) can be reached within 15 minutes on foot.
-50 meters inside the pharmacy, Penny, greengrocer, hairdresser etc... 
-The flat is furnished on a kitchen furniture, a washing machine and a refrigerator outside the fridge, but the furnishing can be solved if necessary.
-WC bath or kitchen in separate room. The condominium has A lift.
-","42 sqm, pet-friendly, fully furnished, 1st floor,  Kerékgyártó Street in the 14th district with 2 lovely, separated rooms, balcony The flat is fully renovated and the kitchen is totally equipped with washing machine and dishwasher also. A circulating system provides the heating and hot water, so the overhead depends on consumption. Common cost is 10.130 HUF and the deposit is two months of the rental fee. Public transport is excellent (subway 3 and bus 7 are only few minutes walk away). Available for long term (minimum 1 year) and you can move from the 1st of jun.  ",No info available,otthonpont.alberlet.hu,No info available,"In annex VII, In the district, the worked street rent a 42nm pleasant and quiet apartment.
-The room is furnished and comfy.  
-
-
-Common costs: 13.300 HUF (includes water charge) 
-Overhead is approximately 20.000 ft on the basis of consumption
-
-Transportation is excellent, several bus lines are only a few minutes away, and both M4 and M2 subway line stops are just a few minutes away. 
-
-It can be moved immediately against 2 monthly deposit. 
-
-",ujotthon.alberlet.hu,"In II. district, on Pusztaszeri road a 3+1 ROOM,  RENOVATED, EQUIPPED, FURNISHED FLAT IS FOR RENT WITH BALCONY AND EXCELLENT PUBLIC TRANSPORT!          
-
-110 sqm, with AC, separated toilet, separated kitchen, bathroom with bath and shower.          
-Common cost is 20.000- HUF, so the total rent with common cost is 360.000- HUF!          
-
-Pets are not allowed!          
-Children is possible!          
-The owner can give an invoice!          
-
------->ONLY FOR LONG TERM, MINIMUM 1 YEAR with 2 month deposit!<------          
-I can speak in English!          
-
-","47 sqm
+With 2 month deposit and with the first rental fee, the flat can be moved in IMMEDIATELY!   
+Call me if you are interested in it!","47 sqm
 the apartment is at the newly built building, SEMMELWEIS RESIDENCE
 Unfurnished flat, but equipped. 
 AC, both room
 balcony, view the garden
 1 livingroom + 1 bedroom
-Available from now. ","In the I. district in a NEAR TO THE BUDA CASTLE in Varralja street  a 65 sqm 3 rooms  flat waiting for its new tenant for LONG TERM (min 1 year). THE FLAT  NICELY RENOVATED TOTALY  FURNISHED and  EQUPPED ( dish washer, washing machine, mico, katle, toster etc....)     
+Available from now. ","Modern style first district apartment in central location with 2 garages
 
-The flat has: american kitchen with a living room and dining room, 2 bedrooms, 2 bathrooms with  a toilet ( one of it with a sauna.   It has a flloor heating as well.  
+Furnished apartment for rent in the first district Pauler street, 95 sqm 4. floor with elevator, balcony, air conditioning, shutters, alarm system.
+Quiet street but central location 150 meters away from bus nr. 5, 178, 16, 105, 956, 916, tram line 19, 56 and one corner away from Déryé Bistro. Grocery, pharmacy, post office, drogerie, cinema, cafes, restaurant and the Buda Castle within few minutes walking distance. 
 
-The  Common costs  18,326.- HUF, which is inculed the water fee.     
+Parking: 2 garage places included in the rental price uniquely in the downtown.
 
- Public transport is 5, 105, 15 buses, 56, 56A tram.      
+Living room + kitchen: 50 sqm
+1. room: 17 sqm
+2. room: 14 sqm
+Walk-though closet/: 7 sqm
+Bathroom: 4 sqm
+Separate toilet + storage: 3 sqm
+Terrace: 3 sqm
 
-With 2 month deposit and one mounth rental fee the flat can be moved in ","FROM JANUARY !!! In the II. district in a VERY POPULAR AREA in Horvat street 68 sqm 12 rooms  flat with a TERRACE waiting for its new tenant for LONG TERM (min 1 year).  PANORAMIC VIEWS  TO THE BUDA CASTLE AND TO THE GELLERT HILL. THE FLAT  FURNISHED and  EQUPPED ( A.C as well)  Common costs  20,000.- HUF.   SURFACE GARGE CAN BE RENTED WITH REMOTE CONTROLL DOOR. Public transport: M2  metro, 4, 6 tram. Several shopping facilities, restaurant  all around. With 2 month deposit and one mounth rental fee the flat can be moved in .","In the VII. district, BETWEEN OKTOGON AND BLAHA LUJZA SQUARE,  in Erzsebet boulevard  a 45  sqm 1 room BRIGHT flat waiting for its new tenant for LONG TERM (min 1 year). THE FLAT PARTLY  FURNISHED but  EQUPPED ( dish washer as well). ,Common coast 7000.- HUF. The apartment in the HEART OF THE CITY, the public transport is excellent 4, 6 tram M2, M3 metro.   Several restaurant and bar all around. With 2 month deposit and one mounth rental fee the flat can be moved in    ","VI. district ""Diplomatic Quarter"" WESTEND at the Bajza street garden apartments for rent!                                  
-Immediately available: newly designed, quiet apartments!  40sqm, one room (kitchen, livingroom, bathroom, dressing room. Excellent layout, central heating, indoor garden courtyard, comfortable, sunny apartment. To let with modern facilities and furniture.                                  
- Convenient public transport: Bajza Street underground (M1) 5-minute walk, trolley No72  stops in front of the house, three stops from the Western railway station.                                  
-Rent: 390Euro / month + (utilities by individual meters). Common costs: 10.000 HUF / month.                                  
-Deposit required.                                  
-
-Call me! :)                                   
-","For rent, near Heroes ' Square and the Andrassy Avenue, 47 sqm of American cuisine + a fully furnished, full-equipped machine (LCD TV, washing machine, fridge, built-in oven, internet), quiet yard.
-
-Excellent transport, a few minutes walk from almost all available, universities, restaurants, shopping, sports, entertainment.
-
-You can start immediately for a 2 month deposit for the first month of the renting fee, if you are asked for a free weekend.",lotushouse.alberlet.hu,bsingatlan.alberlet.hu,"In district 11, in Bank ban street, on the 3rd floor of a classical building, a 77 sqm, RENOVATED flat is for rent.  
-The flat is FURNISHED and EQUIPPED (stove, oven, fridge, washing machine, microwave).  
-It consists of 2 ample and bright rooms, a kitchen with window, a bathroom (with tub), and plenty of storing space.  
-
-The windows of the flat look to the silent side street and let a lot of natural light in. 
-
-PARKING in the neighbourhood IS FREE! 
-
-The common cost is 20,000 HUF and INCLUDES the costs of the WATER CONSUMPTION, and the rubbish removal, and the overhead is an average of around 22,000.  
-
-The public transport connection is good: Metro line M4, Tram nr. 19, 49, Bus nr. 7, Night bus nr. 907 and 918 are accessible within minutes. 
-
-The flat can IMMEDIATELY be moved in for long-term, by paying 2 month deposit and the 1st month’s rental fee in advance. 
-Show-around is free of charge. Callings are accepted during daytime. 
-","In district 13, in Szabolcs street, near Dozsa Gyorgy road, on the 4th floor of a NEWLY BUILT HOUSE with LIFT, a 38 sqm flat is for rent. The flat is FURNISHED and EQUIPPED (electric stove, oven, fridge, washing machine). It consists of an ample and bright room, an attached kitchen, a bathroom (with tub), and a BALCONY.                       
-
-Sophisticated small dog might be accepted.                      
-
-In the UNDERGROUND GARAGE of the house, a parking spot can be rented.                      
-
-The common cost is 23,000 HUF, and the overhead is an average of around 8,000.                       
-
-The public transport connection is good: Tram nr. 14, Bus nr. 30, 105, 230, Trolley nr. 72, 75, 79, Night bus nr. 914 and 914A are accessible within minutes.                      
-
-The flat can be occupied IMMEDIATELY, for long-term, by paying 2 month deposit and 1 month rental fee in advance.                      
-Show-around is free of charge. Callings are accepted during daytime.                      
-","YOU CAN BE THE FIRST TENANT. In the V. district in a EXQUISITE ENVIROMENT next to St. STEPHENS BASILICA  in Hercegprimas street  a 50 sqm 2 rooms UNIQUE flat waiting for its new tenant for LONG TERM (min 1 year). THE FLAT JUST RENOVATED  FURNISHED and  EQUPPED ( dish washer, A.C as well). Common costs  23,000.- HUF, which is included the HEATING AND THE WATER FEE..  The appartman in the HART OF THE CITY, the public transport is exellente M1, M2, M3, ,metro, 4, 6 tram. Several restaurant and bar all around. With 2 mounth deposit and one mounth rental fee the flat can be moved in .","CITY CENTER!
-In the 6th district, in Lovag street, a 45 sqm, QUIET flat, on the 1st floor is waiting for a new tenant, for min.1 year.
-FURNISHED, EQUIPPED! AIR-CONDITIONED! LIVING ROOM+BEDROOM! BALCONY! 24/7 RECEPTION!
-You can rent 2 places in the garage if you need it: 100EUR/place.
-
-Common cost+utilities: in summer: 40.000 HUF.
-In winter: 55.000 HUF.
-
-With 2 month deposit and with the first rental fee, the flat can be moved in IMMEDIATELY!
-Call me if you are interested in it!","In the VII. district, next to the Keleti Trainstation, there is a quiet, 35square meters big apartment. 
-It is partly furnished and equipped ( microwave, owen, washing machine, fridge, AIRCONDITIONER) 
-Further furnished can be solved, in that case the rental fee is 130.000HUF 
-
-Common cost: 11.200 HUF (water included) 
-Utilities depends on consumption, around 15.000HUF 
-
-2 months deposit neccessary to move in immediately.","In the CITY CENTER, in Hercegprimas street, at DEAK FERENC SQUARE, a 67 sqm LUXURY, BRIGHT flat with 2 BEDROOMS + 2 BATHROOMS + AMERICAN KITCHEN, on the 2nd floor, with BALCONY is waiting for a new tenant. FURNISHED and EQUIPPED!      
-
-Common cost: 45.000 HUF, including WATER, HEATING!      
-
-With 2 month deposit and with the first rental fee, the flat can be moved in IMMEDIATELY for min. 1 year. Call me if you are interested in it.                                                                            
-","EXCELLENT LOCATION!  
-In the 6th district, in ANDRASSY STREET, close to OPERA, a 90 sqm, RENOVATED, QUIET flat, on the 2nd floor (elevator) is waiting for a new tenant. FULLY EQUIPPED (dishwasher too). We can buy FURNITURE if you need it! PET-FRIENDLY!  
-LIVING ROOM+2 SEPARATED BEDROOMS! ALARM SYSTEM!  
-
-Common cost: 15.000 HUF.  
-Utilities: after usage.  
-
-With 2 month deposit and with the first rental fee, tha flat can be moved in IMMEDIATELY! Call me if you are interested in it!","In the CITY CENTER, at Honved square, close to Nyugati, a 81 sqm, FRESHLY RENOVATED and PAINTED flat, on the 5th floor, with 3 SEPARATED ROOMS is waiting for a new tenant. Very QUIET and BRIGHT! FURNISHED and EQUIPPED (dishwasher too)!       
-
-Rental fee: 850 EUR   
-
-Common cost: 15.200 HUF       
-Central heating: 17.900 HUF       
-Water, electricity: after the consumption.       
-
-With 2 month deposit and with the first rental fee, the flat can be moved in IMMEDIATELY.       
-Call me if you are interested in it!","In the 6th discrict, in Rippl-Ronai street, close to Heroes Square, a 75 sqm flat with 3 SEPARATED BEDROOMS (one of it is a half room) and with BALCONY, on the 2nd floor is waiting for a new tenant. The flat is UNFURNISHED and UNEQUIPPED.      
-
-Common cost: 15.000 HUF      
-Utilities: after your usage.      
-
-With 2 month deposit and with the first rental fee, you can moove in IMMEDIATELY. Call me if you are interested in it."
-Area,"Near Danube, Parlament, Széll Kálmán square","Bazilika, Deák square, Parlament","Near Danube, Vár",Andrássy street,Városliget,"Andrássy street, Astoria, Blaha Lujza square, Near Danube, Nyugati square, Oktogon",Móricz Zsigmond square,Deák square,Blaha Lujza square,Városliget,"Andrássy street, Városliget","Bazilika, Deák square, Duna korzó, Near Danube, Jászai Mari square, Inside Nagykörút, Nyugati square",Móricz Zsigmond square,Oktogon,"Deák square, Near Danube, Inside Nagykörút, Váci street","Andrássy street, Deák square",Corvin negyed,Városliget,Corvin negyed,"Blaha Lujza square, Nyugati square, Oktogon","Andrássy street, Inside Nagykörút, Nyugati square, Oktogon, Városliget","Andrássy street, Oktogon, Városliget","Andrássy street, Bazilika, Deák square, Near Danube","street opening from Nagykörút, Nyugati square, Oktogon","Andrássy street, Bazilika, Deák square","Andrássy street, Oktogon",Nyugati square,,,,,,,,,,,,,,,,,,,,,
-Transportation,Metro 2 red,"Metro 1 historic line, Metro 2 red						",Metro 1 historic line,"7 bus, Metro 2 red, Matro 4						",Metro 3 blue						,"4, 6 trams, 47, 49 trams, 7 bus, Matro 4						",7 bus,"4, 6 trams","4, 6 trams, Metro 2 red, Matro 4						","Metro 3 blue, Metro 2 red","47, 49 trams						","4, 6 trams, Metro 1 historic line						","47, 49 trams, Metro 1 historic line, Metro 3 blue, Metro 2 red						","4, 6 trams, 47, 49 trams, Metro 1 historic line						","4, 6 trams, Metro 3 blue, Matro 4","7 bus, Metro 1 historic line						","Metro 2 red, Matro 4						",Metro 3 blue						,"4, 6 trams, Metro 2 red","4, 6 trams, Metro 3 blue, Metro 2 red						","Metro 1 historic line, Metro 3 blue",Metro 1 historic line						,"47, 49 trams, 7 bus, Matro 4","Metro 1 historic line, Metro 3 blue, Metro 2 red","4, 6 trams, Metro 3 blue						",Metro 3 blue						,"47, 49 trams, Metro 1 historic line, Metro 3 blue, Metro 2 red						","4, 6 trams, Metro 1 historic line						","4, 6 trams, Metro 3 blue						",Metro 1 historic line						,,,,,,,,,,,,,,,,,,
-Near universities,"Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.023 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.970 km )Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 1.862 km )Közép-Európai Egyetem - KEE ( 0.933 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.983 km )Semmelweis Egyetem - SE TSK ( 1.548 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.638 km )Central European University - CEU ( 0.933 km )
+Price: 1200 EUR/month for min. 1 year with 2-month deposit.
+FIXED total overhead: 60.000 Ft (includes common charges, water, electricity, heating). High-speed internet optional.","II. district, 180 sm, living-room and 4 bedrooms, 2 bathrooms, kitchen totally equipped, garage, 30 sm terrace, very nice flat to rent from 15 of September. Please call me if you want to see. ","IX. district, Lechner Odon fasor, Duna Pest Residence, luxus flat with luxus furnitures, big balcony with beautiful panorama to the Danube River, good location, sauna, swimming-pool, massage and other extras in the house. Please call me if you want to see. Parking place in the garage. ","II. district, 114 sm flat, 8 sm loggia, beautiful flat is available for long term rent (minimum 1 year) in Pasaret close to Budagyongye Center.     
+The flat is on the second floor of a newly renovated Bauhaus building built in the 40's.    
+The built-in wardrobes are partially original. The flat is bright and it has a great view to the surrounding green area.    
+The flat consists of a spacious open-plan kitchen, a bedroom and two small rooms.    
+One parking space is available in the garden.    
+There are excellent transport links in the neighbourhood in just a few minutes walking distance. Please call me if you want to see. ","11th district, 61 sm flat, 2 and a half rooms, kitchen totally equipped, without furnitures, bathroom with jacuzzi, livingroom with dining-room and kitchen, 2 bedrooms, balcony (4 sm), please call me if you want to see. Parking place for 1 car 20.000,-HUF/month. Rent for min 1 year from now.","Perfect quiet flat at a perfect location for staying in Bp.                                                                                            
+With 1 room. Low costs.                                                                                           
+Available immediatelly.                                                                             
+Only for long term. Two month deposit and first month rental price.","XII. district, Szechenyi mountain, Rege str. 52 sm flat, 1 room, living-room with dining-room and bedroom too. Bathroom with bath. 2 separated balcony, 7-7 sm, nice panorama to the city, very fresh air, totally furnished, kitchen partly furnished, refrigirater, cooking (warming) plate. Parking place for 1 car in the garden. Common cost is 18.000,- HUF/month. Please call me if you want to see. "
+Area,"Andrássy street, Oktogon","Deák square, Inside Nagykörút, Váci street",Corvin negyed,"Astoria, Kálvin square","Andrássy street, Deák square, Inside Nagykörút, Váci street","Széll Kálmán square, Vár",street opening from Nagykörút,Andrássy street,"Andrássy street, Bazilika, Deák square, Váci street",Nyugati square,Blaha Lujza square,Corvin negyed,"Near Danube, Danube view",Széll Kálmán square,Móricz Zsigmond square,"Corvin negyed, street opening from Nagykörút",Széll Kálmán square,,,,,,,
+Transportation,"4, 6 trams, Metro 1 historic line, Metro 3 blue						","47, 49 trams, Metro 1 historic line, Metro 3 blue, Metro 2 red						",Metro 3 blue						,"47, 49 trams, Metro 1 historic line, Metro 3 blue, Metro 2 red",Metro 2 red,Metro 1 historic line						,"47, 49 trams, 7 bus, Metro 1 historic line, Metro 3 blue, Metro 2 red						","4, 6 trams, Metro 2 red, Matro 4						",Metro 3 blue						,"4, 6 trams","4, 6 trams, 47, 49 trams, 7 bus, Matro 4","4, 6 trams						",,,,,,,,,,,,
+Near universities,"Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.389 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 0.679 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.525 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.388 km )Baptista Teológiai Akadémia - BTA ( 1.581 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.494 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.494 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.167 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.762 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.338 km )Közép-Európai Egyetem - KEE ( 0.747 km )Károli Gáspár Református Egyetem - KRE ( 1.682 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.691 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.491 km )McDaniel College - MCDC ( 1.646 km )Magyar Képzőművészeti Egyetem - MKE ( 0.768 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.495 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.495 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.524 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.459 km )Semmelweis Egyetem - SE EFK ( 1.333 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.128 km )Szent István Egyetem - SZIE ÁOTK ( 1.514 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.317 km )Central European University - CEU ( 0.747 km )
 
                     More
                     
 
 
 
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.373 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 0.829 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.685 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.685 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.685 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.921 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.293 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.747 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.260 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.260 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.083 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.024 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.978 km )Közép-Európai Egyetem - KEE ( 0.058 km )Károli Gáspár Református Egyetem - KRE ( 1.510 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.646 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.926 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.170 km )Magyar Képzőművészeti Egyetem - MKE ( 1.544 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.713 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.532 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.202 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.499 km )Semmelweis Egyetem - SE ( 1.973 km )Semmelweis Egyetem - SE ÁOK ( 1.973 km )Semmelweis Egyetem - SE EFK ( 1.474 km )Semmelweis Egyetem - SE FOK ( 1.973 km )Semmelweis Egyetem - SE GYTK ( 1.973 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.337 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 0.837 km )Central European University - CEU ( 0.058 km )
+","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 0.710 km )Általános Vállalkozási Főiskola - ÁVF ( 1.990 km )Budapesti Corvinus Egyetem - BCE-KIK ( 1.740 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.466 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 0.988 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 0.988 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 0.988 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.207 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.430 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ( 1.397 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ÉSZK ( 1.397 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME GTK ( 1.397 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME KSK ( 1.397 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME TTK ( 1.397 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME VIK ( 1.949 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-ÉŐK ( 1.397 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-VBK ( 1.397 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.290 km )Budapesti Műszaki Főiskola - BMF KGK ( 1.770 km )Eötvös Loránd Tudományegyetem - ELTE ( 0.535 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 0.535 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 0.433 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.708 km )Fernuniversitätgesamthochschule in Hagen - FU ( 1.990 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.779 km )Közép-Európai Egyetem - KEE ( 0.774 km )Károli Gáspár Református Egyetem - KRE ( 0.787 km )Károli Gáspár Református Egyetem - KRE BTK ( 0.947 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.202 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.188 km )Magyar Képzőművészeti Egyetem - MKE ( 1.680 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.150 km )Pázmány Péter Katolikus Egyetem - PPKE ( 0.878 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 0.491 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 0.850 km )Semmelweis Egyetem - SE ( 1.261 km )Semmelweis Egyetem - SE ÁOK ( 1.261 km )Semmelweis Egyetem - SE EFK ( 0.893 km )Semmelweis Egyetem - SE FOK ( 1.261 km )Semmelweis Egyetem - SE GYTK ( 1.261 km )Színház- és Filmművészeti Egyetem - SZFE ( 0.840 km )Szent István Egyetem - SZIE ÁOTK ( 1.988 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 0.266 km )Central European University - CEU ( 0.774 km )
 
                     More
                     
 
 
 
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.606 km )Általános Vállalkozási Főiskola - ÁVF ( 1.145 km )Budapesti Corvinus Egyetem - BCE-KIK ( 1.085 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.164 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem  - BKÁE ÉTK BCE ÉTK ( 1.081 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.164 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KERTK BCE KERTK ( 1.081 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.164 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE TÁJK BCE TÁJK ( 1.081 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.413 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ( 1.213 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ÉSZK ( 1.213 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME GTK ( 1.213 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME KSK ( 1.213 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME TTK ( 1.213 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME VIK ( 1.656 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-ÉŐK ( 1.213 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-VBK ( 1.213 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.223 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.223 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.436 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.825 km )Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 1.801 km )Fernuniversitätgesamthochschule in Hagen - FU ( 1.145 km )Közép-Európai Egyetem - KEE ( 1.410 km )Károli Gáspár Református Egyetem - KRE ( 1.400 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.674 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.635 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.750 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.059 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.738 km )Semmelweis Egyetem - SE ( 1.844 km )Semmelweis Egyetem - SE ÁOK ( 1.844 km )Semmelweis Egyetem - SE EFK ( 1.870 km )Semmelweis Egyetem - SE FOK ( 1.844 km )Semmelweis Egyetem - SE GYTK ( 1.844 km )Semmelweis Egyetem - SE TSK ( 1.510 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.894 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 0.861 km )Central European University - CEU ( 1.410 km )
+","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.628 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.902 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.902 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.902 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.699 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.401 km )Budapesti Műszaki Főiskola - BMF KGK ( 0.685 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.899 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.899 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.915 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.924 km )Károli Gáspár Református Egyetem - KRE ( 1.668 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.420 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.422 km )McDaniel College - MCDC ( 1.985 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.292 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.461 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 0.295 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.492 km )Semmelweis Egyetem - SE ( 1.199 km )Semmelweis Egyetem - SE ÁOK ( 1.199 km )Semmelweis Egyetem - SE EFK ( 1.510 km )Semmelweis Egyetem - SE FOK ( 1.199 km )Semmelweis Egyetem - SE GYTK ( 1.199 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.677 km )Szent István Egyetem - SZIE ÁOTK ( 1.970 km )Wesley János Lelkészképző Főiskola - WJLF ( 0.571 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 0.156 km )
 
                     More
                     
 
 
 
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 0.603 km )Általános Vállalkozási Főiskola - ÁVF ( 1.639 km )Budapesti Corvinus Egyetem - BCE-KIK ( 1.350 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.920 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 0.535 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem  - BKÁE ÉTK BCE ÉTK ( 1.744 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 0.535 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KERTK BCE KERTK ( 1.744 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 0.535 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE TÁJK BCE TÁJK ( 1.744 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 0.766 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.800 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ( 0.949 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ÉSZK ( 0.949 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME GTK ( 0.949 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME KSK ( 0.949 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME TTK ( 0.949 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME VIK ( 1.497 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-ÉŐK ( 0.949 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-VBK ( 0.949 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.340 km )Budapesti Műszaki Főiskola - BMF KGK ( 1.639 km )Eötvös Loránd Tudományegyetem - ELTE ( 0.222 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 0.222 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 0.486 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.977 km )Fernuniversitätgesamthochschule in Hagen - FU ( 1.639 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.974 km )Közép-Európai Egyetem - KEE ( 1.208 km )Károli Gáspár Református Egyetem - KRE ( 0.448 km )Károli Gáspár Református Egyetem - KRE BTK ( 0.697 km )Károli Gáspár Református Egyetem - KRE HTK ( 0.816 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.535 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.108 km )Pázmány Péter Katolikus Egyetem - PPKE ( 0.746 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 0.064 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 1.821 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 0.734 km )Semmelweis Egyetem - SE ( 0.943 km )Semmelweis Egyetem - SE ÁOK ( 0.943 km )Semmelweis Egyetem - SE EFK ( 0.874 km )Semmelweis Egyetem - SE FOK ( 0.943 km )Semmelweis Egyetem - SE GYTK ( 0.943 km )Színház- és Filmművészeti Egyetem - SZFE ( 0.931 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 0.350 km )Wesley János Lelkészképző Főiskola - WJLF ( 1.960 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 1.969 km )Central European University - CEU ( 1.208 km )
+","Baptista Teológiai Akadémia - BTA ( 1.572 km )Harsányi János Főiskola - HJF ( 0.771 km )Magyar Táncművészeti Főiskola - MTF ( 0.920 km )
+","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 0.328 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.084 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.084 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.084 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.090 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.434 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ( 1.518 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ÉSZK ( 1.518 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME GTK ( 1.518 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME KSK ( 1.518 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME TTK ( 1.518 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME VIK ( 1.947 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-ÉŐK ( 1.518 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-VBK ( 1.518 km )Budapesti Műszaki Főiskola - BMF BGK ( 0.449 km )Budapesti Műszaki Főiskola - BMF KGK ( 0.785 km )Eötvös Loránd Tudományegyetem - ELTE ( 0.719 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 0.719 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 0.556 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.675 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.195 km )Közép-Európai Egyetem - KEE ( 1.613 km )Károli Gáspár Református Egyetem - KRE ( 0.640 km )Károli Gáspár Református Egyetem - KRE BTK ( 0.425 km )Károli Gáspár Református Egyetem - KRE HTK ( 0.840 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.160 km )McDaniel College - MCDC ( 1.482 km )Magyar Képzőművészeti Egyetem - MKE ( 1.594 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 0.176 km )Pázmány Péter Katolikus Egyetem - PPKE ( 0.213 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 0.881 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 1.113 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 0.208 km )Semmelweis Egyetem - SE ( 0.671 km )Semmelweis Egyetem - SE ÁOK ( 0.671 km )Semmelweis Egyetem - SE EFK ( 0.110 km )Semmelweis Egyetem - SE FOK ( 0.671 km )Semmelweis Egyetem - SE GYTK ( 0.671 km )Színház- és Filmművészeti Egyetem - SZFE ( 0.309 km )Szent István Egyetem - SZIE ÁOTK ( 1.373 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.144 km )Wesley János Lelkészképző Főiskola - WJLF ( 1.091 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 1.289 km )Central European University - CEU ( 1.613 km )
 
                     More
                     
 
 
 
-",,,"Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.544 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.445 km )Budapesti Műszaki Főiskola - BMF KGK ( 1.714 km )Baptista Teológiai Akadémia - BTA ( 0.941 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.862 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 0.788 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.576 km )McDaniel College - MCDC ( 0.443 km )Magyar Képzőművészeti Egyetem - MKE ( 1.375 km )Magyar Táncművészeti Főiskola - MTF ( 1.712 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.747 km )Pünkösdi Teológiai Főiskola - PTF ( 1.967 km )Semmelweis Egyetem - SE EFK ( 1.906 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.809 km )Szent István Egyetem - SZIE ÁOTK ( 0.580 km )Szent István Egyetem - SZIE-YMÉK ( 0.705 km )Wesley János Lelkészképző Főiskola - WJLF ( 1.628 km )
+",,"Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.261 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 0.709 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.818 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.818 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.818 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.752 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.396 km )Baptista Teológiai Akadémia - BTA ( 1.818 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.311 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.311 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.010 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.698 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.478 km )Közép-Európai Egyetem - KEE ( 0.519 km )Károli Gáspár Református Egyetem - KRE ( 1.518 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.563 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.929 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.643 km )McDaniel College - MCDC ( 1.804 km )Magyar Képzőművészeti Egyetem - MKE ( 1.004 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.450 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.388 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.322 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.351 km )Semmelweis Egyetem - SE ( 1.902 km )Semmelweis Egyetem - SE ÁOK ( 1.902 km )Semmelweis Egyetem - SE EFK ( 1.255 km )Semmelweis Egyetem - SE FOK ( 1.902 km )Semmelweis Egyetem - SE GYTK ( 1.902 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.067 km )Szent István Egyetem - SZIE ÁOTK ( 1.668 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.081 km )Central European University - CEU ( 0.519 km )
 
                     More
                     
 
 
 
-",,"Eötvös Loránd Tudományegyetem - ELTE GYFK ( 0.760 km )A Tan Kapuja Buddhista Főiskola - TKBF ( 0.119 km )
-",,,,"Budapesti Gazdasági Főiskola - BGF ( 1.178 km )Budapesti Gazdasági Főiskola - BGF PSZFK ( 1.180 km )Budapesti Kommunikációs Főiskola - BKF ( 1.947 km )Evangélikus Hittudományi Egyetem - EHE ( 0.438 km )Magyar Táncművészeti Főiskola - MTF ( 1.679 km )Pünkösdi Teológiai Főiskola - PTF ( 1.908 km )Szent István Egyetem - SZIE-YMÉK ( 1.689 km )
+","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.904 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.578 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.601 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.397 km )Baptista Teológiai Akadémia - BTA ( 0.471 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.835 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.326 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 0.748 km )Közép-Európai Egyetem - KEE ( 1.867 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.791 km )McDaniel College - MCDC ( 0.838 km )Magyar Képzőművészeti Egyetem - MKE ( 0.355 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.679 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.914 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.888 km )Semmelweis Egyetem - SE EFK ( 1.690 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.500 km )Szent István Egyetem - SZIE ÁOTK ( 0.770 km )Szent István Egyetem - SZIE-YMÉK ( 1.698 km )Central European University - CEU ( 1.867 km )
 
                     More
                     
 
 
 
-",,"Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 0.800 km )Mozgássérültek Pető András Nevelőképző és Nevelőintézete - MPANNI ( 1.775 km )Semmelweis Egyetem - SE TSK ( 1.024 km )
+",,"Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 0.245 km )Semmelweis Egyetem - SE TSK ( 0.435 km )
+","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.552 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.965 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.965 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.965 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.796 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.184 km )Budapesti Műszaki Főiskola - BMF KGK ( 0.498 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.872 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.872 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.825 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.874 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.628 km )Károli Gáspár Református Egyetem - KRE ( 1.666 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.397 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.496 km )McDaniel College - MCDC ( 1.667 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.141 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.385 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 0.376 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.410 km )Semmelweis Egyetem - SE ( 1.247 km )Semmelweis Egyetem - SE ÁOK ( 1.247 km )Semmelweis Egyetem - SE EFK ( 1.385 km )Semmelweis Egyetem - SE FOK ( 1.247 km )Semmelweis Egyetem - SE GYTK ( 1.247 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.523 km )Szent István Egyetem - SZIE ÁOTK ( 1.659 km )Wesley János Lelkészképző Főiskola - WJLF ( 0.267 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 0.397 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE ( 1.984 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE BKMFK ZMNE BKMK ( 1.984 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE-KHK ( 1.984 km )
+
+                    More
+                    
+
+
+
+","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.651 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.640 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.572 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.106 km )Budapesti Műszaki Főiskola - BMF KGK ( 1.726 km )Baptista Teológiai Akadémia - BTA ( 0.672 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.964 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.964 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.610 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.116 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 0.466 km )Közép-Európai Egyetem - KEE ( 1.802 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.880 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.657 km )McDaniel College - MCDC ( 0.633 km )Magyar Képzőművészeti Egyetem - MKE ( 0.420 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.395 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.648 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.624 km )Semmelweis Egyetem - SE EFK ( 1.423 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.243 km )Szent István Egyetem - SZIE ÁOTK ( 0.533 km )Szent István Egyetem - SZIE-YMÉK ( 1.648 km )Wesley János Lelkészképző Főiskola - WJLF ( 1.820 km )Central European University - CEU ( 1.802 km )
+
+                    More
+                    
+
+
+
+","Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.202 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.501 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.641 km )Baptista Teológiai Akadémia - BTA ( 0.772 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.869 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.362 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.124 km )Közép-Európai Egyetem - KEE ( 1.631 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.781 km )McDaniel College - MCDC ( 1.273 km )Magyar Képzőművészeti Egyetem - MKE ( 0.319 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.884 km )Semmelweis Egyetem - SE EFK ( 1.835 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.626 km )Szent István Egyetem - SZIE ÁOTK ( 1.190 km )Central European University - CEU ( 1.631 km )
+
+                    More
+                    
+
+
+
+","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.467 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 0.720 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.799 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.799 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.799 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.266 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.805 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.368 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.368 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.178 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.079 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.992 km )Közép-Európai Egyetem - KEE ( 0.059 km )Károli Gáspár Református Egyetem - KRE ( 1.616 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.744 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.167 km )Magyar Képzőművészeti Egyetem - MKE ( 1.511 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.787 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.623 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.314 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.589 km )Semmelweis Egyetem - SE EFK ( 1.553 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.407 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 0.952 km )Central European University - CEU ( 0.059 km )
+
+                    More
+                    
+
+
+
+","Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.133 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.607 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.787 km )Baptista Teológiai Akadémia - BTA ( 0.871 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.964 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.464 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.286 km )Közép-Európai Egyetem - KEE ( 1.632 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.889 km )McDaniel College - MCDC ( 1.432 km )Magyar Képzőművészeti Egyetem - MKE ( 0.467 km )Semmelweis Egyetem - SE EFK ( 1.959 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.747 km )Szent István Egyetem - SZIE ÁOTK ( 1.350 km )Central European University - CEU ( 1.632 km )
+
+                    More
+                    
+
+
+
 ","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 0.913 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.590 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.590 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.590 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.526 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.559 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ( 1.980 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ÉSZK ( 1.980 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME GTK ( 1.980 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME KSK ( 1.980 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME TTK ( 1.980 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-ÉŐK ( 1.980 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-VBK ( 1.980 km )Budapesti Műszaki Főiskola - BMF BGK ( 0.356 km )Budapesti Műszaki Főiskola - BMF KGK ( 0.373 km )Baptista Teológiai Akadémia - BTA ( 1.944 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.298 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.298 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.130 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.064 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 0.952 km )Károli Gáspár Református Egyetem - KRE ( 1.175 km )Károli Gáspár Református Egyetem - KRE BTK ( 0.909 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.227 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.336 km )McDaniel College - MCDC ( 1.131 km )Magyar Képzőművészeti Egyetem - MKE ( 1.633 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 0.411 km )Pázmány Péter Katolikus Egyetem - PPKE ( 0.772 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.462 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 0.829 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 0.781 km )Semmelweis Egyetem - SE ( 0.980 km )Semmelweis Egyetem - SE ÁOK ( 0.980 km )Semmelweis Egyetem - SE EFK ( 0.665 km )Semmelweis Egyetem - SE FOK ( 0.980 km )Semmelweis Egyetem - SE GYTK ( 0.980 km )Színház- és Filmművészeti Egyetem - SZFE ( 0.740 km )Szent István Egyetem - SZIE ÁOTK ( 1.063 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.727 km )Wesley János Lelkészképző Főiskola - WJLF ( 0.584 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 0.999 km )
-
-                    More
-                    
-
-
-
-","Baptista Teológiai Akadémia - BTA ( 1.618 km )Evangélikus Hittudományi Egyetem - EHE ( 1.729 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.787 km )McDaniel College - MCDC ( 1.441 km )Magyar Táncművészeti Főiskola - MTF ( 1.284 km )Pünkösdi Teológiai Főiskola - PTF ( 1.486 km )Szent István Egyetem - SZIE ÁOTK ( 1.578 km )Szent István Egyetem - SZIE-YMÉK ( 0.298 km )
-
-                    More
-                    
-
-
-
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.834 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.196 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.344 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.470 km )Baptista Teológiai Akadémia - BTA ( 0.796 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.708 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.198 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 0.982 km )Közép-Európai Egyetem - KEE ( 1.545 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.617 km )McDaniel College - MCDC ( 1.162 km )Magyar Képzőművészeti Egyetem - MKE ( 0.149 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.711 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.878 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.847 km )Semmelweis Egyetem - SE EFK ( 1.663 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.455 km )Szent István Egyetem - SZIE ÁOTK ( 1.067 km )Central European University - CEU ( 1.545 km )
-
-                    More
-                    
-
-
-
-",,,"Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.646 km )Általános Vállalkozási Főiskola - ÁVF ( 0.639 km )Budapesti Corvinus Egyetem - BCE-KIK ( 0.282 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 0.830 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem  - BKÁE ÉTK BCE ÉTK ( 0.897 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 0.830 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KERTK BCE KERTK ( 0.897 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 0.830 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE TÁJK BCE TÁJK ( 0.897 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 0.843 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ( 0.389 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ÉSZK ( 0.389 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME GTK ( 0.389 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME KSK ( 0.389 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME TTK ( 0.389 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME VIK ( 0.453 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-ÉŐK ( 0.389 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-VBK ( 0.389 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.330 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.330 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.692 km )Eötvös Loránd Tudományegyetem - ELTE IK ( 1.110 km )Eötvös Loránd Tudományegyetem - ELTE TÁTK ( 1.110 km )Eötvös Loránd Tudományegyetem - ELTE TTK ( 1.110 km )Fernuniversitätgesamthochschule in Hagen - FU ( 0.639 km )Károli Gáspár Református Egyetem - KRE ( 1.276 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.487 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.150 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.693 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.249 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.707 km )Semmelweis Egyetem - SE ( 1.409 km )Semmelweis Egyetem - SE ÁOK ( 1.409 km )Semmelweis Egyetem - SE EFK ( 1.907 km )Semmelweis Egyetem - SE FOK ( 1.409 km )Semmelweis Egyetem - SE GYTK ( 1.409 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.466 km )
-
-                    More
-                    
-
-
-
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.230 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.013 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.948 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.948 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.948 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.322 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.084 km )Budapesti Műszaki Főiskola - BMF KGK ( 1.799 km )Baptista Teológiai Akadémia - BTA ( 1.368 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.421 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.421 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.065 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.574 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 0.998 km )Közép-Európai Egyetem - KEE ( 1.012 km )Károli Gáspár Református Egyetem - KRE ( 1.566 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.522 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.935 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.150 km )McDaniel College - MCDC ( 1.315 km )Magyar Képzőművészeti Egyetem - MKE ( 0.574 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.235 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.305 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.487 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.271 km )Semmelweis Egyetem - SE ( 1.842 km )Semmelweis Egyetem - SE ÁOK ( 1.842 km )Semmelweis Egyetem - SE EFK ( 1.114 km )Semmelweis Egyetem - SE FOK ( 1.842 km )Semmelweis Egyetem - SE GYTK ( 1.842 km )Színház- és Filmművészeti Egyetem - SZFE ( 0.900 km )Szent István Egyetem - SZIE ÁOTK ( 1.180 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.371 km )Central European University - CEU ( 1.012 km )
-
-                    More
-                    
-
-
-
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.016 km )Általános Vállalkozási Főiskola - ÁVF ( 1.944 km )Budapesti Corvinus Egyetem - BCE-KIK ( 1.743 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.363 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.154 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem  - BKÁE ÉTK BCE ÉTK ( 1.960 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.154 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KERTK BCE KERTK ( 1.960 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.154 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE TÁJK BCE TÁJK ( 1.960 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.400 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.556 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ( 1.506 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ÉSZK ( 1.506 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME GTK ( 1.506 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME KSK ( 1.506 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME TTK ( 1.506 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-ÉŐK ( 1.506 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-VBK ( 1.506 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.587 km )Eötvös Loránd Tudományegyetem - ELTE ( 0.789 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 0.789 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 0.742 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.953 km )Fernuniversitätgesamthochschule in Hagen - FU ( 1.944 km )Közép-Európai Egyetem - KEE ( 0.604 km )Károli Gáspár Református Egyetem - KRE ( 1.046 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.236 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.446 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.348 km )Magyar Képzőművészeti Egyetem - MKE ( 1.813 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.459 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.184 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 0.694 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.157 km )Semmelweis Egyetem - SE ( 1.536 km )Semmelweis Egyetem - SE ÁOK ( 1.536 km )Semmelweis Egyetem - SE EFK ( 1.202 km )Semmelweis Egyetem - SE FOK ( 1.536 km )Semmelweis Egyetem - SE GYTK ( 1.536 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.138 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 0.297 km )Central European University - CEU ( 0.604 km )
-
-                    More
-                    
-
-
-
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.130 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.135 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.871 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.871 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.871 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.998 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.381 km )Budapesti Műszaki Főiskola - BMF BGK ( 0.954 km )Budapesti Műszaki Főiskola - BMF KGK ( 1.669 km )Baptista Teológiai Akadémia - BTA ( 1.372 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.346 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.346 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 0.986 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.480 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 0.907 km )Közép-Európai Egyetem - KEE ( 1.073 km )Károli Gáspár Református Egyetem - KRE ( 1.476 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.417 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.835 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.112 km )McDaniel College - MCDC ( 1.235 km )Magyar Képzőművészeti Egyetem - MKE ( 0.612 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.110 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.196 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.423 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.163 km )Semmelweis Egyetem - SE ( 1.732 km )Semmelweis Egyetem - SE ÁOK ( 1.732 km )Semmelweis Egyetem - SE EFK ( 0.998 km )Semmelweis Egyetem - SE FOK ( 1.732 km )Semmelweis Egyetem - SE GYTK ( 1.732 km )Színház- és Filmművészeti Egyetem - SZFE ( 0.784 km )Szent István Egyetem - SZIE ÁOTK ( 1.098 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.342 km )Wesley János Lelkészképző Főiskola - WJLF ( 1.882 km )Central European University - CEU ( 1.073 km )
-
-                    More
-                    
-
-
-
-",,,,"Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.338 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.147 km )Budapesti Műszaki Főiskola - BMF BGK ( 0.598 km )Budapesti Műszaki Főiskola - BMF KGK ( 1.018 km )Baptista Teológiai Akadémia - BTA ( 1.263 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.722 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.722 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.435 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.101 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 0.294 km )Károli Gáspár Református Egyetem - KRE ( 1.686 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.463 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.848 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.028 km )McDaniel College - MCDC ( 0.447 km )Magyar Képzőművészeti Egyetem - MKE ( 1.122 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 0.904 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.260 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.870 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 1.467 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.250 km )Semmelweis Egyetem - SE ( 1.625 km )Semmelweis Egyetem - SE ÁOK ( 1.625 km )Semmelweis Egyetem - SE EFK ( 1.060 km )Semmelweis Egyetem - SE FOK ( 1.625 km )Semmelweis Egyetem - SE GYTK ( 1.625 km )Színház- és Filmművészeti Egyetem - SZFE ( 0.978 km )Szent István Egyetem - SZIE ÁOTK ( 0.368 km )Szent István Egyetem - SZIE-YMÉK ( 1.511 km )Wesley János Lelkészképző Főiskola - WJLF ( 1.068 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 1.617 km )
-
-                    More
-                    
-
-
-
-",,"Budapest Kortárstánc Főiskola - BHF ( 1.595 km )Budapesti Műszaki Főiskola - BMF ( 0.983 km )Budapesti Műszaki Főiskola - BMF KVK ( 0.978 km )Budapesti Műszaki Főiskola - BMF NIK ( 0.983 km )Budapesti Műszaki Főiskola - BMF RKK ( 0.906 km )
 
                     More
                     
@@ -502,82 +304,19 @@ Near universities,"Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.023 km )Eötv�
 
 
 
-","Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.628 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.896 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.896 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.916 km )Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 1.286 km )Közép-Európai Egyetem - KEE ( 1.131 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.757 km )Semmelweis Egyetem - SE TSK ( 0.935 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.367 km )Central European University - CEU ( 1.131 km )
+","Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.738 km )Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 1.119 km )Közép-Európai Egyetem - KEE ( 1.325 km )Semmelweis Egyetem - SE TSK ( 0.781 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.616 km )Central European University - CEU ( 1.325 km )
 
                     More
                     
 
 
 
-",,,"Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.554 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.962 km )Baptista Teológiai Akadémia - BTA ( 0.615 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.815 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.375 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.235 km )McDaniel College - MCDC ( 1.414 km )Magyar Képzőművészeti Egyetem - MKE ( 0.740 km )Magyar Táncművészeti Főiskola - MTF ( 1.902 km )Szent István Egyetem - SZIE ÁOTK ( 1.372 km )
+",,,,,"Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.552 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.965 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.965 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.965 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.796 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.184 km )Budapesti Műszaki Főiskola - BMF KGK ( 0.498 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.872 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.872 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.825 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.874 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.628 km )Károli Gáspár Református Egyetem - KRE ( 1.666 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.397 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.496 km )McDaniel College - MCDC ( 1.667 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.141 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.385 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 0.376 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.410 km )Semmelweis Egyetem - SE ( 1.247 km )Semmelweis Egyetem - SE ÁOK ( 1.247 km )Semmelweis Egyetem - SE EFK ( 1.385 km )Semmelweis Egyetem - SE FOK ( 1.247 km )Semmelweis Egyetem - SE GYTK ( 1.247 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.523 km )Szent István Egyetem - SZIE ÁOTK ( 1.659 km )Wesley János Lelkészképző Főiskola - WJLF ( 0.267 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 0.397 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE ( 1.984 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE BKMFK ZMNE BKMK ( 1.984 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE-KHK ( 1.984 km )
 
                     More
                     
 
 
 
-","Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.367 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.740 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.833 km )Baptista Teológiai Akadémia - BTA ( 0.665 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.597 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.248 km )Közép-Európai Egyetem - KEE ( 1.854 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.016 km )McDaniel College - MCDC ( 1.338 km )Magyar Képzőművészeti Egyetem - MKE ( 0.531 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.849 km )Szent István Egyetem - SZIE ÁOTK ( 1.276 km )Central European University - CEU ( 1.854 km )
-
-                    More
-                    
-
-
-
-",,"Általános Vállalkozási Főiskola - ÁVF ( 1.467 km )Budapesti Corvinus Egyetem - BCE-KIK ( 1.820 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem  - BKÁE ÉTK BCE ÉTK ( 1.337 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KERTK BCE KERTK ( 1.337 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE TÁJK BCE TÁJK ( 1.337 km )Fernuniversitätgesamthochschule in Hagen - FU ( 1.467 km )Gábor Dénes Főiskola - GDF ( 0.814 km )Számalk Rt. School of Economic Studies - SES ( 0.622 km )
-
-                    More
-                    
-
-
-
-","Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.908 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.490 km )Baptista Teológiai Akadémia - BTA ( 0.946 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.862 km )Harsányi János Főiskola - HJF ( 1.917 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.766 km )McDaniel College - MCDC ( 1.842 km )Magyar Képzőművészeti Egyetem - MKE ( 1.275 km )Magyar Táncművészeti Főiskola - MTF ( 1.717 km )Szent István Egyetem - SZIE ÁOTK ( 1.826 km )
-
-                    More
-                    
-
-
-
-",,"Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.664 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 0.545 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.530 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.603 km )Baptista Teológiai Akadémia - BTA ( 1.485 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.775 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.775 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.447 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.027 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.432 km )Közép-Európai Egyetem - KEE ( 0.905 km )Károli Gáspár Református Egyetem - KRE ( 1.962 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.966 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.635 km )McDaniel College - MCDC ( 1.707 km )Magyar Képzőművészeti Egyetem - MKE ( 0.711 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.741 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.765 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.802 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.730 km )Semmelweis Egyetem - SE EFK ( 1.595 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.385 km )Szent István Egyetem - SZIE ÁOTK ( 1.584 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.578 km )Central European University - CEU ( 0.905 km )
-
-                    More
-                    
-
-
-
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.960 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.489 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.213 km )Budapesti Műszaki Főiskola - BMF KGK ( 1.454 km )Baptista Teológiai Akadémia - BTA ( 1.080 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.690 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 0.637 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.474 km )McDaniel College - MCDC ( 0.313 km )Magyar Képzőművészeti Egyetem - MKE ( 1.357 km )Magyar Táncművészeti Főiskola - MTF ( 1.973 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.509 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.875 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 1.846 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.868 km )Pünkösdi Teológiai Főiskola - PTF ( 1.956 km )Semmelweis Egyetem - SE EFK ( 1.681 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.600 km )Szent István Egyetem - SZIE ÁOTK ( 0.444 km )Szent István Egyetem - SZIE-YMÉK ( 0.888 km )Wesley János Lelkészképző Főiskola - WJLF ( 1.372 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 1.961 km )
-
-                    More
-                    
-
-
-
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.119 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 0.919 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.535 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.535 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.535 km )Budapesti Corvinus Egyetem - BKÁE TK BCE TK ( 1.751 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.097 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ( 1.938 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME ÉSZK ( 1.938 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME GTK ( 1.938 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME KSK ( 1.938 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME TTK ( 1.938 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-ÉŐK ( 1.938 km )Budapesti Műszaki és Gazdaságtudományi Egyetem - BME-VBK ( 1.938 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.456 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.063 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.063 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 0.834 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.733 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.709 km )Közép-Európai Egyetem - KEE ( 0.311 km )Károli Gáspár Református Egyetem - KRE ( 1.300 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.404 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.719 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.932 km )Magyar Képzőművészeti Egyetem - MKE ( 1.355 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.430 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.271 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.037 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.236 km )Semmelweis Egyetem - SE ( 1.739 km )Semmelweis Egyetem - SE ÁOK ( 1.739 km )Semmelweis Egyetem - SE EFK ( 1.196 km )Semmelweis Egyetem - SE FOK ( 1.739 km )Semmelweis Egyetem - SE GYTK ( 1.739 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.050 km )Szent István Egyetem - SZIE ÁOTK ( 1.911 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 0.738 km )Central European University - CEU ( 0.311 km )
-
-                    More
-                    
-
-
-
-","Andrássy Gyula Budapesti Német Nyelvű Egyetem - ANNYE ( 1.220 km )Budapesti Gazdasági Főiskola - BGF KVIFK ( 0.907 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE BCE ( 1.900 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE GTK BCE GTK ( 1.900 km )Budapesti Közgazdaságtudományi és Államigazgatási Egyetem - BKÁE KTK BCE KTK ( 1.900 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 0.430 km )Budapesti Műszaki Főiskola - BMF BGK ( 1.162 km )Budapesti Műszaki Főiskola - BMF KGK ( 1.871 km )Baptista Teológiai Akadémia - BTA ( 1.493 km )Eötvös Loránd Tudományegyetem - ELTE ( 1.374 km )Eötvös Loránd Tudományegyetem - ELTE ÁJK ( 1.374 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.027 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 0.572 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.136 km )Közép-Európai Egyetem - KEE ( 0.869 km )Károli Gáspár Református Egyetem - KRE ( 1.538 km )Károli Gáspár Református Egyetem - KRE BTK ( 1.520 km )Károli Gáspár Református Egyetem - KRE HTK ( 1.922 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 0.291 km )McDaniel College - MCDC ( 1.456 km )Magyar Képzőművészeti Egyetem - MKE ( 0.688 km )Országos Rabbiképző - Zsidó Egyetem - OR ZSE ( 1.283 km )Pázmány Péter Katolikus Egyetem - PPKE ( 1.312 km )Pázmány Péter Katolikus Egyetem - PPKE HTK ( 1.425 km )Pázmány Péter Katolikus Egyetem - PPKE JÁK ( 1.277 km )Semmelweis Egyetem - SE ( 1.848 km )Semmelweis Egyetem - SE ÁOK ( 1.848 km )Semmelweis Egyetem - SE EFK ( 1.137 km )Semmelweis Egyetem - SE FOK ( 1.848 km )Semmelweis Egyetem - SE GYTK ( 1.848 km )Színház- és Filmművészeti Egyetem - SZFE ( 0.926 km )Szent István Egyetem - SZIE ÁOTK ( 1.321 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.276 km )Central European University - CEU ( 0.869 km )
-
-                    More
-                    
-
-
-
-","Budapesti Gazdasági Főiskola - BGF KVIFK ( 0.327 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.110 km )Baptista Teológiai Akadémia - BTA ( 1.856 km )Eötvös Loránd Tudományegyetem - ELTE BTK ( 1.968 km )Eötvös Loránd Tudományegyetem - ELTE PPK ( 1.611 km )Közép-Európai Egyetem - KEE ( 1.096 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.256 km )Magyar Képzőművészeti Egyetem - MKE ( 1.216 km )Színház- és Filmművészeti Egyetem - SZFE ( 1.979 km )Sapientia Szerzetesi Hittudományi Főiskola - SSZHF ( 1.951 km )Central European University - CEU ( 1.096 km )
-
-                    More
-                    
-
-
-
-","Budapesti Gazdasági Főiskola - BGF KVIFK ( 1.887 km )Bhaktivedanta Hittudományi Főiskola - BKTF ( 1.276 km )Baptista Teológiai Akadémia - BTA ( 0.595 km )Heller Farkas Gazdasági és Turisztikai Szolgáltatások Főiskolája - HFF ( 1.531 km )Liszt Ferenc Zeneművészeti Egyetem - LFZE ( 1.537 km )McDaniel College - MCDC ( 1.494 km )Magyar Képzőművészeti Egyetem - MKE ( 1.036 km )Magyar Táncművészeti Főiskola - MTF ( 1.589 km )Szent István Egyetem - SZIE ÁOTK ( 1.483 km )Szent István Egyetem - SZIE-YMÉK ( 1.887 km )
-
-                    More
-                    
-
-
-
-",,
-Longitude and latitude,",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",",","
+",
+Longitude and latitude,,,,,,,,,,,,,,,,,,,,,,,,

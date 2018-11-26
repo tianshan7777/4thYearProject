@@ -33,7 +33,7 @@ import pandas as pd
 #One can easily see that by changing the 'page' parameter, we can scrape over multiple pages
 
 #Changing the URL's parameter
-pages = [str(i) for i in range(1, 3)]
+pages = [str(i) for i in range(1, 2)]
 
 #Lists to store the scraped data in
 prices_per_month = []
@@ -68,10 +68,13 @@ universities = []
 
 #Use -1 to represent the none value
 NOTFOUND = -1
-#Use 0 to represent NO
+#Use 0 to represent NO/NOT FURNISHED/NOT EQUIPPED
 NO = 0
-#Use 1 to represent YES
+#Use 1 to represent YES/FURNISHED/EQUIPPED
 YES = 1
+#Use 0.5 to represent partly furnished
+PARTLYFURNISHED = 0.5
+
 
 #Mornitoring the loop as it is still going
 start_time = time()
@@ -500,22 +503,56 @@ properties = pd.DataFrame.from_dict(my_dict, orient='index')
 	'Foreigners welcomed', 'Children welcomed', 'Can be an office', 'Common cost', 'Number of separate rooms', 'Furniture', 
 	'Floor', 'Balconies', 'View', 'Shortest rental period', 'Details']] '''
 
+#Data Cleaning
+
 #Convert price to int
 for p in properties.loc["Price per month", : ]:
-	p = int(p.replace(" ", ""))
-	print(p)
+	print("price per month: ", p)
 
-#Delete the white space in size and number of rooms
+properties.loc["Price per month", : ] = properties.loc["Price per month", : ].apply(lambda x:str(x).replace(" ", "")).astype(int)
+
+#Convert district number to int
+
+
+#Convert the size to int
 for p in properties.loc["Size(sqm)", : ]:
-	p = int(p.strip()[ :-4])
-	print(p)
+	print("size: ", p)
 
-for p in properties.loc["Number of separate rooms", : ]:
-	if p.is_integer():
-		p = p
-	else:
-		p = int(p.strip())
+properties.loc["Size(sqm)", : ] = properties.loc["Size(sqm)", : ].apply(lambda x:str(x).strip()[ :-4]).astype(int)
+
+'''for p in properties.loc["Number of rooms", : ]:
 	print(p)
+	if "No" in str(p):
+		p = 0
+	else:
+		p = int(p.strip()[ :-5])
+	print("Number of rooms:", p)'''
+
+#Convert deposit to int
+for p in properties.loc["Deposit", : ]:
+	print("deposit: ", p)
+
+properties.loc["Deposit", : ] = properties.loc["Deposit", : ].apply(lambda x:str(x).replace(" ","").strip()[ :-4]).astype(int)
+
+#Convert utilities to int
+for p in properties.loc["Utilities", : ]:
+	print("utilities: ", p)
+
+properties.loc["Utilities", : ] = properties.loc["Utilities", : ].apply(lambda x:str(x).strip()[ :-12]).astype(int)
+
+#Convert common cost to int
+for p in properties.loc["Common cost", : ]:
+	print("common cost: ", p)
+
+properties.loc["Common cost", : ] = properties.loc["Common cost", : ].apply(lambda x: str(x) if isinstance(x, int) else str(x).strip()[ :-12]).astype(int)
+
+#Convert number of separate rooms to int
+for p in properties.loc["Number of separate rooms", : ]:
+	print("number of separate rooms: ", p)
+
+properties.loc["Number of separate rooms", : ] = properties.loc["Number of separate rooms"].apply(lambda x: "0" if "No" in str(x) else x).astype(int)
+
+print(properties[0])
 
 #Produce a .csv file
 properties.to_csv('alberlet_rent.csv')
