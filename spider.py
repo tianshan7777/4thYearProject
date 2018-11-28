@@ -38,7 +38,7 @@ import matplotlib.pyplot as plt
 #One can easily see that by changing the 'page' parameter, we can scrape over multiple pages
 
 #Changing the URL's parameter
-pages = [str(i) for i in range(1, 2)]
+pages = [str(i) for i in range(1, 100)]
 
 #Lists to store the scraped data in
 prices_per_month = []
@@ -64,7 +64,8 @@ pets = []
 foreigners = []
 washing_machines = []
 details = []
-locations = []
+longitudes = []
+latitudes = []
 areas = []
 transportations = []
 universities = []
@@ -217,7 +218,8 @@ for page in pages:
 				foreigners.append(NOTFOUND)
 				washing_machines.append(NOTFOUND)
 				details.append(NOTFOUND)
-				locations.append(NOTFOUND)
+				latitudes.append(NOTFOUND)
+				longitudes.append(NOTFOUND)
 
 			else:
 				sub_page_html = BeautifulSoup(sub_response.text, 'html.parser')
@@ -428,16 +430,32 @@ for page in pages:
 				#Attributes for the heatmap later
 				if sub_page_html.find('a', class_ = 'btn btn--primary btn--small btn-get-direction') is not None:
 					latitude_longitude = sub_page_html.find('a', class_ = 'btn btn--primary btn--small btn-get-direction')['onclick']
-					location = latitude_longitude[25:40] + "," + latitude_longitude[44:59]
-					locations.append(location)
+					latitudes.append(latitude_longitude[25:40])
+					longitudes.append(latitude_longitude[44:59]) 
+					print(latitude_longitude[25:40])
+					print(latitude_longitude[44:59])
+				elif sub_page_html.find_all("script", type = "text/javascript") is not None:
+					script_text = str(sub_page_html.find_all("script", type = "text/javascript"))
+					#print(script_text)
+					list_of_words = script_text.split()
+					if "lat:" in list_of_words:
+						lat = list_of_words[list_of_words.index("lat:")+1]
+						lng = list_of_words[list_of_words.index("lng:")+1]
+						latitudes.append(lat.replace("'", "").replace(",",""))
+						longitudes.append(lng.replace("'","").replace(",", ""))
+						print(lat.replace("'", "").replace(",",""), lng.replace("'","").replace(",", ""))
+					else:
+						latitudes.append(NOTFOUND)
+						longitudes.append(NOTFOUND)
+						print("lat & long not found.")
 				else:
 					#Use -1 to represent fake maps
-					locations.append(NOTFOUND)
-				#print(latitude_longitude)
+					latitudes.append(NOTFOUND)
+					longitudes.append(NOTFOUND)
+					print(NOTFOUND)
 				#Since all of the latitude and longitude follow the same format
 				#e.g. CP.MapDirections.deploy("47.489264600000", "19.069734900000", "0");
 				#by counting and slicing the string, we can get the pair of latitude and longitude
-				#print(location)
 
 #If want vertically arranged
 '''properties = pd.DataFrame({
@@ -462,7 +480,8 @@ for page in pages:
 	'Foreigners welcomed': foreigners,
 	'Washing machine': washing_machines,
 	'Details': details,
-	'Longitude and latitude': locations
+	'Latitude': latitudes,
+	"Longitude": longitudes
 })'''
 
 #If want horizontally arranged
@@ -491,7 +510,8 @@ my_dict = {
 	'Area': areas,
 	'Transportation': transportations,
 	'Near universities': universities,
-	'Longitude and latitude': locations
+	'Latitude': latitudes,
+	"Longitude": longitudes
 }
 
 properties = pd.DataFrame.from_dict(my_dict, orient='index')
@@ -540,19 +560,24 @@ properties.loc["Deposit", : ] = properties.loc["Deposit", : ].apply(lambda x: x 
 for p in properties.loc["Utilities", : ]:
 	print("utilities: ", p)
 
-properties.loc["Utilities", : ] = properties.loc["Utilities", : ].apply(lambda x:str(x).strip()[ :-12]).astype(int)
+properties.loc["Utilities", : ] = properties.loc["Utilities", : ].apply(lambda x: x if x == -1 else str(x).replace(" ", "").strip()[ :-10]).astype(int)
 
 #Convert common cost to int
 for p in properties.loc["Common cost", : ]:
 	print("common cost: ", p)
 
-properties.loc["Common cost", : ] = properties.loc["Common cost", : ].apply(lambda x: str(x) if isinstance(x, int) else str(x).strip()[ :-12]).astype(int)
+properties.loc["Common cost", : ] = properties.loc["Common cost", : ].apply(lambda x: x if isinstance(x, int) else str(x).replace(" ", "").strip()[ :-10]).astype(int)
 
 #Convert number of separate rooms to int
 for p in properties.loc["Number of separate rooms", : ]:
 	print("number of separate rooms: ", p)
 
-properties.loc["Number of separate rooms", : ] = properties.loc["Number of separate rooms"].apply(lambda x: "0" if "No" in str(x) else x).astype(int)
+properties.loc["Number of separate rooms", : ] = properties.loc["Number of separate rooms"].apply(lambda x: 0 if "No" in str(x) else x).astype(int)
+
+#We use 0,0 in case there is no latitude and longitude information
+properties.loc["Latitude", : ] = properties.loc["Latitude"].apply(lambda x: 0 if x == "" else x).astype(float)
+
+properties.loc["Longitude", : ] = properties.loc["Longitude"].apply(lambda x: 0 if x == "" else x).astype(float)
 
 print(properties[0])
 
