@@ -159,9 +159,6 @@ for page in pages:
 	#Select all the item lists
 	property_containers = page_html.find_all('div', class_ = 'boxes-grid row advert-list')
 
-	#print(type(property_containers))
-	#print(len(property_containers))
-
 	#For each property list (usually contains 6 properties )in these 4 divs
 	for container in property_containers:
 
@@ -839,15 +836,6 @@ for page in pages:
 				else:
 					type_of_buildings.append(NOTFOUND)
 
-				#The rental price 
-				#Already scraped from the main page
-				'''if sub_page_html.find('td', text = "New rental price") is not None:
-					rental_price = sub_page_html.find('td', text = "New rental price").find_next_sibling().text
-					print(rental_price)
-				else:
-					rental_price = sub_page_html.find('td', text = "Rental price").find_next_sibling().text
-					print(rental_price)'''
-
 				#The deposit
 				if sub_page_html.find('td', text = "Deposit") is not None:
 					deposit = sub_page_html.find('td', text = "Deposit").find_next_sibling().text
@@ -871,24 +859,6 @@ for page in pages:
 					common_costs.append(common_cost)
 				else:
 					common_costs.append(NOTFOUND)
-
-				#The size
-				#Already scraped from the main page
-				'''if sub_page_html.find('td', text = "Size") is not None:
-					property_size = sub_page_html.find('td', text = "Size").find_next_sibling().text
-					print(property_size)
-
-					else:
-					property_size.append(NOTFOUND)'''
-
-				#The number of rooms
-				#Already scraped from the main page
-				'''if sub_page_html.find('td', text = "Number of rooms") is not None:
-					property_rooms = sub_page_html.find('td', text = "Number of rooms").find_next_sibling().text
-					print(property_rooms)
-
-					else:
-					property_rooms.append(NOTFOUND)'''
 
 				#The number of separate rooms
 				if sub_page_html.find('td', text = "Separate rooms") is not None:
@@ -1057,49 +1027,6 @@ for page in pages:
 					latitudes.append(NOTFOUND)
 					longitudes.append(NOTFOUND)
 					print(NOTFOUND)
-				#Since all of the latitude and longitude follow the same format
-				#e.g. CP.MapDirections.deploy("47.489264600000", "19.069734900000", "0");
-				#by counting and slicing the string, we can get the pair of latitude and longitude
-
-'''#If want vertically arranged
-properties = pd.DataFrame({
-	'Type of properties': type_of_properties,
-	'Price per month': prices_per_month,
-	'District I': district_1,
-	'District II': district_2,
-	'District III': district_3,
-	'District IV': district_4,
-	'District V': district_5,
-	'District VI': district_6,
-	'District VII': district_7,
-	'District VIII': district_8,
-	'District IX': district_9,
-	'District X': district_10,
-	'Street': streets,
-	'Size(sqm)': sizes,
-	'Number of rooms': num_of_rooms,
-	'Type of the building': type_of_buildings,
-	'Deposit': deposits,
-	'Utilities': utilities,
-	'Common cost': common_costs,
-	'Number of separate rooms': separate_rooms,
-	'Furniture': furnitures,
-	'Floor': floors,
-	'Balconies': balconies,
-	'View': property_views,
-	'Shortest rental period': shortest_rentals,
-	'Children welcomed': children_welcomes,
-	'American kitchen': ameri_kitchens,
-	'Can be an office': offices,
-	'Foreigners welcomed': foreigners,
-	'Washing machine': washing_machines,
-	'Details': details,
-	'Area': areas,
-	'Transportation': transportations,
-	'Near universities': universities,
-	'Latitude': latitudes,
-	"Longitude": longitudes
-})'''
 
 #If want horizontally arranged
 my_dict = {
@@ -1156,32 +1083,12 @@ my_dict = {
 
 properties = pd.DataFrame.from_dict(my_dict, orient='index')
 
-#print(properties.info())
-#properties.head(10)
-
-#Cleaning our data
-
-#If vertically arranged
-#Rearrange the columns
-'''properties = properties[[
-	#'Longitude and latitude', 
-	'District', 'Size', 'Price per month', 'Street', 'Number of rooms', 'Type of the building', 'Deposit', 'Utilities',
-	'Foreigners welcomed', 'Children welcomed', 'Can be an office', 'Common cost', 'Number of separate rooms', 'Furniture', 
-	'Floor', 'Balconies', 'View', 'Shortest rental period', 'Details']] '''
-
 #Data Cleaning
 #Convert price to int
 for p in properties.loc["Price per month", : ]:
 	print("price per month: ", p)
 
 properties.loc["Price per month", : ] = properties.loc["Price per month", : ].apply(lambda x:str(x).replace(" ", "")).astype(int)
-
-#def district_helper(district):
-#	return district.replace("Budapest,", "").replace(". District", "").replace(" ","")
-#
-#Convert district number to int
-#properties.loc["District", : ] = properties.loc["District", : ].apply(lambda x: roman.fromRoman(district_helper(x)))
-
 
 #Convert the size to int
 for p in properties.loc["Size(sqm)", : ]:
@@ -1222,25 +1129,6 @@ print(properties[0])
 
 #Produce a .csv file
 properties.to_csv('alberlet_rent_houses.csv')
-
-#Draw a simple graph
-#x-axis: price
-#y-axis: number of houses
-
-# This import registers the 3D projection, but is otherwise unused.
-'''
-fig = plt.figure()
-ax = plt.axes(projection='3d')
-zdata = properties.loc["Price per month", : ]
-xdata = properties.loc["District", : ]
-ydata = properties.loc["Number of separate rooms", : ]
-ax.scatter3D(xdata, ydata, zdata, c=zdata)
-
-ax.set_xlabel("District")
-ax.set_ylabel("Number of seperate rooms")
-ax.set_zlabel("Price per month")
-
-plt.show()'''
 
 	
 
