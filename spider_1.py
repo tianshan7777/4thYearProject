@@ -1,4 +1,4 @@
-#This is a spider for web albertlet.hu
+#This is a spider for web alberlet.hu
 #properties for rent
 #type: apartment
 #Scrape the first 70 pages. Can be changed later
@@ -38,11 +38,34 @@ import matplotlib.pyplot as plt
 #One can easily see that by changing the 'page' parameter, we can scrape over multiple pages
 
 #Changing the URL's parameter
-pages = [str(i) for i in range(1, 100)]
+pages = [str(i) for i in range(1, 3)]
 
 #Lists to store the scraped data in
+type_of_properties = []
 prices_per_month = []
-districts = []
+district_1 = []
+district_2 = []
+district_3 = []
+district_4 = []
+district_5 = []
+district_6 = []
+district_7 = []
+district_8 = []
+district_9 = []
+district_10 = []
+district_11 = []
+district_12 = []
+district_13 = []
+district_14 = []
+district_15 = []
+district_16 = []
+district_17 = []
+district_18 = []
+district_19 = []
+district_20 = []
+district_21 = []
+district_22 = []
+district_23 = []
 streets = []
 sizes = []
 num_of_rooms = []
@@ -150,14 +173,595 @@ for page in pages:
 		#For each property in the property list
 		for item in property_items:
 
+			#We mark apartments as 1 here
+			type_of_properties.append(1)
 
 			#The price
 			price = item.b.text
 			prices_per_month.append(price)
 
+			def district_helper(district):
+				return district.replace("Budapest,", "").replace(". District", "").replace(" ","")
+
 			#The district
 			district = item.find('span', class_ = 'advert__city').text
-			districts.append(district)
+			district_num = roman.fromRoman(district_helper(district))
+			if district_num == 1:
+				district_1.append(1)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 2:
+				district_1.append(0)
+				district_2.append(1)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 3:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(1)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 4:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(1)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 5:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(1)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 6:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(1)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 7:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(1)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 8:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(1)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 9:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(1)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 10:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(1)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 11:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(1)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 12:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(1)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)	
+			elif district_num == 13:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(1)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 14:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(1)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 15:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(1)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 16:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(1)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 17:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(1)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(1)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 18:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(1)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 19:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(1)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 20:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(1)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 21:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(1)
+				district_22.append(0)
+				district_23.append(0)
+			elif district_num == 22:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(1)
+				district_23.append(0)
+			elif district_num == 23:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(1)
+			else:
+				district_1.append(0)
+				district_2.append(0)
+				district_3.append(0)
+				district_4.append(0)
+				district_5.append(0)
+				district_6.append(0)
+				district_7.append(0)
+				district_8.append(0)
+				district_9.append(0)
+				district_10.append(0)
+				district_11.append(0)
+				district_12.append(0)
+				district_13.append(0)
+				district_14.append(0)
+				district_15.append(0)
+				district_16.append(0)
+				district_17.append(0)
+				district_18.append(0)
+				district_19.append(0)
+				district_20.append(0)
+				district_21.append(0)
+				district_22.append(0)
+				district_23.append(0)
 
 			#The street
 			street = item.find('span', class_ = 'advert__street').text
@@ -457,12 +1061,22 @@ for page in pages:
 				#e.g. CP.MapDirections.deploy("47.489264600000", "19.069734900000", "0");
 				#by counting and slicing the string, we can get the pair of latitude and longitude
 
-#If want vertically arranged
-'''properties = pd.DataFrame({
+'''#If want vertically arranged
+properties = pd.DataFrame({
+	'Type of properties': type_of_properties,
 	'Price per month': prices_per_month,
-	'District': districts,
+	'District I': district_1,
+	'District II': district_2,
+	'District III': district_3,
+	'District IV': district_4,
+	'District V': district_5,
+	'District VI': district_6,
+	'District VII': district_7,
+	'District VIII': district_8,
+	'District IX': district_9,
+	'District X': district_10,
 	'Street': streets,
-	'Size': sizes,
+	'Size(sqm)': sizes,
 	'Number of rooms': num_of_rooms,
 	'Type of the building': type_of_buildings,
 	'Deposit': deposits,
@@ -480,14 +1094,40 @@ for page in pages:
 	'Foreigners welcomed': foreigners,
 	'Washing machine': washing_machines,
 	'Details': details,
+	'Area': areas,
+	'Transportation': transportations,
+	'Near universities': universities,
 	'Latitude': latitudes,
 	"Longitude": longitudes
 })'''
 
 #If want horizontally arranged
 my_dict = {
+	'Type of properties': type_of_properties,
 	'Price per month': prices_per_month,
-	'District': districts,
+	'District I': district_1,
+	'District II': district_2,
+	'District III': district_3,
+	'District IV': district_4,
+	'District V': district_5,
+	'District VI': district_6,
+	'District VII': district_7,
+	'District VIII': district_8,
+	'District IX': district_9,
+	'District X': district_10,
+	'District XI': district_11,
+	'District XII': district_12,
+	'District XIII': district_13,
+	'District XIV': district_14,
+	'District XV': district_15,
+	'District XVI': district_16,
+	'District XVII': district_17,
+	'District XVIII': district_18,
+	'District XIX': district_19,
+	'District XX': district_20,
+	'District XXI': district_21,
+	'District XXII': district_22,
+	'District XXIII': district_23,
 	'Street': streets,
 	'Size(sqm)': sizes,
 	'Number of rooms': num_of_rooms,
@@ -530,18 +1170,17 @@ properties = pd.DataFrame.from_dict(my_dict, orient='index')
 	'Floor', 'Balconies', 'View', 'Shortest rental period', 'Details']] '''
 
 #Data Cleaning
-
 #Convert price to int
 for p in properties.loc["Price per month", : ]:
 	print("price per month: ", p)
 
 properties.loc["Price per month", : ] = properties.loc["Price per month", : ].apply(lambda x:str(x).replace(" ", "")).astype(int)
 
-def district_helper(district):
-	return district.replace("Budapest,", "").replace(". District", "").replace(" ","")
-
+#def district_helper(district):
+#	return district.replace("Budapest,", "").replace(". District", "").replace(" ","")
+#
 #Convert district number to int
-properties.loc["District", : ] = properties.loc["District", : ].apply(lambda x: roman.fromRoman(district_helper(x)))
+#properties.loc["District", : ] = properties.loc["District", : ].apply(lambda x: roman.fromRoman(district_helper(x)))
 
 
 #Convert the size to int
@@ -582,13 +1221,14 @@ properties.loc["Longitude", : ] = properties.loc["Longitude"].apply(lambda x: 0 
 print(properties[0])
 
 #Produce a .csv file
-properties.to_csv('alberlet_rent.csv')
+properties.to_csv('alberlet_rent_apartments.csv')
 
 #Draw a simple graph
 #x-axis: price
 #y-axis: number of houses
 
 # This import registers the 3D projection, but is otherwise unused.
+'''
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 zdata = properties.loc["Price per month", : ]
@@ -600,7 +1240,7 @@ ax.set_xlabel("District")
 ax.set_ylabel("Number of seperate rooms")
 ax.set_zlabel("Price per month")
 
-plt.show()
+plt.show()'''
 
 	
 
