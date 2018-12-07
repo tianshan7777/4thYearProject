@@ -1,5 +1,5 @@
 #This is a spider for web https://realestatehungary.hu/
-#properties for sale
+#properties for rent
 #type: houses
 
 from requests import get
@@ -671,7 +671,7 @@ requests = 0
 for page in pages:
 	#print('entre page')
 	#Make a request
-	response = get('https://realestatehungary.hu/szukites/elado+haz?page=' + page)
+	response = get('https://realestatehungary.hu/szukites/kiado+haz?page=' + page)
 
 	#Parse the html with a BeautifulSoup object
 	page_html = BeautifulSoup(response.text, 'html.parser')
@@ -1036,7 +1036,7 @@ my_dict = {
 properties = pd.DataFrame.from_dict(my_dict, orient='index')
 
 #Produce a .csv file
-properties.to_csv('realestatehungary_sale_houses.csv')
+properties.to_csv('realestatehungary_rent_houses.csv')
 
 
 
