@@ -1,5 +1,5 @@
 #This is a spider for web http://www.towerbudapest.com/ 
-#Properties for sale
+#Properties for long term rent
 #Type: apartments
 
 from requests import get
@@ -17,7 +17,7 @@ import math
 #		   'Form': 'Client@example.com'}
 
 #Changing the URL's parameter
-pages = [str(i) for i in range(1, 28)]
+pages = [str(i) for i in range(1, 11)]
 
 #Lists to store the scraped data
 #Lists to store the scraped data in
@@ -97,7 +97,7 @@ requests = 0
 for page in pages:
 
 	#Make a request via Requests
-	response = get("https://www.towerbudapest.com/en/sales/" + page)
+	response = get("https://www.towerbudapest.com/en/rentals/" + page)
 
 	#Parse the html file with a BeautifulSoup parser
 	page_url = BeautifulSoup(response.text, 'html.parser')
@@ -269,7 +269,11 @@ for page in pages:
 
 					
  					#The district
-					district = int(details[0].text[-1])
+					district = details[0].text[-1]
+					if district == '-':
+						district = NOTFOUND
+					else:
+						district = int(district)
 					if district == 1:
 						district_1.append(1)
 						district_2.append(0)
@@ -1103,7 +1107,7 @@ properties.loc['District XXII', : ] = properties.loc['District XXII', : ].apply(
 properties.loc['District XXIII', : ] = properties.loc['District XXIII', : ].apply(lambda x: x if isinstance(x, str) else NOTFOUND)
 
 #Produce a .csv file
-properties.to_csv('towerbudapest_sale_apartments.csv')
+properties.to_csv('towerbudapest_longtermrent_apartments.csv')
 
 
 

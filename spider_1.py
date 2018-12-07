@@ -1,8 +1,6 @@
 #This is a spider for web alberlet.hu
 #properties for rent
 #type: apartment
-#Scrape the first 70 pages. Can be changed later
-
 
 from requests import get
 from bs4 import BeautifulSoup
@@ -38,7 +36,7 @@ import matplotlib.pyplot as plt
 #One can easily see that by changing the 'page' parameter, we can scrape over multiple pages
 
 #Changing the URL's parameter
-pages = [str(i) for i in range(1, 3)]
+pages = [str(i) for i in range(1, 150)]
 
 #Lists to store the scraped data in
 type_of_properties = []
@@ -94,7 +92,6 @@ transportations = []
 universities = []
 
 #Define strings used when the value is not available
-
 #Use -1 to represent the none value
 NOTFOUND = -1
 #Use 0 to represent NO/NOT FURNISHED/NOT EQUIPPED
@@ -103,7 +100,6 @@ NO = 0
 YES = 1
 #Use 0.5 to represent partly furnished
 PARTLYFURNISHED = 0.5
-
 
 #Mornitoring the loop as it is still going
 start_time = time()
@@ -804,6 +800,29 @@ for page in pages:
 			#If page not found, fill all the attributes up with NOTFOUND
 			if response.status_code != 200:
 				warn('Request: {}; Status Code: {}'.format(requests, response.status_code))
+				district_1.append(NOTFOUND)
+				district_2.append(NOTFOUND)
+				district_3.append(NOTFOUND)
+				district_4.append(NOTFOUND)
+				district_5.append(NOTFOUND)
+				district_6.append(NOTFOUND)
+				district_7.append(NOTFOUND)
+				district_8.append(NOTFOUND)
+				district_9.append(NOTFOUND)
+				district_10.append(NOTFOUND)
+				district_11.append(NOTFOUND)
+				district_12.append(NOTFOUND)
+				district_13.append(NOTFOUND)
+				district_14.append(NOTFOUND)
+				district_15.append(NOTFOUND)
+				district_16.append(NOTFOUND)
+				district_17.append(NOTFOUND)
+				district_18.append(NOTFOUND)
+				district_19.append(NOTFOUND)
+				district_20.append(NOTFOUND)
+				district_21.append(NOTFOUND)
+				district_22.append(NOTFOUND)
+				district_23.append(NOTFOUND)
 				type_of_buildings.append(NOTFOUND)
 				deposits.append(NOTFOUND)
 				utilities.append(NOTFOUND)
@@ -1151,10 +1170,10 @@ my_dict = {
 	'Transportation': transportations,
 	'Near universities': universities,
 	'Latitude': latitudes,
-	"Longitude": longitudes
+	'Longitude': longitudes
 }
 
-properties = pd.DataFrame.from_dict(my_dict, orient='index')
+properties = pd.DataFrame.from_dict(my_dict, orient = 'index')
 
 #print(properties.info())
 #properties.head(10)
