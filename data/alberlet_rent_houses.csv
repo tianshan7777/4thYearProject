@@ -1,0 +1,390 @@
+,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92
+Type of properties,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+Price per month,1206,1824,448,773,556,896,155,680,182,742,464,91,386,2628,927,556,866,804,587,1206,1800,1852,526,2900,1824,2937,433,556,1824,371,1082,1005,371,1453,2100,1700,500,680,1082,371,464,216,742,1700,402,1082,1855,603,1824,1298,3400,1484,680,2400,1144,1793,2628,6000,8000,3500,1700,2628,2500,1700,1938,1700,3000,5000,1221,927,1777,1978,5000,2500,5500,3000,680,2500,3800,5000,2500,5500,3000,680,2500,3800,5000,2500,5500,3000,680,2500,3800
+District I,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District II,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,1,0,0,0,1,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0,0,0,1,1,0,1,0,1,0,0,0,1,1,0,0,0,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,0
+District III,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District IV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District V,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District VI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District VII,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District VIII,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District IX,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District X,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XI,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XII,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,1
+District XIII,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XIV,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XV,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XVI,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XVII,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XVIII,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XIX,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XX,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XXI,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XXII,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+District XXIII,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Street,Bártfai utca,Kilincs utca,Dabas utca,Szádelő köz,Tihany utca,Nádasdy utca,Dózsa György út,Fogarasi út,Köves utca,Margit utca,Petőfi út,Koszorú utca,Rákász utca,Tárkony utca,Klapka György utca,Klapka György utca,Cékla utca,Lengyel utca,Mártirok út,Szentpétery utca,Szép Juhászné köz,Zöldkő utca,Alsódabas utca,Szalamandra út,Aszu utca,Nyereg út,Háromszék utca,Fürjes utca,Kilincs utca,Bartók Béla utca,Széchenyi utca,Nefelejcs utca,Maros utca,Görbe utca,Jablonka út,Budakeszi út,Pusztaszeri út,Hideg utca,Rákász utca,Határ utca,Előd utca,Nefelejcs utca,Õsrepülő utca,Pesti Gábor utca,Berzsenyi Dániel utca,Kőpor köz,Budakeszi út,Verbéna utca,Kilincs utca,Lejtő út,Fodor utca,Lejtő út,Szegfű utca,Tópart utca,Hanga köz,Nagymákfa utca,Fürj utca,Dutka Ákos utca,Máriaremetei út,Reguly Antal utca,Budakeszi út,Fürj utca,Endrődi Sándor utca,Arany utca,Arany utca,Arany utca,Nedü utca,Turista út,Szatmári utca,Őrvezető utca,Óra út,Óra út,Mandula utca,Szalonkales utca,Nagybányai út,Mártonhegyi út,Szegfű utca,Endrődi Sándor utca,Mátyás király út,Mandula utca,Szalonkales utca,Nagybányai út,Mártonhegyi út,Szegfű utca,Endrődi Sándor utca,Mátyás király út,Mandula utca,Szalonkales utca,Nagybányai út,Mártonhegyi út,Szegfű utca,Endrődi Sándor utca,Mátyás király út
+Size(sqm),120,310,77,70,80,130,30,90,50,140,130,6,30,300,172,117,160,90,80,110,340,180,91,280,300,390,50,100,310,36,120,200,70,92,280,208,45,90,120,46,73,20,150,292,70,140,250,90,290,80,310,80,100,200,144,200,210,570,599,320,260,216,240,241,241,241,430,300,150,220,300,200,320,210,220,350,100,250,580,320,210,220,350,100,250,580,320,210,220,350,100,250,580
+Number of rooms,"
+                2 rooms                 + 3 half room            ","
+                6 rooms                            ","
+                3 rooms                            ","
+                2 rooms                 + 1 half room            ","
+                2 rooms                            ","
+                4 rooms                            ","
+                1 room                            ","
+                3 rooms                            ","
+                1 room                 + 1 half room            ","
+                5 rooms                 + 3 half room            ","
+                4 rooms                            ","
+                1 room                            ","
+                1 room                            ","
+                8 rooms                            ","
+                4 rooms                 + 1 half room            ","
+                2 rooms                            ","
+                4 rooms                            ","
+                3 rooms                 + 1 half room            ","
+                2 rooms                            ","
+                5 rooms                            ","
+                6 rooms                            ","
+                5 rooms                            ","
+                3 rooms                            ","
+                6 rooms                            ","
+                5 rooms                 + 1 half room            ","
+                5 rooms                 + 4 half room            ","
+                2 rooms                            ","
+                3 rooms                            ","
+                5 rooms                            ","
+                1 room                 + 1 half room            ","
+                4 rooms                            ","
+                6 rooms                 + 2 half room            ","
+                2 rooms                            ","
+                3 rooms                            ","
+                5 rooms                            ","
+                6 rooms                            ","
+                1 room                 + 1 half room            ","
+                3 rooms                            ","
+                1 room                 + 2 half room            ","
+                1 room                            ","
+                2 rooms                            ","
+                1 room                            ","
+                4 rooms                            ","
+                5 rooms                            ","
+                1 room                            ","
+                4 rooms                            ","
+                7 rooms                            ","
+                2 rooms                 + 1 half room            ","
+                5 rooms                            ","
+                3 rooms                            ","
+                7 rooms                            ","
+                3 rooms                            ","
+                2 rooms                 + 1 half room            ","
+                3 rooms                 + 2 half room            ","
+                5 rooms                            ","
+                3 rooms                            ","
+                5 rooms                            ","
+                6 rooms                            ","
+                9 rooms                            ","
+                7 rooms                            ","
+                5 rooms                 + 2 half room            ","
+                4 rooms                 + 1 half room            ","
+                6 rooms                            ","
+                7 rooms                            ","
+                5 rooms                 + 2 half room            ","
+                5 rooms                 + 2 half room            ","
+                10 rooms                            ","
+                5 rooms                 + 1 half room            ","
+                5 rooms                            ","
+                5 rooms                 + 1 half room            ","
+                7 rooms                            ","
+                5 rooms                            ","
+                5 rooms                            ","
+                5 rooms                            ","
+                5 rooms                            ","
+                6 rooms                            ","
+                2 rooms                 + 1 half room            ","
+                6 rooms                            ","
+                7 rooms                            ","
+                5 rooms                            ","
+                5 rooms                            ","
+                5 rooms                            ","
+                6 rooms                            ","
+                2 rooms                 + 1 half room            ","
+                6 rooms                            ","
+                7 rooms                            ","
+                5 rooms                            ","
+                5 rooms                            ","
+                5 rooms                            ","
+                6 rooms                            ","
+                2 rooms                 + 1 half room            ","
+                6 rooms                            ","
+                7 rooms                            "
+Type of the building,Row house,Semi detached house,Part of house,House,House,House,House,House,House,House,House,House,House,House,House,House,Semi detached house,Row house,House,Semi detached house,House,Row house,Semi detached house,House,House,House,Part of house,House,Semi detached house,Part of house,Semi detached house,House,House,House,House,House,House,Part of house,Part of house,Part of house,Semi detached house,Part of house,Row house,House,House,House,House,Part of house,Semi detached house,Part of house,"Castle, villa",Part of house,Row house,Semi detached house,Row house,Semi detached house,Semi detached house,House,House,House,House,Semi detached house,Semi detached house,House,House,House,House,Semi detached house,House,Semi detached house,Part of house,Part of house,House,House,House,Semi detached house,Row house,Semi detached house,House,House,House,House,Semi detached house,Row house,Semi detached house,House,House,House,House,Semi detached house,Row house,Semi detached house,House
+Deposit,2411,3648,1051,1546,1113,1793,155,1360,182,1484,927,3,773,5255,1855,1113,1731,1607,1175,2411,3600,3703,1051,5800,3648,5873,866,1113,3648,742,2164,2009,1113,2906,4200,3400,500,1360,2164,742,927,433,1484,3400,804,2164,3710,1206,3648,2597,10201,2968,1360,4800,2288,3586,5255,18000,16000,7000,3710,6019,5000,3400,3876,3876,6000,10000,2442,1855,3555,3957,10000,5000,11000,6000,1175,5000,7600,10000,5000,11000,6000,1175,5000,7600,10000,5000,11000,6000,1175,5000,7600
+Utilities,155,155,124,46,155,77,62,139,10819,124,155,53,77,93,124,77,185,124,93,108,155,124,124,155,124,185,77,93,185,77,155,155,124,155,124,3,93,93,124,62,124,93,124,247,9,155,155,124,155,124,464,108,108,62,155,155,155,155,247,170,155,155,155,170,124,139,185,155,77,155,309,309,155,309,155,155,93,155,773,155,309,155,155,93,155,773,155,309,155,155,93,155,773
+Common cost,-1,-1,-1,-1,12,-1,15,9,15,-1,-1,-1,-1,-1,-1,-1,-1,3,-1,-1,-1,108,-1,3,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,3,-1,-1,-1,-1,-1,-1,-1,-1,15,-1,-1,-1,3,-1,-1,-1,3,-1,3,-1,19,-1,-1,-1,-1,-1,-1,3,3,-1,-1,155,62,3,-1,3,-1,-1,3,-1,3,-1,3,-1,-1,3,-1,3,-1,3,-1,-1,3,-1
+Number of separate rooms,4,6,3,3,-1,-1,-1,3,2,2,4,-1,-1,8,3,2,3,3,-1,5,5,4,3,5,-1,7,2,3,4,-1,3,7,2,2,5,6,1,3,2,-1,-1,1,0,-1,-1,3,6,3,5,3,6,2,2,5,4,3,4,4,7,5,7,5,0,5,5,7,8,5,4,4,6,4,5,4,5,5,2,5,6,5,4,5,5,2,5,6,5,4,5,5,2,5,6
+Furniture,"Partly furnished, equipped","Empty, furnished as well","Furnished, equipped","Empty, furnished as well",Empty,"Furnished, equipped","Furnished, equipped",Empty,"Partly furnished, equipped","Partly furnished, equipped","Furnished, equipped",Partly furnished,"Furnished, equipped","Furnished, equipped",Empty,Empty,"Furnished, equipped",Empty,Partly furnished,"Empty, equipped",Furnished or unfurnished,"Partly furnished, equipped","Partly furnished, equipped","Empty, equipped","Partly furnished, equipped","Partly furnished, equipped","Empty, equipped","Partly furnished, equipped","Empty, furnished as well","Furnished, equipped","Empty, equipped","Furnished, equipped",Empty,"Furnished, equipped","Empty, equipped","Empty, equipped","Furnished, equipped","Empty, equipped","Furnished, equipped","Furnished, equipped","Partly furnished, equipped","Furnished, equipped","Furnished, equipped",Partly furnished,"Furnished, equipped","Furnished, equipped","Empty, equipped","Empty, equipped","Partly furnished, equipped","Empty, equipped","Empty, equipped","Furnished, equipped","Partly furnished, equipped","Furnished, equipped","Furnished, equipped","Empty, equipped","Empty, equipped","Empty, equipped",Luxury,"Partly furnished, equipped","Empty, equipped","Partly furnished, equipped","Empty, furnished as well","Partly furnished, equipped","Furnished, equipped","Partly furnished, equipped","Empty, furnished as well","Partly furnished, equipped","Empty, equipped","Empty, furnished as well","Furnished, equipped","Furnished, equipped","Furnished, equipped",Luxury,"Partly furnished, equipped",Empty,"Partly furnished, equipped","Empty, equipped","Empty, equipped","Furnished, equipped",Luxury,"Partly furnished, equipped",Empty,"Partly furnished, equipped","Empty, equipped","Empty, equipped","Furnished, equipped",Luxury,"Partly furnished, equipped",Empty,"Partly furnished, equipped","Empty, equipped","Empty, equipped"
+Floor,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Balconies,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+View,Overlooking the garden,View to the hills,Street and courtyard,Overlooking the garden,Overlooking the garden,"Courtyard, sunny","Courtyard, sunny",Street and courtyard,Street and courtyard,Street and courtyard,Street and courtyard,To the courtyard,"Courtyard, sunny",Panoramic,Overlooking the garden,Overlooking the garden,Overlooking the garden,Street and courtyard,Street and courtyard,Overlooking the garden,View to the hills,Panoramic,"Courtyard, sunny",Overlooking the garden,Panoramic,Panoramic,Overlooking the garden,"Courtyard, sunny",Panoramic,To the courtyard,Panoramic,"Street, quiet",Street and courtyard,"Street, sunny","Courtyard, sunny","Courtyard, sunny","Courtyard, sunny",Park view,Overlooking the garden,"Courtyard, sunny","Courtyard, sunny","Courtyard, sunny",Overlooking the garden,To the courtyard,Street and courtyard,Panoramic,Overlooking the garden,Overlooking the garden,Overlooking the garden,Overlooking the garden,Panoramic,"Courtyard, sunny",View to the hills,Overlooking the garden,Overlooking the garden,Panoramic,Panoramic,Panoramic,Street and courtyard,Overlooking the garden,Overlooking the garden,View to the city,View to the hills,Overlooking the garden,View to the hills,Street and courtyard,Panoramic,Panoramic,Overlooking the garden,Street and courtyard,View to the hills,View to the hills,Panoramic,Overlooking the garden,Panoramic,Overlooking the garden,Street and courtyard,Panoramic,View to the hills,Panoramic,Overlooking the garden,Panoramic,Overlooking the garden,Street and courtyard,Panoramic,View to the hills,Panoramic,Overlooking the garden,Panoramic,Overlooking the garden,Street and courtyard,Panoramic,View to the hills
+Shortest rental period,At least one year,At least one year,-1,At least one year,At least one year,At least one year,-1,At least one year,8 months,-1,At least one year,-1,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,-1,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,-1,At least one year,At least one year,At least one year,3 months,At least one year,At least one year,10 months,At least one year,-1,At least one year,At least one year,10 months,At least one year,At least one year,-1,At least one year,At least one year,At least one year,At least one year,At least one year,-1,At least one year,At least one year,At least one year,-1,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,At least one year,3 months,3 months,-1,-1,At least one year,At least one year,At least one year,At least one year,At least one year,-1,-1,At least one year,At least one year,At least one year,At least one year,At least one year,-1,-1,At least one year,At least one year,At least one year,At least one year,At least one year
+Children welcomed,-1,Yes,Yes,Yes,-1,Yes,-1,-1,-1,-1,-1,-1,Yes,Yes,Yes,Yes,Yes,-1,-1,-1,Yes,Yes,-1,-1,-1,Yes,Yes,Yes,Yes,-1,Yes,Yes,-1,-1,Yes,Yes,-1,Yes,Yes,-1,-1,-1,Yes,-1,-1,-1,Yes,Yes,-1,Yes,-1,-1,-1,-1,Yes,Yes,Yes,-1,Yes,Yes,-1,Yes,Yes,Yes,Yes,-1,-1,-1,Yes,Yes,Yes,Yes,-1,Yes,-1,Yes,Yes,-1,-1,-1,Yes,-1,Yes,Yes,-1,-1,-1,Yes,-1,Yes,Yes,-1,-1
+American kitchen,-1,-1,-1,-1,-1,-1,-1,-1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,-1,1,-1,1,1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,-1,-1,1,-1,-1,-1,-1,1,-1,-1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Can be an office,-1,-1,-1,Yes,Yes,-1,-1,-1,-1,Yes,Yes,-1,Yes,-1,Yes,Yes,-1,Yes,-1,-1,-1,-1,Yes,Yes,-1,-1,-1,Yes,-1,-1,-1,Yes,-1,-1,-1,Yes,-1,-1,Yes,-1,-1,-1,-1,-1,-1,-1,Yes,-1,-1,-1,-1,-1,Yes,-1,-1,Yes,-1,-1,-1,Yes,Yes,Yes,-1,-1,-1,-1,-1,-1,Yes,-1,Yes,Yes,-1,-1,-1,Yes,-1,-1,Yes,-1,-1,-1,Yes,-1,-1,Yes,-1,-1,-1,Yes,-1,-1,Yes
+Foreigners welcomed,-1,Yes,Yes,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,-1,-1,Yes,-1,Yes,-1,Yes,Yes,Yes,Yes,-1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,-1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+Washing machine,-1,-1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,-1,1,-1,-1,1,-1,1,-1,-1,1,-1,1,-1,-1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,-1,-1,-1,-1,1,1,1,-1,-1,-1,-1,1,1,1,-1,-1,-1,-1
+Details,pesthouse.alberlet.hu,"In the 2nd district on Kilincs street a 310 sqm, 6-roomed, mechanized, american kitchen, panoramic, with balcony, garage, renovated, sauna, 4-storey garden-friendly, pet friendly semi-detached house for rent.
+
+The cost of housing is about 50,000 HUF per month, but it also depends on consumption.
+The property is subject to negotiation. Pet friendly and outdoors can be smoked.
+In the basement of the house there is a garage and a sauna.
+The house has 3 baths + wc, plus a separate toilet.
+On the first floor there are 2 balconies and on the ground floor there is a huge terrace.
+
+Minimum rental period is 1 year!
+The house can be moved immediately by paying a 2 month deposit and the rent for the month."," 
+",diamond.alberlet.hu,duskagabriella.alberlet.hu,-1,-1,duskagabriella.alberlet.hu,-1,diamond.alberlet.hu,-1,-1,-1,"In District 2, on Tarkony Street, a 300 sqm, furnished, mechanized, renovated 3 storey, huge garden with two balconies, 8 rooms, 200 meters from a French school, 2 garages, 3 courtyard, kitchen, 3 bathrooms, fireplace, dog running, underfloor heating, solar collector, rentable from January to rent. 
+
+The cost of housing is not too high because it has modern thermal insulation on the house and thermal insulation windows are installed and on top there are solar collectors. 
+Pet Friendly House. Smoking outside the house is possible only! 
+Optional, even unfurnished. 
+
+Minimum rental period is 1 year. 
+The house can be moved from January by paying a 2 month deposit and the rent for the current month.",ujotthon.alberlet.hu,ujotthon.alberlet.hu,rieltor.alberlet.hu,"In Zugló's, on the Polish street in the house, there is a two-storey, 4 bedroom apartment for rent. Distribution: Ground floor: Hall, toilet, pantry, kitchen, living room, terrace. Floor: Corridor, bath with toilet 3 separate bedrooms, wardrobe. The entire house is insulated with large, grassy garden. The apartment is furnished and unmechanisation. (kitchen furniture, gas cooker) Freshly painted and with quality, very nice coverings and special solutions. The heating is provided by a zirp, the floor is air-conditioning, and it is unique to everything. TV, Internet stand in the apartment/upc/. Common cost is not. Public transport is very good. The apartment has garage parking + surface driveways included in the price.
+ Move in: immediately possible.
+",-1,pesthouse.alberlet.hu,revival.alberlet.hu,revival.alberlet.hu,-1,"Csatárka quite green environment in horizontal landscaped garden 3-storey renovated, luxury family house is available for a minimum of one year rent. Entry level huge living room with access to a large terrace, modern built-in kitchen with applicances, guest toilet, one bedroom and a bathroom with bathtube located. Upstairs there are 2 separate bedrooms, second living room and bathroom with shower. Garden level there is a separate aparment with open style kitchen and fireplace, access to a large terrace and the garden, bathroom with shower, garage for 2 cars, and steam bath located. Circo gas and floor heating. Without furniture, fully equipped. Also suitable as an office. 2 months deposit required. ",budapestalberletek.alberlet.hu,revival.alberlet.hu,diamond.alberlet.hu,-1,revival.alberlet.hu,-1,revival.alberlet.hu,ingatlannagyker.alberlet.hu,"2 bedroom (separate), independent, fully-equipped, old-style detached house for rent at the South Pest Hospital. 120 and + expenses. Quiet, large garden with low flow meters, circular heating, unfurnished, good transport (123, 35, 36 bus, Metro 20 minutes, for 2 persons!) 3 months deposit can be moved from Dec. 10. 
+House: 70 m2, Garden: 600 m2",bibor.alberlet.hu,"In Budapest, in a quiet area of the 3rd district in Taborhegy, Jablonka road a 280sqm detached house is available for rent on 3 levels. ",lotushouse.alberlet.hu,"Full house with garden next to Margaret bridge for rent in January-February
+
+€ 500
+
+In the central part of Buda, a few minutes away from the Margaret Bridge our beloved little house with garden is for rent. At the beginning of Pusztaszeri street, at the famous Daubner confectionery, a 42 m2 renovated, mechanized, stylishly furnished house. From 9 January can be moved for approx. two months (dates are negotiable).
+
+Living room (15 m2), bedroom (10 m2), separate kitchen (10 m2), bathroom. Stylish, handmade furniture, terrace, peaceful garden.
+
+Transportation: 4/6 tram in a 10 minutes walk or two tram / bus stops. The new Buda trams in a few minutes. Buda hills are in a few bus stops.
+Restaurants, shops, market at Kolosy square, a few minutes from the house. Several baths, including the famous Lukács bath, are just around.
+
+Monthly rental fee: 500 EUR (150.000 HUF), invoice is available. Monthly costs, including circulation heating, electricity, communal costs, water and wi-fi: 100 EUR (30.000 HUF). You can book it any time for one month rental fee and one month deposit.
+
+",bojtimaria.alberlet.hu,newlife.alberlet.hu,-1,-1,-1,bojtimaria.alberlet.hu,-1,-1,"In the III.district a hose for rent only for long term,minimum one year.3room and opening kitchen and big terrace.2month deposit and one month rental price!",revival.alberlet.hu,diamond.alberlet.hu,diamond.alberlet.hu,revival.alberlet.hu,"In the 12th district, on the Fodor Street, a 310 sqm, 7 bedroom, two-storey, panoramic, good condition mansion-like house on a beautiful estate.
+
+The monthly cost of the house is about 150000 Forints, but it obviously depends on consumption.
+There are two garages.
+Pets can not be brought.
+No smoking in the house.
+
+Minimum rental period is 2 years.
+The house can be moved immediately by paying the 3 month deposit and the monthly rent per month."," 
+
+
+",-1,lotushouse.alberlet.hu,revival.alberlet.hu,"XI. district, 200 sm house, 400 sm garden, living-room with dining-room, separated kitchen totally equipped, 2 bathrooms, 2 bedrooms, terrace, balcony, 2 parking places in garage, very beautiful panorama to the town, pets are allowed. Please call me if you want to see. ",revival.alberlet.hu,"Modern luxury, high-quality materials with beautiful view!     
+Wonderful green area, panoramic view of the Buda hills and Budapest, a 570 m² beautiful family house is available for a minimum of 2 years rent. 2 spacious living rooms with fireplace, both with panoramic view and terrace, 4 bedrooms with en-suit bathrooms, dressing rooms, kitchen, pantry, garage for 2 large cars, storage room, sauna, gym, Turkish bath and a bar offering luxury home close to the international schools.     
+ Entry level: living room of 65 m², which hac access to a panoramic terrace of 40m².      
+ First floor: 80 m² living room, dining room, kitchen, pantry refrigerator, walk-in closet, storage, heated garage-entrance. Living room with panoramic terrace.     
+Second floor: four large bedrooms whith closet and private bathrooms. All bedrooms has panoramic view. Turkish bath, bar, sauna, fitness room, laundry room also located on this floor. Circo gas and floor heating, air condition. Pets are not allowed. 3 months deposit required.     
+","IMMEDIATELY PLEASED, ALKOVERABLE PRICE! 
+Unique Offer, COLORFUL DESIGN and LIFESTYLE, UNLIMITED COMFORTABLE, LIFE and SECURITY! Beautiful, minimalist style, modern diplomatic house can be rented from September 2018 for 1 year or longer. The property was used for several years as a private resident of a multiple Ambassador and his family. 
+
+The NEGOTIABLE rental price is 8000 € / month. From the property has already moved to the Ambassador so you can see it! Deposit amount equal to 2 months rental. 
+
+Nearby: primary school, kindergarten, doctor's office, pharmacy, bank, car service, dentistry, machine rental, flower shop, confectionery, restaurant, Lidl, Tesco express, yoga studio, beauty salon, cafes etc. 
+
+International schools nearby: 
+AISB: American International School of Budapest - is a 7-minute by car. 
+LFB: Gustave Eiffel French Nursery Elementary School and Grammar School 
+Lycée Francais de Budapest - 4 minutes by car. 
+
+Rich, safe, quiet, happy-looking house and neighborhood. 
+
+It is located on a 1500 m2, well-maintained, landscaped plot on a 3-storey, East-West location, ~ 600 sqm. There is an outdoor pool in the courtyard. Parking: 4 cars are in the garage, additional vehicles can be parked in front of the house. 
+
+The house was made of quality materials, carefully built. Now it is a novel, modern, luxurious state-of-the-art rental. Owners are flexible and cooperative. You can hire a company or an individual. 
+
+DISTRIBUTION: 
+
+Basement: 
+4 storey closed garage, kitchen, dining room, separate living room with bathroom and wardrobe, laundry room, wc, wardrobe. 
+
+Ground floor: 
+spacious lobby, sunny, modern living room, dining room, kitchen, pantry, 2 separate apartments with bath and wardrobe, guest toilet, wardrobe. 
+
+Floor: 
+3 bedrooms, wardrobe, bathroom, living room, separate living room with bath and wellness area. The hotel offers many unique recreational opportunities such as jacuzzi, sauna, pool (kids), massage. 
+
+
+Russian language: НЕМЕДЛЕННО ПРИОБРЕТЕН, ВЫСОКОЙ ЦЕНЫ! 
+Уникальное предложение, ЦВЕТОВЫЙ ДИЗАЙН И ЖИЗНЬ, НЕОГРАНИЧЕННАЯ КОМФОРТАБЕЛЬНОСТЬ, ЖИЗНЬ И БЕЗОПАСНОСТЬ! Красивый, минималистский стиль, современный дипломатический дом можно арендовать с сентября 2018 года на 1 год или дольше. Имущество использовалось в течение нескольких лет в качестве частного жителя нескольких посла и его семьи. 
+
+Стоимость аренды составляет: 8000 € / месяц, оборотный, сделка, собственность уже перешла в Посол, чтобы вы могли ее увидеть! Сумма вклада составляет 2 месяца. 
+
+Рядом: начальная школа, детский сад, кабинет врача, аптека, банк, автосервис, стоматология, прокат машин, цветочный магазин, кондитерские изделия, ресторан, Lidl, Tesco express, студия йоги, салон красоты, кафе и т. Д. 
+
+Международные школы поблизости: 
+AISB: Американская международная школа в Будапеште - находится в 7 минутах езды от отеля. 
+LFB: Начальная школа и гимназия французского детского сада Gustave Eiffel 
+Lycée Francais de Budapest - 4 минуты на машине. 
+
+Богатый, безопасный, тихий, счастливый дом и окрестности. 
+
+Он расположен на 1500 м2, ухоженный, благоустроенный участок на 3-этажном, восток-запад месте, ~ 600  м2.  Во дворе есть открытый бассейн. Парковка: в гараже 4 автомобиля, дополнительные транспортные средства могут быть припаркованы перед домом. 
+
+Дом был сделан из качественных материалов, тщательно построенных. Теперь это новая, современная, роскошная современная аренда. Владельцы являются гибкими и совместными. Вы можете нанять компанию или человека. 
+
+РАСПРОСТРАНЕНИЕ: 
+
+Подвал: 
+4-этажный закрытый гараж, кухня, столовая, отдельная гостиная с ванной комнатой и гардеробом, прачечная, туалет, шкаф для одежды. 
+
+Первый этаж: 
+просторный вестибюль, солнечная, современная гостиная, столовая, кухня, кладовая, 2 отдельные апартаменты с ванной и гардеробом, гостевой туалет, шкаф для одежды. 
+
+пол: 
+3 спальни, шкаф для одежды, ванная комната, гостиная, отдельная гостиная с ванной и оздоровительным центром. В течение дня вы можете насладиться расслабляющей атмосферой, таких услуг, как джакузи, сауна, бассейн (в помещении), массаж. 
+
+","ENJOY YOUR OWN GARDEN IN THE MIDDLE OF THE TOWN!
+
+House with garden for rent! 
+In a beautiful historically protected quiet neighborhood in Budapest’s VIII. Disctrict, we are renting a 320 sqm. home on two floors, with a large private garden.
+
+Features:
+ 4 bedrooms each with own bathroom, 
+2 office space/smaller bedrooms, 
+large open plan living space downstairs + open space upstairs with sun terrace. 
+Fully equipped large kitchen + 60 sqm. basement. 
+
+The home was built in the mid XIX. century, and fully restored in 2014. 
+
+Other monthly expenses: -water 3.500.- Ft -electricity 17.000.- Ft -gas & heating 25.000.- Ft -garbage & recycling 6.000.- Ft 
+
+AVAILABLE FROM AUGUST 2018 with long term lease agreement and 2 month's deposit                                    ","In the 2nd district of Budakeszi street a two-storey, beautiful almost forest house for rent.  
+
+The cost is around 50000Ft, but this also depends on consumption.  
+Smoking and pets are allowed.  
+Minimum rental period is 1 year.  
+
+You can move up to 2 months deposit and pay rent per month.","In the 12th district in the Furj street a 216nm, 4 + 1 half room, renovated, luxury, semi-detached house for rent.
+The house is beautifully situated in the pictures and the unmatched panorama of the city is immersive!
+
+Both heating and hot water are provided by a circular boiler, which means that the monthly cost of ownership is about 50,000HUF.
+
+The minimum rental period is 3 years.
+A pet can be brought. Smoking outside the house is allowed.
+
+Can be moved immediately with a 2-month deposit and the rent for the current month!","FAMILY HOUSE for rent in the 2nd district at Endrody Sandor street in  Buda side at Rozsadomb..      
+
+The fully equipped and furnished house is 240 sqm with an overall 1000sqm site.      
+
+Quiet and friendly neighbourhood, Szell Kalman square, Batthyany square and Nyugati railway station are just 5 minutes away by car!      
+All of the locations above can be approached by buses within 10 minutes: bus 11, 49, 91      
+
+ROOMS:      
+-First floor: separate entrance, hall, 2 bathrooms, bedroom, livingroom with kitchen/dining room, terrace opening to the backyard      
+-Second floor: living room with a view on the backyard and the street, bathroom      
+-Third floor: 3 bedrooms, spacious bathroom with toilet and bidet      
+-2 garages, 2 further garages can be rented if needed      
+
+AC, FLOOR HEATING, ALARM SYSTEM      
+
+Can be moved in immediately by paying deposit (2months rent fee) and one month rent fee.      
+
+Pet friendly but sorry no smoking allowed.         
+Only for demanding tenants with reference. 
+Available from January 2019                     
+
+Please feel free to contact me on weekends as well.",revival.alberlet.hu,.,"In the 3rd district on the Arany Street a 5 + 2 half room, 4 storey, sauna, garden-connected, natural daylight, partially furnished or equipped, wardrobe, brick house for rent. 
+
+The house is located in Csillaghegy in a very nice quiet street. 
+The living room is very bright, as there is a glass plate on the ceiling that is comfortable with natural light.
+
+Rezsi is around about 45,000For. 
+Smoking in the house is not possible, but using the permissible ash in the garden. 
+Keeping pets in the garden is possible. 
+
+Minimum rental period is 1 year but can be extended for 2 years by the owner! 
+The house can be moved immediately by paying 2 month deposit and the rent for the month.","II/A in quite street beautiful green environment, 3-storey 430 sqm multiple generations, full panoramic family hosue, which was fully renovated in 2015, is available for long term rent. Entry level hall, kitchen with dining area, food storage, laundry room and storage room, and a large terrace with garden access. Living room level there altogether 6 rooms: 3 living rooms, one bedroom, 2 studies, bathroom with jacuzzi bath and shower, sauna and full panoramic round terrace. Upstairs level 2 separate living areas: first with one bedroom and bathroom, the second with 2 bedrooms and bathroom. With or without furniture. Circo gas and floor heating. Extra: alarm system. At the basement garage for 2 cars, and addtitional 4 parking lots in the yard. Garden area of 1000 sqm. Beautiful landscaped garden. 2 months deposit required. ","Palvölgy beautiful green environment in a quite street 3-storey, LUXURY, PANORAMIC semi-detached house is available for longterm rent. 300 sqm living area, 100 sqm terrace and 3 additional balconies upstairs. Entrance through the winter garden. At this level living room with terrace and garden access, kitchen with dining area, dining room, one room /study, food storage, bathroom and toilet and laundry room located. First floor 3 bedrooms, garderobe room, bathroom and toilet located. Top floor there is a separate apartment area with living room, kitchen, bathroom and toilet, plus balcony. (suitable as guest room or 2nd generation apartment). First floor and top floor have panoramic view to the city and the forest. Garage for 2 cars and 4 additional parking lots in the yard. Green intimate garden, with automatic watering system. 2 months deposit requiered. Bristish school in 5 minutes drive.",oiko.alberlet.hu,"A refurbished house is for long term rent          
+It offers 3 separate  bedrooms, large living room, working room.          
+
+
+Only for long term. Two months deposit + the whole 1 year rental fee in advance is needed.",skyholdingatlan.alberlet.hu,skyholdingatlan.alberlet.hu,"Close to Verhalom square in a quite green street in landscaped garden 3-story luxury modern newly built original Bauhaus villa is available for a minimum of 2 years rent. 320 sqm modern condiminium with 3 levels, and panoramic roof terrace. Entry level ante-room, bright spacious living room with fireplace and huge terrace plus dining area, large modern built-in kitchen with appliances, food storage, garderobe, guest toilet and a bedroom with bathroom are located. Upstairs there are 2 bedrooms and a bathroom, garderobe, plus a large terrace. Fantastic panoramic roof terrace with kitchen. Lower level there is a guest bedroom with bathroom, laundry room and garderobe are located. 70 sqm garage. Fully furnished and equipped. Floorplan will be sent by request. 2 months deposit required. ","We offer a 210 sqm house with 4 levels in district 2. in Szalonkales utca. It is situated in a newly built building. The windows are facing the garden. -2 level:deep garage(2 place) -1 level: pool, gym, sauna, 2 storage -Ground: living room, kitchen, winter terrace, big terrace, wardrobe -1 level: 3 bedrooms, 1 barhroom, 2 balcony, 1 wardrobe. 2 level: 1 bedroom, 1 bathroom, balcony, kitchen. No Common cost. Utilities: -heating: Ft/month -water: 15000 Ft/month -current: 40.000 Ft/month Other informations: -lift in the house -alarm -Camera system outside and inside -pool -winter terrace -gym -sauna Pets are allowed.","Next to the forest in beautiful green environment in a large ground, PANORAMIC, freshly renovated 3-storey family house awaits its firts tenant, for a minimum of one year rent. Entry level sunny and spacious living room with terrace access, separate dining room and separate kitchen, ante-room, bathroom with shower, guest toilet and a small spa with sauna located. First floor 3 large bedrooms, a large panoramic terrace (16 sqm), which can be accessed from 2 bedrooms, 2 bathrooms (one with shower the other with bathtube). The attic level consists of a large room, a bathroom with shower and a separete toilet. At the basement garage for 2 cars, with direct access to the groundfloor. Partially furnished, fully equipped. Pets and smoking are not allowed. 2 months deposit required. ",lotushouse.alberlet.hu," 
+
+
+","Törökvész quite area between Bimbó and Endrődi Sándor street in beautiful green environment, recently renovated panoramic family twin house built in 1992 is available for a minimum of one year rent. Entry level there are spacious open style kitchen with living room and dining area, terrace and garden access and a guest toilet. First floor 3 bedrooms, bathroom with bathtube and a second toilet. Second floor additional living room, bedroom, bathroom with bath and a small kitchen. At the basement level there is a garage for one car and an additional parking lot for a second car, laundry room, shower and storage rooms are located. The house is suitable for welcoming guests and /or as a 2-generation house. Without furniture. Air condition, lots of built-in warderobes. Pets are not allowed. 2 months deposit required.   ","FOR RENT: in few minutes from NORMAFA(Svabhegy), on the MATYAS KIRALY with wonderful panorama, 580 sqm. It has large TERRACE and garden, tastefully designed, air-conditioning, pool, sauna, fireplace, water purification equipment.     
+Premises list: 5 bedroom, 3 living-room, kitchen,  dining room, 2 walk-in closet, 4 bathrooms, 2 guest toilets, swimming pool, sauna, storage rooms.            
+Next to the house is a covered grilling, barbecue houses.      
+3 garages are available.      
+The gardener takes care of orderliness of the garden.      
+It's suitable for embassy building, diplomatic residency, offic and also family home.      
+ONLY FOR LONG TERM (at least 1 year)!      
+It's available right now!      
+For rent need 2 months deposit and 1 month rent fee.","Close to Verhalom square in a quite green street in landscaped garden 3-story luxury modern newly built original Bauhaus villa is available for a minimum of 2 years rent. 320 sqm modern condiminium with 3 levels, and panoramic roof terrace. Entry level ante-room, bright spacious living room with fireplace and huge terrace plus dining area, large modern built-in kitchen with appliances, food storage, garderobe, guest toilet and a bedroom with bathroom are located. Upstairs there are 2 bedrooms and a bathroom, garderobe, plus a large terrace. Fantastic panoramic roof terrace with kitchen. Lower level there is a guest bedroom with bathroom, laundry room and garderobe are located. 70 sqm garage. Fully furnished and equipped. Floorplan will be sent by request. 2 months deposit required. ","We offer a 210 sqm house with 4 levels in district 2. in Szalonkales utca. It is situated in a newly built building. The windows are facing the garden. -2 level:deep garage(2 place) -1 level: pool, gym, sauna, 2 storage -Ground: living room, kitchen, winter terrace, big terrace, wardrobe -1 level: 3 bedrooms, 1 barhroom, 2 balcony, 1 wardrobe. 2 level: 1 bedroom, 1 bathroom, balcony, kitchen. No Common cost. Utilities: -heating: Ft/month -water: 15000 Ft/month -current: 40.000 Ft/month Other informations: -lift in the house -alarm -Camera system outside and inside -pool -winter terrace -gym -sauna Pets are allowed.","Next to the forest in beautiful green environment in a large ground, PANORAMIC, freshly renovated 3-storey family house awaits its firts tenant, for a minimum of one year rent. Entry level sunny and spacious living room with terrace access, separate dining room and separate kitchen, ante-room, bathroom with shower, guest toilet and a small spa with sauna located. First floor 3 large bedrooms, a large panoramic terrace (16 sqm), which can be accessed from 2 bedrooms, 2 bathrooms (one with shower the other with bathtube). The attic level consists of a large room, a bathroom with shower and a separete toilet. At the basement garage for 2 cars, with direct access to the groundfloor. Partially furnished, fully equipped. Pets and smoking are not allowed. 2 months deposit required. ",lotushouse.alberlet.hu," 
+
+
+","Törökvész quite area between Bimbó and Endrődi Sándor street in beautiful green environment, recently renovated panoramic family twin house built in 1992 is available for a minimum of one year rent. Entry level there are spacious open style kitchen with living room and dining area, terrace and garden access and a guest toilet. First floor 3 bedrooms, bathroom with bathtube and a second toilet. Second floor additional living room, bedroom, bathroom with bath and a small kitchen. At the basement level there is a garage for one car and an additional parking lot for a second car, laundry room, shower and storage rooms are located. The house is suitable for welcoming guests and /or as a 2-generation house. Without furniture. Air condition, lots of built-in warderobes. Pets are not allowed. 2 months deposit required.   ","FOR RENT: in few minutes from NORMAFA(Svabhegy), on the MATYAS KIRALY with wonderful panorama, 580 sqm. It has large TERRACE and garden, tastefully designed, air-conditioning, pool, sauna, fireplace, water purification equipment.     
+Premises list: 5 bedroom, 3 living-room, kitchen,  dining room, 2 walk-in closet, 4 bathrooms, 2 guest toilets, swimming pool, sauna, storage rooms.            
+Next to the house is a covered grilling, barbecue houses.      
+3 garages are available.      
+The gardener takes care of orderliness of the garden.      
+It's suitable for embassy building, diplomatic residency, offic and also family home.      
+ONLY FOR LONG TERM (at least 1 year)!      
+It's available right now!      
+For rent need 2 months deposit and 1 month rent fee.","Close to Verhalom square in a quite green street in landscaped garden 3-story luxury modern newly built original Bauhaus villa is available for a minimum of 2 years rent. 320 sqm modern condiminium with 3 levels, and panoramic roof terrace. Entry level ante-room, bright spacious living room with fireplace and huge terrace plus dining area, large modern built-in kitchen with appliances, food storage, garderobe, guest toilet and a bedroom with bathroom are located. Upstairs there are 2 bedrooms and a bathroom, garderobe, plus a large terrace. Fantastic panoramic roof terrace with kitchen. Lower level there is a guest bedroom with bathroom, laundry room and garderobe are located. 70 sqm garage. Fully furnished and equipped. Floorplan will be sent by request. 2 months deposit required. ","We offer a 210 sqm house with 4 levels in district 2. in Szalonkales utca. It is situated in a newly built building. The windows are facing the garden. -2 level:deep garage(2 place) -1 level: pool, gym, sauna, 2 storage -Ground: living room, kitchen, winter terrace, big terrace, wardrobe -1 level: 3 bedrooms, 1 barhroom, 2 balcony, 1 wardrobe. 2 level: 1 bedroom, 1 bathroom, balcony, kitchen. No Common cost. Utilities: -heating: Ft/month -water: 15000 Ft/month -current: 40.000 Ft/month Other informations: -lift in the house -alarm -Camera system outside and inside -pool -winter terrace -gym -sauna Pets are allowed.","Next to the forest in beautiful green environment in a large ground, PANORAMIC, freshly renovated 3-storey family house awaits its firts tenant, for a minimum of one year rent. Entry level sunny and spacious living room with terrace access, separate dining room and separate kitchen, ante-room, bathroom with shower, guest toilet and a small spa with sauna located. First floor 3 large bedrooms, a large panoramic terrace (16 sqm), which can be accessed from 2 bedrooms, 2 bathrooms (one with shower the other with bathtube). The attic level consists of a large room, a bathroom with shower and a separete toilet. At the basement garage for 2 cars, with direct access to the groundfloor. Partially furnished, fully equipped. Pets and smoking are not allowed. 2 months deposit required. ",lotushouse.alberlet.hu," 
+
+
+","Törökvész quite area between Bimbó and Endrődi Sándor street in beautiful green environment, recently renovated panoramic family twin house built in 1992 is available for a minimum of one year rent. Entry level there are spacious open style kitchen with living room and dining area, terrace and garden access and a guest toilet. First floor 3 bedrooms, bathroom with bathtube and a second toilet. Second floor additional living room, bedroom, bathroom with bath and a small kitchen. At the basement level there is a garage for one car and an additional parking lot for a second car, laundry room, shower and storage rooms are located. The house is suitable for welcoming guests and /or as a 2-generation house. Without furniture. Air condition, lots of built-in warderobes. Pets are not allowed. 2 months deposit required.   ","FOR RENT: in few minutes from NORMAFA(Svabhegy), on the MATYAS KIRALY with wonderful panorama, 580 sqm. It has large TERRACE and garden, tastefully designed, air-conditioning, pool, sauna, fireplace, water purification equipment.     
+Premises list: 5 bedroom, 3 living-room, kitchen,  dining room, 2 walk-in closet, 4 bathrooms, 2 guest toilets, swimming pool, sauna, storage rooms.            
+Next to the house is a covered grilling, barbecue houses.      
+3 garages are available.      
+The gardener takes care of orderliness of the garden.      
+It's suitable for embassy building, diplomatic residency, offic and also family home.      
+ONLY FOR LONG TERM (at least 1 year)!      
+It's available right now!      
+For rent need 2 months deposit and 1 month rent fee."
+Area,Széll Kálmán square,Near Danube,Széll Kálmán square,Széll Kálmán square,Danube view,Danube view,Danube view,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Transportation,"7 bus, Matro 4",Metro 3 blue						,Metro 2 red,Metro 2 red,Metro 3 blue,"4, 6 trams",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Near universities,,,,,,,,,,,"Budapesti Gazdasági Főiskola - BGF ( 0.931 km )Budapesti Gazdasági Főiskola - BGF PSZFK ( 0.895 km )Budapesti Kommunikációs Főiskola - BKF ( 1.357 km )Evangélikus Hittudományi Egyetem - EHE ( 0.873 km )
+
+                    More
+                    
+
+
+
+",,,,,,,,,"Budapest Kortárstánc Főiskola - BHF ( 1.426 km )Budapesti Műszaki Főiskola - BMF ( 0.822 km )Budapesti Műszaki Főiskola - BMF KVK ( 0.814 km )Budapesti Műszaki Főiskola - BMF NIK ( 0.822 km )Budapesti Műszaki Főiskola - BMF RKK ( 0.751 km )
+
+                    More
+                    
+
+
+
+",,,,,"Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 1.064 km )Mozgássérültek Pető András Nevelőképző és Nevelőintézete - MPANNI ( 1.705 km )Rendőrtiszti Főiskola - RTF ( 1.870 km )Semmelweis Egyetem - SE TSK ( 1.329 km )
+
+                    More
+                    
+
+
+
+","Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 0.443 km )Semmelweis Egyetem - SE TSK ( 0.791 km )
+",,,"Budapesti Műszaki Főiskola - BMF KGK ( 1.787 km )Eötvös Loránd Tudományegyetem - ELTE GYFK ( 1.501 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 1.449 km )Wesley János Lelkészképző Főiskola - WJLF ( 1.546 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 1.288 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE ( 1.493 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE BKMFK ZMNE BKMK ( 1.493 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE-KHK ( 1.493 km )
+
+                    More
+                    
+
+
+
+","Sola Scriptura Teológiai Főiskola - SSTF ( 1.109 km )
+","Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 0.535 km )Semmelweis Egyetem - SE TSK ( 0.872 km )
+","Moholy-Nagy Művészeti Egyetem - MOME ( 1.469 km )Mozgássérültek Pető András Nevelőképző és Nevelőintézete - MPANNI ( 1.204 km )Nemzetközi Üzleti Főiskola (International Business School), - NÜF IBS ( 1.282 km )International Business School - IBS ( 1.282 km )
+
+                    More
+                    
+
+
+
+",,,"Budapesti Gazdasági Főiskola - BGF KKFK ( 0.798 km )
+",,,,,,,,"Moholy-Nagy Művészeti Egyetem - MOME ( 1.948 km )Rendőrtiszti Főiskola - RTF ( 1.515 km )Sola Scriptura Teológiai Főiskola - SSTF ( 1.510 km )
+",,,,,,"Moholy-Nagy Művészeti Egyetem - MOME ( 1.948 km )Rendőrtiszti Főiskola - RTF ( 1.515 km )Sola Scriptura Teológiai Főiskola - SSTF ( 1.510 km )
+",,,,,,"Moholy-Nagy Művészeti Egyetem - MOME ( 1.948 km )Rendőrtiszti Főiskola - RTF ( 1.515 km )Sola Scriptura Teológiai Főiskola - SSTF ( 1.510 km )
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Latitude,47.4664148,47.5689645,47.417117378163,47.4561437,47.513821,47.452398,47.4060123,47.5101172,0.0,47.5154171,47.4489449,47.4904586,47.5015302,47.5658095,47.5520436,47.5520436,47.531224,47.516232,47.4395017,47.4695533,47.5386616,47.5316762,47.485666,47.5344337,47.5586605,47.5382175,47.4734393,47.4130971,47.5680442,47.5665738,47.550014,47.450028,47.4197126,47.4826732,47.5639288,47.5245154,47.5277798,47.566845,47.5015302,47.5791032,47.4232762,47.450028,47.4704435,47.5049318,47.582141,47.5817612,47.5218361,47.446683,47.5680442,47.487466,47.4969346,47.490242,47.5484737,47.5715703,47.5804233,47.4776232,47.4877719,47.5502368,47.556284,47.4816188,47.5245154,47.4891366,47.5223896,47.583515,47.583515,47.5835654,47.5520643,47.5368003,47.518061726371,47.506604,47.5016865,47.5016865,47.5197756,47.5354639,47.5305201,47.4911299,47.5482975,47.523437,47.5041523,47.5197756,47.5354639,47.5305201,47.4911299,47.5482975,47.523437,47.5041523,47.5197756,47.5354639,47.5305201,47.4911299,47.5482975,47.523437,47.5041523
+Longitude,19.0356809,18.962806,19.093847646558,19.0310796,19.140497,19.1264105,18.999174,19.1304605,0.0,19.1859379,19.1394908,19.0799919,19.1549042,18.9539018,19.122654,19.122654,19.209085,19.125758,19.1269107,19.038969,18.9436922,19.0097436,19.2927828,19.0063684,18.9599814,19.0196595,19.0047625,19.0790626,18.9617845,19.1193265,18.95643,19.1802379,19.1348691,19.0068974,19.0051635,18.9598017,19.0284845,18.9690169,19.1549042,19.0423322,19.1242273,19.1802379,19.2260107,19.1611,19.0628908,19.0190689,18.9673086,19.0318871,18.9617845,19.011983,19.007209,19.014488,18.9663436,18.9572001,19.0381285,18.9819044,19.0183159,18.9457119,18.948746,19.0972039,18.9598017,19.0141426,19.0085265,19.0570625,19.0570625,19.0572124,18.966475,19.0093116,19.155124792065,19.191095,19.0000605,19.0000605,19.0260026,18.9896256,18.9915472,18.9991458,18.9665268,19.0067887,18.9726126,19.0260026,18.9896256,18.9915472,18.9991458,18.9665268,19.0067887,18.9726126,19.0260026,18.9896256,18.9915472,18.9991458,18.9665268,19.0067887,18.9726126
