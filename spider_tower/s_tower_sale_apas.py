@@ -185,6 +185,12 @@ for page in pages:
 						print(lat, lng)
 						latitudes.append(lat)
 						longitudes.append(lng)
+					elif "['https://www.towerbudapest.com/resources/images/pin-green-tower.png'," in list_of_words:
+						lat = list_of_words[list_of_words.index("['https://www.towerbudapest.com/resources/images/pin-green-tower.png',")+1].replace(',', '')
+						lng = list_of_words[list_of_words.index("['https://www.towerbudapest.com/resources/images/pin-green-tower.png',")+2].replace(',', '')
+						print(lat, lng)
+						latitudes.append(lat)
+						longitudes.append(lng)
 					else:
 						latitudes.append(NOTFOUND)
 						longitudes.append(NOTFOUND)
@@ -993,10 +999,11 @@ properties = pd.DataFrame.from_dict(my_dict, orient='index')
 
 #Data Cleaning
 #Convert price to int
+'''
 for p in properties.loc['Price', : ]:
 	print('Price:', p)
 properties.loc['Price', : ] = properties.loc['Price', : ].apply(lambda x: x.replace(' ', '').replace(')', '').replace('.', '').split('€',1)[1] if isinstance(x, str) else NOTFOUND).astype(int)
-print(properties.loc['Price', : ])
+print(properties.loc['Price', : ])'''
 
 #Convert bedroom to int
 #We use -2 to represent studio here

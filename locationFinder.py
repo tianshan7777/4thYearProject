@@ -11,7 +11,7 @@ lats = []
 lons = []
 
 #Load .csv data
-data = pd.read_csv('realestatehungary_rent_apas.csv')
+data = pd.read_csv('towerbudapest_sale_apartments.csv')
 
 latitude = data[['Latitude']]
 longitude = data[['Longitude']]
@@ -55,8 +55,6 @@ for i , j in zip(latitude, longitude):
 			districts.append(int(district))
 			print(district)
 		else:
-			lats.append(-1)
-			lons.append(-1)
 			postcodes.append(-1)
 			districts.append(-1)
 
