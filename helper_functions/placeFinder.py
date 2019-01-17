@@ -81,8 +81,6 @@ for i , j in zip(latitude, longitude):
 
         if float(lat) == 0 or float(lat) == -1:
 
-                lats.append(-1)
-                lons.append(-1)
                 accountings.append(-1)
                 atms.append(-1)
                 bakeries.append(-1)
