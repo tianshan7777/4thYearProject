@@ -1,0 +1,434 @@
+ID,Apartment,House,Room,Price per month,Size(sqm),Price per sqm,District I,District II,District III,District IV,District V,District VI,District VII,District VIII,District IX,District X,District XI,District XII,District XIII,District XIV,District XV,District XVI,District XVII,District XVIII,District XIX,District XX,District XXI,District XXII,District XXIII,Street,Number of rooms,Number of seperated rooms,Number of half rooms,Type of the building,"Type of building: Castle, villa",Type of building: house,Type of the building: Part of house,Type of the building: Raw house,Type of building: Semi detached house,Deposit,Utilities,Common cost,Furniture,Furniture: Empty,Furniture: Equipped,Furniture: Furnished,Furniture: Partly furnished,Floor,Balconies,View,"View: Courtyard, sunny",View: Courtyard,View: Garden,View: Panoramic,View: Park,View: Street,"View: Street, quiet","View: Street, sunny",View: City,View: Hills,Shortest rental period,Children welcomed,American kitchen,Can be an office,Foreigners welcomed,Washing machine,Details,Area,Transportation,Near universities,Latitude,Longitude,Lats,Lons,Postcode,District,Distace to Danube,Distace to City Centre,Distace to Keleti,Distace to Nyugati,Distance to Deli,Distance to Airport
+0,0,1,0,1206,120,10.05,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Bártfai utca,"
+                2 rooms                 + 3 half room            ",2,3,Row house,0,1,0,1,0,2411,155,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,3,-1,-1,-1,-1,-1,pesthouse.alberlet.hu,Széll Kálmán square,"7 bus, Matro 4",,47.4664148,19.0356809,47.4664148,19.0356809,1115,11,1.4133112029029002,3.5330850973073096,5.31322168607938,5.27939189636309,3.9780114170958556,16.57666109049049
+1,0,1,0,1824,310,5.883870967999999,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Kilincs utca,"
+                6 rooms                            ",6,0,Semi detached house,0,1,0,0,1,3648,155,-1,"Empty, furnished as well",1,0,1,0,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,12,1,-1,-1,1,-1,"In the 2nd district on Kilincs street a 310 sqm, 6-roomed, mechanized, american kitchen, panoramic, with balcony, garage, renovated, sauna, 4-storey garden-friendly, pet friendly semi-detached house for rent.
+
+The cost of housing is about 50,000 HUF per month, but it also depends on consumption.
+The property is subject to negotiation. Pet friendly and outdoors can be smoked.
+In the basement of the house there is a garage and a sauna.
+The house has 3 baths + wc, plus a separate toilet.
+On the first floor there are 2 balconies and on the ground floor there is a huge terrace.
+
+Minimum rental period is 1 year!
+The house can be moved immediately by paying a 2 month deposit and the rent for the month.",Near Danube,Metro 3 blue						,,47.5689645,18.962806,47.5689645,18.962806,1028,2,7.77300649706307,10.41299611041852,11.790115297880467,9.535214951978148,8.830365912850597,26.132611357985954
+2,0,1,0,448,77,5.818181817999999,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,Dabas utca,"
+                3 rooms                            ",3,0,Part of house,0,1,1,0,0,1051,124,-1,"Furnished, equipped",0,1,1,0,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,-1,1,-1,-1,1,1," 
+",Széll Kálmán square,Metro 2 red,,47.41711738,19.09384765,47.41711738,19.09384765,1212,21,7.466010704345647,9.406500208041379,9.401829353857973,10.861113978606538,10.720060569152176,12.154806831502379
+3,0,1,0,773,70,11.04285714,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Szádelő köz,"
+                2 rooms                 + 1 half room            ",2,1,House,0,1,0,0,0,1546,46,-1,"Empty, furnished as well",1,0,1,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,1,-1,-1,diamond.alberlet.hu,Széll Kálmán square,Metro 2 red,,47.45614370000001,19.0310796,47.45614370000001,19.0310796,1119,11,1.4996045445117245,4.725986278108046,6.406690065303825,6.47257297620285,5.0556467440195325,16.747205767534805
+4,0,1,0,556,80,6.95,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,Tihany utca,"
+                2 rooms                            ",2,0,House,0,1,0,0,0,1113,155,12,Empty,1,0,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,-1,-1,1,-1,-1,duskagabriella.alberlet.hu,Danube view,Metro 3 blue,,47.513821,19.140497,47.513821,19.140497,1144,14,6.872529185814522,7.013755796694437,4.4739897945765135,6.258387927394807,8.812724680494652,11.854308898327627
+5,0,1,0,896,130,6.892307692,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,Nádasdy utca,"
+                4 rooms                            ",4,0,House,0,1,0,0,0,1793,77,-1,"Furnished, equipped",0,1,1,0,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,12,1,-1,-1,-1,-1,-1,Danube view,"4, 6 trams",,47.452398,19.1264105,47.452398,19.1264105,1192,19,8.342636708300656,7.513355540986991,6.318472778609293,8.388585958525317,9.392299909289783,9.58842766141015
+6,0,1,0,155,30,5.166666667,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,Dózsa György út,"
+                1 room                            ",1,0,House,0,1,0,0,0,155,62,15,"Furnished, equipped",0,1,1,0,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,Danube view,,,47.40601229999999,18.999174,47.40601229999999,18.999174,1224,22,1.2545394907501504,10.78438594521468,12.3703189228864,12.52644623599087,10.77777756344967,19.383338128030832
+7,0,1,0,680,90,7.555555556,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,Fogarasi út,"
+                3 rooms                            ",3,0,House,0,1,0,0,0,1360,139,9,Empty,1,0,0,0,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,-1,-1,-1,-1,-1,duskagabriella.alberlet.hu,,,,47.5101172,19.1304605,47.5101172,19.1304605,1141,14,6.3173506465553295,6.178931119167909,3.6334115080836824,5.5024355213366425,8.009120957502054,12.126560198219622
+8,0,1,0,182,50,3.64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,Köves utca,"
+                1 room                 + 1 half room            ",1,1,House,0,1,0,0,0,182,10819,15,"Partly furnished, equipped",0,1,0,1,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,8,-1,1,-1,-1,-1,-1,,,,-1.0,-1.0,-1.0,-1.0,-1,-1,1167.6521527879972,5732.995097558857,5734.572860668599,5734.71762771819,5732.625624493174,5733.874026758354
+9,0,1,0,742,140,5.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,Margit utca,"
+                5 rooms                 + 3 half room            ",5,3,House,0,1,0,0,0,1484,124,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,-1,-1,-1,1,-1,-1,diamond.alberlet.hu,,,,47.5154171,19.1859379,47.5154171,19.1859379,1165,16,9.991711952784803,10.372974369460996,7.825257003423104,9.675471034669552,12.216598340770886,9.889777944852627
+10,0,1,0,464,130,3.569230769,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,Petőfi út,"
+                4 rooms                            ",4,0,House,0,1,0,0,0,927,155,-1,"Furnished, equipped",0,1,1,0,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,-1,-1,1,-1,-1,-1,,,"Budapesti Gazdasági Főiskola - BGF ( 0.931 km )Budapesti Gazdasági Főiskola - BGF PSZFK ( 0.895 km )Budapesti Kommunikációs Főiskola - BKF ( 1.357 km )Evangélikus Hittudományi Egyetem - EHE ( 0.873 km )
+
+                    More
+                    
+
+
+
+",47.4489449,19.1394908,47.4489449,19.1394908,1196,19,9.39896898770598,8.516044848063583,7.177210009191669,9.31451972394549,10.419188866814473,8.559179567451542
+11,0,1,0,91,6,15.16666667,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Koszorú utca,"
+                1 room                            ",1,0,House,0,1,0,0,0,3,53,-1,Partly furnished,0,0,0,1,-1,-1,To the courtyard,0,1,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,,,,47.4904586,19.0799919,47.4904586,19.0799919,1086,8,3.5637111656441887,2.3015228764044267,1.2504316685378083,2.9072605081050433,4.334383532789515,14.176509643596
+12,0,1,0,386,30,12.86666667,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Rákász utca,"
+                1 room                            ",1,0,House,0,1,0,0,0,773,77,-1,"Furnished, equipped",0,1,1,0,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,12,1,-1,1,-1,-1,-1,,,,47.50153020000001,19.1549042,47.50153020000001,19.1549042,1106,10,8.374346561412192,7.847744021187307,5.338219882862347,7.421471467392288,9.787122874868295,10.125408455932433
+13,0,1,0,2628,300,8.76,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Tárkony utca,"
+                8 rooms                            ",8,0,House,0,1,0,0,0,5255,93,-1,"Furnished, equipped",0,1,1,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,1,-1,-1,-1,-1,"In District 2, on Tarkony Street, a 300 sqm, furnished, mechanized, renovated 3 storey, huge garden with two balconies, 8 rooms, 200 meters from a French school, 2 garages, 3 courtyard, kitchen, 3 bathrooms, fireplace, dog running, underfloor heating, solar collector, rentable from January to rent. 
+
+The cost of housing is not too high because it has modern thermal insulation on the house and thermal insulation windows are installed and on top there are solar collectors. 
+Pet Friendly House. Smoking outside the house is possible only! 
+Optional, even unfurnished. 
+
+Minimum rental period is 1 year. 
+The house can be moved from January by paying a 2 month deposit and the rent for the current month.",,,,47.5658095,18.9539018,47.5658095,18.9539018,1028,2,8.270656556958263,10.591239191007608,12.10201442712401,9.823125392802586,8.915120630644994,26.503403443666695
+14,0,1,0,927,172,5.389534884,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Klapka György utca,"
+                4 rooms                 + 1 half room            ",4,1,House,0,1,0,0,0,1855,124,-1,Empty,1,0,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,1,-1,-1,ujotthon.alberlet.hu,,,,47.5520436,19.122654,47.5520436,19.122654,1154,15,4.093017766721934,8.203761860607527,6.340760092810499,6.6590962871704935,9.267952964483685,15.935595135983766
+15,0,1,0,556,117,4.752136752,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Klapka György utca,"
+                2 rooms                            ",2,0,House,0,1,0,0,0,1113,77,-1,Empty,1,0,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,1,-1,-1,ujotthon.alberlet.hu,,,,47.5520436,19.122654,47.5520436,19.122654,1154,15,4.093017766721934,8.203761860607527,6.340760092810499,6.6590962871704935,9.267952964483685,15.935595135983766
+16,0,1,0,866,160,5.4125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,Cékla utca,"
+                4 rooms                            ",4,0,Semi detached house,0,1,0,0,1,1731,185,-1,"Furnished, equipped",0,1,1,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,-1,-1,-1,rieltor.alberlet.hu,,,,47.531224,19.209085,47.531224,19.209085,1162,16,10.978038527403784,12.50504854970879,9.973156104477145,11.609680146928058,14.24466359319077,10.798116545438765
+17,0,1,0,804,90,8.933333333,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,Lengyel utca,"
+                3 rooms                 + 1 half room            ",3,1,Row house,0,1,0,1,0,1607,124,3,Empty,1,0,0,0,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,-1,-1,1,-1,-1,"In Zugló's, on the Polish street in the house, there is a two-storey, 4 bedroom apartment for rent. Distribution: Ground floor: Hall, toilet, pantry, kitchen, living room, terrace. Floor: Corridor, bath with toilet 3 separate bedrooms, wardrobe. The entire house is insulated with large, grassy garden. The apartment is furnished and unmechanisation. (kitchen furniture, gas cooker) Freshly painted and with quality, very nice coverings and special solutions. The heating is provided by a zirp, the floor is air-conditioning, and it is unique to everything. TV, Internet stand in the apartment/upc/. Common cost is not. Public transport is very good. The apartment has garage parking + surface driveways included in the price.
+ Move in: immediately possible.
+",,,,47.516232,19.125758,47.516232,19.125758,1148,14,5.7430883942961195,6.048596280160505,3.554169586523833,5.172112746242623,7.773549912820413,12.84193724937678
+18,0,1,0,587,80,7.3375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,Mártirok út,"
+                2 rooms                            ",2,0,House,0,1,0,0,0,1175,93,-1,Partly furnished,0,0,0,1,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,-1,-1,-1,-1,-1,-1,,,,47.43950170000001,19.1269107,47.43950170000001,19.1269107,1202,20,8.89370048946542,8.544938299362757,7.605970085175882,9.57628687812657,10.319393145933036,9.429021813236071
+19,0,1,0,1206,110,10.96363636,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Szentpétery utca,"
+                5 rooms                            ",5,0,Semi detached house,0,1,0,0,1,2411,108,-1,"Empty, equipped",1,1,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,-1,-1,-1,-1,-1,pesthouse.alberlet.hu,,,"Budapest Kortárstánc Főiskola - BHF ( 1.426 km )Budapesti Műszaki Főiskola - BMF ( 0.822 km )Budapesti Műszaki Főiskola - BMF KVK ( 0.814 km )Budapesti Műszaki Főiskola - BMF NIK ( 0.822 km )Budapesti Műszaki Főiskola - BMF RKK ( 0.751 km )
+
+                    More
+                    
+
+
+
+",47.4695533,19.038969,47.4695533,19.038969,1115,11,1.5190042174508032,3.1258406934170644,4.889672500693736,4.873121712805316,3.7017473844870796,16.403017521483584
+20,0,1,0,1800,340,5.294117647,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Szép Juhászné köz,"
+                6 rooms                            ",6,0,House,0,1,0,0,0,3600,155,-1,Furnished or unfurnished,0,0,-1,0,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,12,1,-1,-1,1,-1,revival.alberlet.hu,,,,47.53866160000001,18.9436922,47.53866160000001,18.9436922,1021,2,7.9066428755775675,9.302430273568563,11.310598629491645,9.04056002615569,7.355060721232995,25.717537003131685
+21,0,1,0,1852,180,10.28888889,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Zöldkő utca,"
+                5 rooms                            ",5,0,Row house,0,1,0,1,0,3703,124,108,"Partly furnished, equipped",0,1,0,1,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,1,1,-1,-1,-1,revival.alberlet.hu,,,,47.53167620000001,19.0097436,47.53167620000001,19.0097436,1025,2,3.0042588781675237,4.97410951756331,6.503856411045301,4.206790799578682,3.547043283301868,20.958042400442206
+22,0,1,0,526,91,5.78021978,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,Alsódabas utca,"
+                3 rooms                            ",3,0,Semi detached house,0,1,0,0,1,1051,124,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,12,-1,1,1,-1,-1,-1,,,,47.485666,19.2927828,47.485666,19.2927828,1171,17,18.667856482258294,18.228665431634344,15.795201580718494,17.929068711513104,20.223420768459533,6.0546467694679205
+23,0,1,0,2900,280,10.35714286,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Szalamandra út,"
+                6 rooms                            ",6,0,House,0,1,0,0,0,5800,155,3,"Empty, equipped",1,1,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,-1,1,1,-1,-1,"Csatárka quite green environment in horizontal landscaped garden 3-storey renovated, luxury family house is available for a minimum of one year rent. Entry level huge living room with access to a large terrace, modern built-in kitchen with applicances, guest toilet, one bedroom and a bathroom with bathtube located. Upstairs there are 2 separate bedrooms, second living room and bathroom with shower. Garden level there is a separate aparment with open style kitchen and fireplace, access to a large terrace and the garden, bathroom with shower, garage for 2 cars, and steam bath located. Circo gas and floor heating. Without furniture, fully equipped. Also suitable as an office. 2 months deposit required. ",,,,47.53443370000001,19.0063684,47.53443370000001,19.0063684,1025,2,3.350371529993152,5.3717803438861,6.880566678028053,4.5859332377368665,3.9205192949829897,21.330044931471974
+24,0,1,0,1824,300,6.08,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Aszu utca,"
+                5 rooms                 + 1 half room            ",5,1,House,0,1,0,0,0,3648,124,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,budapestalberletek.alberlet.hu,,,"Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 1.064 km )Mozgássérültek Pető András Nevelőképző és Nevelőintézete - MPANNI ( 1.705 km )Rendőrtiszti Főiskola - RTF ( 1.870 km )Semmelweis Egyetem - SE TSK ( 1.329 km )
+
+                    More
+                    
+
+
+
+",47.5586605,18.9599814,47.5586605,18.9599814,1028,2,7.5609773194811565,9.702456172601144,11.27027473646897,8.98213840090447,8.005620960306672,25.69779272978051
+25,0,1,0,2937,390,7.530769231,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Nyereg út,"
+                5 rooms                 + 4 half room            ",5,4,House,0,1,0,0,0,5873,185,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,1,1,-1,-1,-1,revival.alberlet.hu,,,"Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 0.443 km )Semmelweis Egyetem - SE TSK ( 0.791 km )
+",47.5382175,19.0196595,47.5382175,19.0196595,1037,3,2.5701435186237673,5.18935380519316,6.3238199222209195,4.088499223257665,4.110817578114422,20.692560702118488
+26,0,1,0,433,50,8.66,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Háromszék utca,"
+                2 rooms                            ",2,0,Part of house,0,1,1,0,0,866,77,-1,"Empty, equipped",1,1,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,-1,-1,-1,diamond.alberlet.hu,,,,47.4734393,19.0047625,47.4734393,19.0047625,1118,11,1.0359899876078265,4.301822085743042,6.706242234676716,5.79231713272562,3.4485260055835325,19.008031551591415
+27,0,1,0,556,100,5.56,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,Fürjes utca,"
+                3 rooms                            ",3,0,House,0,1,0,0,0,1113,93,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,12,1,1,1,-1,-1,-1,,,,47.4130971,19.0790626,47.4130971,19.0790626,1213,21,6.587454999332549,9.51844008823342,9.825296229068547,11.07583942513465,10.637895739802882,13.335485783416999
+28,0,1,0,1824,310,5.883870967999999,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Kilincs utca,"
+                5 rooms                            ",5,0,Semi detached house,0,1,0,0,1,3648,185,-1,"Empty, furnished as well",1,0,1,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,1,1,-1,-1,-1,revival.alberlet.hu,,,"Budapesti Műszaki Főiskola - BMF KGK ( 1.787 km )Eötvös Loránd Tudományegyetem - ELTE GYFK ( 1.501 km )Pázmány Péter Katolikus Egyetem - PPKE ITK ( 1.449 km )Wesley János Lelkészképző Főiskola - WJLF ( 1.546 km )Wekerle Sándor Üzleti Főiskola - WSUF ( 1.288 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE ( 1.493 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE BKMFK ZMNE BKMK ( 1.493 km )Zrínyi Miklós Nemzetvédelmi Egyetem - ZMNE-KHK ( 1.493 km )
+
+                    More
+                    
+
+
+
+",47.5680442,18.9617845,47.5680442,18.9617845,1028,2,7.80788810417724,10.383214779411771,11.78476146908848,9.524662921249904,8.784428638064194,26.140165809554986
+29,0,1,0,371,36,10.30555556,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Bartók Béla utca,"
+                1 room                 + 1 half room            ",1,1,Part of house,0,1,1,0,0,742,77,-1,"Furnished, equipped",0,1,1,0,-1,-1,To the courtyard,0,1,0,0,0,0,0,0,0,0,12,-1,-1,-1,-1,-1,-1,,,"Sola Scriptura Teológiai Főiskola - SSTF ( 1.109 km )
+",47.56657379999999,19.1193265,47.56657379999999,19.1193265,1151,15,3.278834625061005,9.33898800114092,7.721215935141145,7.686768633261963,10.152462826704362,17.38440670939923
+30,0,1,0,1082,120,9.016666667,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Széchenyi utca,"
+                4 rooms                            ",4,0,Semi detached house,0,1,0,0,1,2164,155,-1,"Empty, equipped",1,1,0,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,1,1,-1,-1,-1,revival.alberlet.hu,,,"Eötvös Loránd Tudományegyetem - ELTE TÓFK ( 0.535 km )Semmelweis Egyetem - SE TSK ( 0.872 km )
+",47.550014,18.95643,47.550014,18.95643,1028,2,7.465917756503366,9.245973606789661,10.98841782912719,8.689961405884524,7.44543161689907,25.446026303701064
+31,0,1,0,1005,200,5.025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,Nefelejcs utca,"
+                6 rooms                 + 2 half room            ",6,2,House,0,1,0,0,0,2009,155,-1,"Furnished, equipped",0,1,1,0,-1,-1,"Street, quiet",0,0,0,0,0,1,1,0,0,0,12,1,-1,1,-1,-1,ingatlannagyker.alberlet.hu,,,"Moholy-Nagy Művészeti Egyetem - MOME ( 1.469 km )Mozgássérültek Pető András Nevelőképző és Nevelőintézete - MPANNI ( 1.204 km )Nemzetközi Üzleti Főiskola (International Business School), - NÜF IBS ( 1.282 km )International Business School - IBS ( 1.282 km )
+
+                    More
+                    
+
+
+
+",47.450028,19.1802379,47.450028,19.1802379,1183,18,12.214633056020938,11.0234601482712,9.225864918023726,11.503512626760275,13.016328668573271,5.564189686158226
+32,0,1,0,371,70,5.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,Maros utca,"
+                2 rooms                            ",2,0,House,0,1,0,0,0,1113,124,-1,Empty,1,0,0,0,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,-1,-1,-1,-1,-1,-1,"2 bedroom (separate), independent, fully-equipped, old-style detached house for rent at the South Pest Hospital. 120 and + expenses. Quiet, large garden with low flow meters, circular heating, unfurnished, good transport (123, 35, 36 bus, Metro 20 minutes, for 2 persons!) 3 months deposit can be moved from Dec. 10. 
+House: 70 m2, Garden: 600 m2",,,,47.4197126,19.134869100000003,47.4197126,19.134869100000003,1237,23,10.244469783498106,10.629593719657448,9.859967532340239,11.76718837708199,12.296526515671685,9.077991545569525
+33,0,1,0,1453,92,15.79347826,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Görbe utca,"
+                3 rooms                            ",3,0,House,0,1,0,0,0,2906,155,-1,"Furnished, equipped",0,1,1,0,-1,-1,"Street, sunny",0,0,0,0,0,1,0,1,0,0,12,-1,-1,-1,-1,-1,bibor.alberlet.hu,,,,47.4826732,19.0068974,47.4826732,19.0068974,1112,11,1.2536894322253944,3.633890963614087,6.144673547860958,4.9647672199852,2.4715859284581945,19.086796869333686
+34,0,1,0,2100,280,7.5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Jablonka út,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,4200,124,-1,"Empty, equipped",1,1,0,0,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,12,1,1,-1,-1,-1,"In Budapest, in a quiet area of the 3rd district in Taborhegy, Jablonka road a 280sqm detached house is available for rent on 3 levels. ",,,"Budapesti Gazdasági Főiskola - BGF KKFK ( 0.798 km )
+",47.56392879999999,19.0051635,47.56392879999999,19.0051635,1037,3,4.60839643062398,8.238186469689095,9.123306043159065,7.009178688252729,7.10463479229151,23.211701790385547
+35,0,1,0,1700,208,8.173076923,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Budakeszi út,"
+                6 rooms                            ",6,0,House,0,1,0,0,0,3400,3,-1,"Empty, equipped",1,1,0,0,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,12,1,-1,1,-1,-1,lotushouse.alberlet.hu,,,,47.5245154,18.9598017,47.5245154,18.9598017,1021,2,6.217095758414599,7.503391820530858,9.663989975275113,7.45616391195919,5.5048497908270875,23.965147277974218
+36,0,1,0,500,45,11.11111111,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pusztaszeri út,"
+                1 room                 + 1 half room            ",1,1,House,0,1,0,0,0,500,93,-1,"Furnished, equipped",0,1,1,0,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,3,-1,-1,-1,-1,-1,"Full house with garden next to Margaret bridge for rent in January-February
+
+€ 500
+
+In the central part of Buda, a few minutes away from the Margaret Bridge our beloved little house with garden is for rent. At the beginning of Pusztaszeri street, at the famous Daubner confectionery, a 42 m2 renovated, mechanized, stylishly furnished house. From 9 January can be moved for approx. two months (dates are negotiable).
+
+Living room (15 m2), bedroom (10 m2), separate kitchen (10 m2), bathroom. Stylish, handmade furniture, terrace, peaceful garden.
+
+Transportation: 4/6 tram in a 10 minutes walk or two tram / bus stops. The new Buda trams in a few minutes. Buda hills are in a few bus stops.
+Restaurants, shops, market at Kolosy square, a few minutes from the house. Several baths, including the famous Lukács bath, are just around.
+
+Monthly rental fee: 500 EUR (150.000 HUF), invoice is available. Monthly costs, including circulation heating, electricity, communal costs, water and wi-fi: 100 EUR (30.000 HUF). You can book it any time for one month rental fee and one month deposit.
+
+",,,,47.5277798,19.0284845,47.5277798,19.0284845,1025,2,1.5363055662129967,3.8554367364538598,5.08812867937885,2.8098168074115413,2.94763779511702,19.522655503176203
+37,0,1,0,680,90,7.555555556,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Hideg utca,"
+                3 rooms                            ",3,0,Part of house,0,1,1,0,0,1360,93,-1,"Empty, equipped",1,1,0,0,-1,-1,Park view,0,0,0,0,1,0,0,0,0,0,12,1,-1,-1,-1,-1,bojtimaria.alberlet.hu,,,,47.566845,18.9690169,47.566845,18.9690169,1028,2,7.254070774695831,9.937515490099312,11.281320803045556,9.032137506256682,8.389312109284772,25.614127950365926
+38,0,1,0,1082,120,9.016666667,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Rákász utca,"
+                1 room                 + 2 half room            ",1,2,Part of house,0,1,1,0,0,2164,124,3,"Furnished, equipped",0,1,1,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,1,1,-1,-1,newlife.alberlet.hu,,,,47.50153020000001,19.1549042,47.50153020000001,19.1549042,1106,10,8.374346561412192,7.847744021187307,5.338219882862347,7.421471467392288,9.787122874868295,10.125408455932433
+39,0,1,0,371,46,8.065217391000001,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Határ utca,"
+                1 room                            ",1,0,Part of house,0,1,1,0,0,742,62,-1,"Furnished, equipped",0,1,1,0,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,10,-1,-1,-1,-1,1,-1,,,,47.5791032,19.0423322,47.5791032,19.0423322,1038,3,2.6116295924928883,9.203974904457258,9.184984066298387,7.588318072451509,8.741922520810485,22.197315675515494
+40,0,1,0,464,73,6.356164384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,Előd utca,"
+                2 rooms                            ",2,0,Semi detached house,0,1,0,0,1,927,124,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,12,-1,-1,-1,-1,-1,-1,,,,47.4232762,19.1242273,47.4232762,19.1242273,1201,20,9.354347442537966,9.843231140959515,9.202111705522375,11.037521991300714,11.468961886738255,9.781429447047541
+41,0,1,0,216,20,10.8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,Nefelejcs utca,"
+                1 room                            ",1,0,Part of house,0,1,1,0,0,433,93,-1,"Furnished, equipped",0,1,1,0,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,1,-1,,,,47.450028,19.1802379,47.450028,19.1802379,1183,18,12.214633056020938,11.0234601482712,9.225864918023726,11.503512626760275,13.016328668573271,5.564189686158226
+42,0,1,0,742,150,4.946666667,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,Õsrepülő utca,"
+                4 rooms                            ",4,0,Row house,0,1,0,1,0,1484,124,-1,"Furnished, equipped",0,1,1,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,1,-1,1,-1,bojtimaria.alberlet.hu,,,"Moholy-Nagy Művészeti Egyetem - MOME ( 1.948 km )Rendőrtiszti Főiskola - RTF ( 1.515 km )Sola Scriptura Teológiai Főiskola - SSTF ( 1.510 km )
+",47.4704435,19.2260107,47.4704435,19.2260107,1174,17,14.60382029921633,13.48904204579764,11.22372937690071,13.481880096520564,15.519663038477555,4.053846321589401
+43,0,1,0,1700,292,5.821917807999999,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pesti Gábor utca,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,3400,247,-1,Partly furnished,0,0,0,1,-1,-1,To the courtyard,0,1,0,0,0,0,0,0,0,0,12,-1,-1,-1,-1,-1,-1,,,,47.5049318,19.1611,47.5049318,19.1611,1106,10,8.67224084900198,8.345693273812444,5.816720967180469,7.836772030085825,10.259727915759589,10.067627427944549
+44,0,1,0,402,70,5.742857142999999,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Berzsenyi Dániel utca,"
+                1 room                            ",1,0,House,0,1,0,0,0,804,9,-1,"Furnished, equipped",0,1,1,0,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,10,-1,-1,-1,-1,1,-1,,,,47.582141,19.0628908,47.582141,19.0628908,1039,3,1.2940578901955473,9.564146002883017,9.114796340347386,7.854736539626026,9.426428319019024,21.379054264317205
+45,0,1,0,1082,140,7.728571429,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Kőpor köz,"
+                4 rooms                            ",4,0,House,0,1,0,0,0,2164,155,-1,"Furnished, equipped",0,1,1,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,-1,-1,1,-1,"In the III.district a hose for rent only for long term,minimum one year.3room and opening kitchen and big terrace.2month deposit and one month rental price!",,,,47.5817612,19.0190689,47.5817612,19.0190689,1037,3,4.345386942060386,9.771002854854986,10.172964033238701,8.310251819699594,8.945460512731485,23.668231637486983
+46,0,1,0,1855,250,7.42,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Budakeszi út,"
+                7 rooms                            ",7,0,House,0,1,0,0,0,3710,155,-1,"Empty, equipped",1,1,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,1,-1,1,revival.alberlet.hu,,,,47.5218361,18.967308600000006,47.5218361,18.967308600000006,1021,2,5.58499565769755,6.867029662875602,9.0425190316258,6.848247168778484,4.867275833926559,23.32956633856324
+47,0,1,0,603,90,6.7,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Verbéna utca,"
+                2 rooms                 + 1 half room            ",2,1,Part of house,0,1,1,0,0,1206,124,15,"Empty, equipped",1,1,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,-1,1,-1,-1,1,-1,diamond.alberlet.hu,,,,47.446683,19.0318871,47.446683,19.0318871,1116,11,1.9332688938307692,5.7195617740869835,7.229452651073952,7.466048363561906,6.108733113966991,16.59835058281292
+48,0,1,0,1824,290,6.289655172000001,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Kilincs utca,"
+                5 rooms                            ",5,0,Semi detached house,0,1,0,0,1,3648,155,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,-1,1,-1,-1,-1,diamond.alberlet.hu,,,"Moholy-Nagy Művészeti Egyetem - MOME ( 1.948 km )Rendőrtiszti Főiskola - RTF ( 1.515 km )Sola Scriptura Teológiai Főiskola - SSTF ( 1.510 km )
+",47.5680442,18.9617845,47.5680442,18.9617845,1028,2,7.80788810417724,10.383214779411771,11.78476146908848,9.524662921249904,8.784428638064194,26.140165809554986
+49,0,1,0,1298,80,16.225,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Lejtő út,"
+                3 rooms                            ",3,0,Part of house,0,1,1,0,0,2597,124,-1,"Empty, equipped",1,1,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,-1,1,1,revival.alberlet.hu,,,,47.487466,19.011983,47.487466,19.011983,1124,12,1.0877759911914853,3.078560604853093,5.616678329894271,4.331209105195814,1.8170642843593603,18.863289321306485
+50,0,1,0,3400,310,10.96774194,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Fodor utca,"
+                7 rooms                            ",7,0,"Castle, villa",1,0,0,0,0,10201,464,-1,"Empty, equipped",1,1,0,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,-1,-1,1,-1,"In the 12th district, on the Fodor Street, a 310 sqm, 7 bedroom, two-storey, panoramic, good condition mansion-like house on a beautiful estate.
+
+The monthly cost of the house is about 150000 Forints, but it obviously depends on consumption.
+There are two garages.
+Pets can not be brought.
+No smoking in the house.
+
+Minimum rental period is 2 years.
+The house can be moved immediately by paying the 3 month deposit and the monthly rent per month.",,,,47.4969346,19.007209,47.4969346,19.007209,1126,12,1.7993617752373303,3.2678891641266175,5.778294331545014,4.0963524850024555,1.3989079088787482,19.52962798837798
+51,0,1,0,1484,80,18.55,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Lejtő út,"
+                3 rooms                            ",3,0,Part of house,0,1,1,0,0,2968,108,3,"Furnished, equipped",0,1,1,0,-1,-1,"Courtyard, sunny",1,1,0,0,0,0,0,0,0,0,12,-1,-1,-1,1,1," 
+
+
+",,,,47.490242,19.014488,47.490242,19.014488,1124,12,1.0226088248312566,2.80910042539645,5.356097095156146,3.9941338467167875,1.455528607158559,18.774674864114704
+52,0,1,0,680,100,6.8,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Szegfű utca,"
+                2 rooms                 + 1 half room            ",2,1,Row house,0,1,0,1,0,1360,108,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,12,-1,-1,1,1,-1,-1,,,,47.5484737,18.9663436,47.5484737,18.9663436,1028,2,6.7108132104721365,8.572993332316466,10.258505158945708,7.96061912848366,6.822356497503224,24.7132511951993
+53,0,1,0,2400,200,12.0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Tópart utca,"
+                3 rooms                 + 2 half room            ",3,2,Semi detached house,0,1,0,0,1,4800,62,-1,"Furnished, equipped",0,1,1,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,-1,-1,1,-1,-1,-1,lotushouse.alberlet.hu,,,,47.5715703,18.9572001,47.5715703,18.9572001,1028,2,8.26894059661934,10.904658533548714,12.298987441631569,10.041913689094741,9.300247015506088,26.643252347545396
+54,0,1,0,1144,144,7.944444444,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Hanga köz,"
+                5 rooms                            ",5,0,Row house,0,1,0,1,0,2288,155,-1,"Furnished, equipped",0,1,1,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,-1,1,1,revival.alberlet.hu,,,"Moholy-Nagy Művészeti Egyetem - MOME ( 1.948 km )Rendőrtiszti Főiskola - RTF ( 1.515 km )Sola Scriptura Teológiai Főiskola - SSTF ( 1.510 km )
+",47.58042329999999,19.0381285,47.58042329999999,19.0381285,1038,3,2.958409559360286,9.376919292785825,9.433334321002553,7.785419618620659,8.845320133355935,22.52508621638817
+55,0,1,0,1793,200,8.965,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Nagymákfa utca,"
+                3 rooms                            ",3,0,Semi detached house,0,1,0,0,1,3586,155,3,"Empty, equipped",1,1,0,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,1,-1,1,1,-1,"XI. district, 200 sm house, 400 sm garden, living-room with dining-room, separated kitchen totally equipped, 2 bathrooms, 2 bedrooms, terrace, balcony, 2 parking places in garage, very beautiful panorama to the town, pets are allowed. Please call me if you want to see. ",,,,47.4776232,18.9819044,47.4776232,18.9819044,1112,11,2.805592958596938,5.580417851308108,8.102738739199872,6.804862043224704,4.158138630881115,20.784835899963436
+56,0,1,0,2628,210,12.51428571,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Fürj utca,"
+                5 rooms                            ",5,0,Semi detached house,0,1,0,0,1,5255,155,-1,"Empty, equipped",1,1,0,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,1,-1,-1,1,-1,revival.alberlet.hu,,,,47.4877719,19.0183159,47.4877719,19.0183159,1124,12,0.6558139934226165,2.6207047003930732,5.150891572607224,3.945867798287254,1.5876218374083968,18.41791932902081
+57,0,1,0,6000,570,10.52631579,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Dutka Ákos utca,"
+                6 rooms                            ",6,0,House,0,1,0,0,0,18000,155,3,"Empty, equipped",1,1,0,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,-1,-1,-1,-1,1,-1,"Modern luxury, high-quality materials with beautiful view!     
+Wonderful green area, panoramic view of the Buda hills and Budapest, a 570 m² beautiful family house is available for a minimum of 2 years rent. 2 spacious living rooms with fireplace, both with panoramic view and terrace, 4 bedrooms with en-suit bathrooms, dressing rooms, kitchen, pantry, garage for 2 large cars, storage room, sauna, gym, Turkish bath and a bar offering luxury home close to the international schools.     
+ Entry level: living room of 65 m², which hac access to a panoramic terrace of 40m².      
+ First floor: 80 m² living room, dining room, kitchen, pantry refrigerator, walk-in closet, storage, heated garage-entrance. Living room with panoramic terrace.     
+Second floor: four large bedrooms whith closet and private bathrooms. All bedrooms has panoramic view. Turkish bath, bar, sauna, fitness room, laundry room also located on this floor. Circo gas and floor heating, air condition. Pets are not allowed. 3 months deposit required.     
+",,,,47.55023679999999,18.9457119,47.55023679999999,18.9457119,1029,2,8.224956658129903,9.890655921826674,11.707226524571206,9.410355188240816,8.036862948623723,26.164045704894587
+58,0,1,0,8000,599,13.35559265,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Máriaremetei út,"
+                9 rooms                            ",9,0,House,0,1,0,0,0,16000,247,-1,Luxury,0,1,1,0,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,1,-1,-1,1,-1,"IMMEDIATELY PLEASED, ALKOVERABLE PRICE! 
+Unique Offer, COLORFUL DESIGN and LIFESTYLE, UNLIMITED COMFORTABLE, LIFE and SECURITY! Beautiful, minimalist style, modern diplomatic house can be rented from September 2018 for 1 year or longer. The property was used for several years as a private resident of a multiple Ambassador and his family. 
+
+The NEGOTIABLE rental price is 8000 € / month. From the property has already moved to the Ambassador so you can see it! Deposit amount equal to 2 months rental. 
+
+Nearby: primary school, kindergarten, doctor's office, pharmacy, bank, car service, dentistry, machine rental, flower shop, confectionery, restaurant, Lidl, Tesco express, yoga studio, beauty salon, cafes etc. 
+
+International schools nearby: 
+AISB: American International School of Budapest - is a 7-minute by car. 
+LFB: Gustave Eiffel French Nursery Elementary School and Grammar School 
+Lycée Francais de Budapest - 4 minutes by car. 
+
+Rich, safe, quiet, happy-looking house and neighborhood. 
+
+It is located on a 1500 m2, well-maintained, landscaped plot on a 3-storey, East-West location, ~ 600 sqm. There is an outdoor pool in the courtyard. Parking: 4 cars are in the garage, additional vehicles can be parked in front of the house. 
+
+The house was made of quality materials, carefully built. Now it is a novel, modern, luxurious state-of-the-art rental. Owners are flexible and cooperative. You can hire a company or an individual. 
+
+DISTRIBUTION: 
+
+Basement: 
+4 storey closed garage, kitchen, dining room, separate living room with bathroom and wardrobe, laundry room, wc, wardrobe. 
+
+Ground floor: 
+spacious lobby, sunny, modern living room, dining room, kitchen, pantry, 2 separate apartments with bath and wardrobe, guest toilet, wardrobe. 
+
+Floor: 
+3 bedrooms, wardrobe, bathroom, living room, separate living room with bath and wellness area. The hotel offers many unique recreational opportunities such as jacuzzi, sauna, pool (kids), massage. 
+
+
+Russian language: НЕМЕДЛЕННО ПРИОБРЕТЕН, ВЫСОКОЙ ЦЕНЫ! 
+Уникальное предложение, ЦВЕТОВЫЙ ДИЗАЙН И ЖИЗНЬ, НЕОГРАНИЧЕННАЯ КОМФОРТАБЕЛЬНОСТЬ, ЖИЗНЬ И БЕЗОПАСНОСТЬ! Красивый, минималистский стиль, современный дипломатический дом можно арендовать с сентября 2018 года на 1 год или дольше. Имущество использовалось в течение нескольких лет в качестве частного жителя нескольких посла и его семьи. 
+
+Стоимость аренды составляет: 8000 € / месяц, оборотный, сделка, собственность уже перешла в Посол, чтобы вы могли ее увидеть! Сумма вклада составляет 2 месяца. 
+
+Рядом: начальная школа, детский сад, кабинет врача, аптека, банк, автосервис, стоматология, прокат машин, цветочный магазин, кондитерские изделия, ресторан, Lidl, Tesco express, студия йоги, салон красоты, кафе и т. Д. 
+
+Международные школы поблизости: 
+AISB: Американская международная школа в Будапеште - находится в 7 минутах езды от отеля. 
+LFB: Начальная школа и гимназия французского детского сада Gustave Eiffel 
+Lycée Francais de Budapest - 4 минуты на машине. 
+
+Богатый, безопасный, тихий, счастливый дом и окрестности. 
+
+Он расположен на 1500 м2, ухоженный, благоустроенный участок на 3-этажном, восток-запад месте, ~ 600  м2.  Во дворе есть открытый бассейн. Парковка: в гараже 4 автомобиля, дополнительные транспортные средства могут быть припаркованы перед домом. 
+
+Дом был сделан из качественных материалов, тщательно построенных. Теперь это новая, современная, роскошная современная аренда. Владельцы являются гибкими и совместными. Вы можете нанять компанию или человека. 
+
+РАСПРОСТРАНЕНИЕ: 
+
+Подвал: 
+4-этажный закрытый гараж, кухня, столовая, отдельная гостиная с ванной комнатой и гардеробом, прачечная, туалет, шкаф для одежды. 
+
+Первый этаж: 
+просторный вестибюль, солнечная, современная гостиная, столовая, кухня, кладовая, 2 отдельные апартаменты с ванной и гардеробом, гостевой туалет, шкаф для одежды. 
+
+пол: 
+3 спальни, шкаф для одежды, ванная комната, гостиная, отдельная гостиная с ванной и оздоровительным центром. В течение дня вы можете насладиться расслабляющей атмосферой, таких услуг, как джакузи, сауна, бассейн (в помещении), массаж. 
+
+",,,,47.55628400000001,18.948746,47.55628400000001,18.948746,1029,2,8.252856342172185,10.137181961279714,11.837604457318298,9.540106167132889,8.348352803867702,26.29057785206649
+59,0,1,0,3500,320,10.9375,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Reguly Antal utca,"
+                7 rooms                            ",7,0,House,0,1,0,0,0,7000,170,19,"Partly furnished, equipped",0,1,0,1,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,1,1,1,-1,"ENJOY YOUR OWN GARDEN IN THE MIDDLE OF THE TOWN!
+
+House with garden for rent! 
+In a beautiful historically protected quiet neighborhood in Budapest’s VIII. Disctrict, we are renting a 320 sqm. home on two floors, with a large private garden.
+
+Features:
+ 4 bedrooms each with own bathroom, 
+2 office space/smaller bedrooms, 
+large open plan living space downstairs + open space upstairs with sun terrace. 
+Fully equipped large kitchen + 60 sqm. basement. 
+
+The home was built in the mid XIX. century, and fully restored in 2014. 
+
+Other monthly expenses: -water 3.500.- Ft -electricity 17.000.- Ft -gas & heating 25.000.- Ft -garbage & recycling 6.000.- Ft 
+
+AVAILABLE FROM AUGUST 2018 with long term lease agreement and 2 month's deposit                                    ",,,,47.4816188,19.0972039,47.4816188,19.0972039,1089,8,5.124484807909219,3.8670950969669335,2.4177480969314153,4.487257383162838,5.88055138639004,12.601092515673546
+60,0,1,0,1700,260,6.538461538,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Budakeszi út,"
+                5 rooms                 + 2 half room            ",5,2,House,0,1,0,0,0,3710,155,-1,"Empty, equipped",1,1,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,-1,-1,1,1,-1,"In the 2nd district of Budakeszi street a two-storey, beautiful almost forest house for rent.  
+
+The cost is around 50000Ft, but this also depends on consumption.  
+Smoking and pets are allowed.  
+Minimum rental period is 1 year.  
+
+You can move up to 2 months deposit and pay rent per month.",,,,47.5245154,18.9598017,47.5245154,18.9598017,1021,2,6.217095758414599,7.503391820530858,9.663989975275113,7.45616391195919,5.5048497908270875,23.965147277974218
+61,0,1,0,2628,216,12.16666667,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Fürj utca,"
+                4 rooms                 + 1 half room            ",4,1,Semi detached house,0,1,0,0,1,6019,155,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,View to the city,0,0,0,0,0,0,0,0,1,0,12,1,-1,1,1,-1,"In the 12th district in the Furj street a 216nm, 4 + 1 half room, renovated, luxury, semi-detached house for rent.
+The house is beautifully situated in the pictures and the unmatched panorama of the city is immersive!
+
+Both heating and hot water are provided by a circular boiler, which means that the monthly cost of ownership is about 50,000HUF.
+
+The minimum rental period is 3 years.
+A pet can be brought. Smoking outside the house is allowed.
+
+Can be moved immediately with a 2-month deposit and the rent for the current month!",,,,47.4891366,19.0141426,47.4891366,19.0141426,1124,12,1.0028260878557858,2.867035706130756,5.411055879101057,4.088972167782784,1.574439411962319,18.762400178236412
+62,0,1,0,2500,240,10.41666667,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Endrődi Sándor utca,"
+                6 rooms                            ",6,0,Semi detached house,0,1,0,0,1,5000,155,-1,"Empty, furnished as well",1,0,1,0,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,12,1,-1,-1,1,-1,"FAMILY HOUSE for rent in the 2nd district at Endrody Sandor street in  Buda side at Rozsadomb..      
+
+The fully equipped and furnished house is 240 sqm with an overall 1000sqm site.      
+
+Quiet and friendly neighbourhood, Szell Kalman square, Batthyany square and Nyugati railway station are just 5 minutes away by car!      
+All of the locations above can be approached by buses within 10 minutes: bus 11, 49, 91      
+
+ROOMS:      
+-First floor: separate entrance, hall, 2 bathrooms, bedroom, livingroom with kitchen/dining room, terrace opening to the backyard      
+-Second floor: living room with a view on the backyard and the street, bathroom      
+-Third floor: 3 bedrooms, spacious bathroom with toilet and bidet      
+-2 garages, 2 further garages can be rented if needed      
+
+AC, FLOOR HEATING, ALARM SYSTEM      
+
+Can be moved in immediately by paying deposit (2months rent fee) and one month rent fee.      
+
+Pet friendly but sorry no smoking allowed.         
+Only for demanding tenants with reference. 
+Available from January 2019                     
+
+Please feel free to contact me on weekends as well.",,,,47.5223896,19.0085265,47.5223896,19.0085265,1026,2,2.719964827050997,4.2787631689786805,6.1192094426917665,3.8492446207376676,2.6282821915810715,20.550755789882622
+63,0,1,0,1700,241,7.053941909,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Arany utca,"
+                7 rooms                            ",7,0,House,0,1,0,0,0,3400,170,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,1,-1,1,-1,revival.alberlet.hu,,,,47.58351500000001,19.0570625,47.58351500000001,19.0570625,1039,3,1.756736314278152,9.684841354998973,9.349521194948073,7.996037295086352,9.449963864849806,21.785392955407726
+64,0,1,0,1938,241,8.041493776,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Arany utca,"
+                5 rooms                 + 2 half room            ",5,2,House,0,1,0,0,0,3876,124,-1,"Furnished, equipped",0,1,1,0,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,12,1,-1,-1,1,-1,.,,,,47.58351500000001,19.0570625,47.58351500000001,19.0570625,1039,3,1.756736314278152,9.684841354998973,9.349521194948073,7.996037295086352,9.449963864849806,21.785392955407726
+65,0,1,0,1700,241,7.053941909,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Arany utca,"
+                5 rooms                 + 2 half room            ",5,2,House,0,1,0,0,0,3876,139,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,-1,-1,-1,1,-1,"In the 3rd district on the Arany Street a 5 + 2 half room, 4 storey, sauna, garden-connected, natural daylight, partially furnished or equipped, wardrobe, brick house for rent. 
+
+The house is located in Csillaghegy in a very nice quiet street. 
+The living room is very bright, as there is a glass plate on the ceiling that is comfortable with natural light.
+
+Rezsi is around about 45,000For. 
+Smoking in the house is not possible, but using the permissible ash in the garden. 
+Keeping pets in the garden is possible. 
+
+Minimum rental period is 1 year but can be extended for 2 years by the owner! 
+The house can be moved immediately by paying 2 month deposit and the rent for the month.",,,,47.5835654,19.0572124,47.5835654,19.0572124,1039,3,1.7482567570015692,9.690999588633165,9.352583039472343,8.001631534535356,9.458282840698331,21.781959751044464
+66,0,1,0,3000,430,6.976744186,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Nedü utca,"
+                10 rooms                            ",10,0,House,0,1,0,0,0,6000,185,3,"Empty, furnished as well",1,0,1,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,-1,-1,1,-1,"II/A in quite street beautiful green environment, 3-storey 430 sqm multiple generations, full panoramic family hosue, which was fully renovated in 2015, is available for long term rent. Entry level hall, kitchen with dining area, food storage, laundry room and storage room, and a large terrace with garden access. Living room level there altogether 6 rooms: 3 living rooms, one bedroom, 2 studies, bathroom with jacuzzi bath and shower, sauna and full panoramic round terrace. Upstairs level 2 separate living areas: first with one bedroom and bathroom, the second with 2 bedrooms and bathroom. With or without furniture. Circo gas and floor heating. Extra: alarm system. At the basement garage for 2 cars, and addtitional 4 parking lots in the yard. Garden area of 1000 sqm. Beautiful landscaped garden. 2 months deposit required. ",,,,47.5520643,18.966475,47.5520643,18.966475,1028,2,6.8443147105437,8.839723299085225,10.459292987275942,8.164969929508537,7.127138609123443,24.90389443189834
+67,0,1,0,5000,300,16.66666667,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Turista út,"
+                5 rooms                 + 1 half room            ",5,1,Semi detached house,0,1,0,0,1,10000,155,3,"Partly furnished, equipped",0,1,0,1,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,1,-1,1,-1,"Palvölgy beautiful green environment in a quite street 3-storey, LUXURY, PANORAMIC semi-detached house is available for longterm rent. 300 sqm living area, 100 sqm terrace and 3 additional balconies upstairs. Entrance through the winter garden. At this level living room with terrace and garden access, kitchen with dining area, dining room, one room /study, food storage, bathroom and toilet and laundry room located. First floor 3 bedrooms, garderobe room, bathroom and toilet located. Top floor there is a separate apartment area with living room, kitchen, bathroom and toilet, plus balcony. (suitable as guest room or 2nd generation apartment). First floor and top floor have panoramic view to the city and the forest. Garage for 2 cars and 4 additional parking lots in the yard. Green intimate garden, with automatic watering system. 2 months deposit requiered. Bristish school in 5 minutes drive.",,,,47.5368003,19.0093116,47.5368003,19.0093116,1025,2,3.238425121713704,5.451646647759483,6.842538292546535,4.560277900550752,4.1007215805788695,21.272264861205752
+68,0,1,0,1221,150,8.14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,Szatmári utca,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,2442,77,-1,"Empty, equipped",1,1,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,1,1,-1,-1,oiko.alberlet.hu,,,,47.51806173,19.15512479,47.51806173,19.15512479,1161,16,7.727600249562004,8.20081941644684,5.665460973578747,7.3868169904107,9.975691837685691,11.461592386647256
+69,0,1,0,927,220,4.213636364,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,Őrvezető utca,"
+                5 rooms                 + 1 half room            ",5,1,Semi detached house,0,1,0,0,1,1855,155,-1,"Empty, furnished as well",1,0,1,0,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,1,-1,-1,1,-1,"A refurbished house is for long term rent          
+It offers 3 separate  bedrooms, large living room, working room.          
+
+
+Only for long term. Two months deposit + the whole 1 year rental fee in advance is needed.",,,,47.506604,19.191095,47.506604,19.191095,1163,16,10.706377287587049,10.605646519991888,8.077229346882174,10.069704568156252,12.51854448662,8.849684637774823
+70,0,1,0,1777,300,5.923333333,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Óra út,"
+                7 rooms                            ",7,0,Part of house,0,1,1,0,0,3555,309,155,"Furnished, equipped",0,1,1,0,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,3,1,-1,1,1,-1,skyholdingatlan.alberlet.hu,,,,47.5016865,19.0000605,47.5016865,19.0000605,1125,12,2.489522463447674,3.8475219599625663,6.293746840578497,4.433668591257222,1.845034332709238,20.213680541781876
+71,0,1,0,1978,200,9.89,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Óra út,"
+                5 rooms                            ",5,0,Part of house,0,1,1,0,0,3957,309,62,"Furnished, equipped",0,1,1,0,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,3,1,-1,1,1,-1,skyholdingatlan.alberlet.hu,,,,47.5016865,19.0000605,47.5016865,19.0000605,1125,12,2.489522463447674,3.8475219599625663,6.293746840578497,4.433668591257222,1.845034332709238,20.213680541781876
+72,0,1,0,5000,320,15.625,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Mandula utca,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,10000,155,3,"Furnished, equipped",0,1,1,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,-1,-1,-1,-1,1,1,"Close to Verhalom square in a quite green street in landscaped garden 3-story luxury modern newly built original Bauhaus villa is available for a minimum of 2 years rent. 320 sqm modern condiminium with 3 levels, and panoramic roof terrace. Entry level ante-room, bright spacious living room with fireplace and huge terrace plus dining area, large modern built-in kitchen with appliances, food storage, garderobe, guest toilet and a bedroom with bathroom are located. Upstairs there are 2 bedrooms and a bathroom, garderobe, plus a large terrace. Fantastic panoramic roof terrace with kitchen. Lower level there is a guest bedroom with bathroom, laundry room and garderobe are located. 70 sqm garage. Fully furnished and equipped. Floorplan will be sent by request. 2 months deposit required. ",,,,47.5197756,19.0260026,47.5197756,19.0260026,1025,2,1.3914042904618749,3.1823213603455587,4.800732417748488,2.515144506385725,2.045918170887004,19.25167981336924
+73,0,1,0,2500,210,11.9047619,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Szalonkales utca,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,5000,309,-1,Luxury,0,1,1,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,-1,1,-1,-1,1,1,"We offer a 210 sqm house with 4 levels in district 2. in Szalonkales utca. It is situated in a newly built building. The windows are facing the garden. -2 level:deep garage(2 place) -1 level: pool, gym, sauna, 2 storage -Ground: living room, kitchen, winter terrace, big terrace, wardrobe -1 level: 3 bedrooms, 1 barhroom, 2 balcony, 1 wardrobe. 2 level: 1 bedroom, 1 bathroom, balcony, kitchen. No Common cost. Utilities: -heating: Ft/month -water: 15000 Ft/month -current: 40.000 Ft/month Other informations: -lift in the house -alarm -Camera system outside and inside -pool -winter terrace -gym -sauna Pets are allowed.",,,,47.5354639,18.989625600000004,47.5354639,18.989625600000004,1025,2,4.56378863175809,6.307816183115682,8.02539920123854,5.727900091956974,4.6100069095059055,22.483172906672245
+74,0,1,0,5500,220,25.0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Nagybányai út,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,11000,155,3,"Partly furnished, equipped",0,1,0,1,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,-1,-1,1,1,"Next to the forest in beautiful green environment in a large ground, PANORAMIC, freshly renovated 3-storey family house awaits its firts tenant, for a minimum of one year rent. Entry level sunny and spacious living room with terrace access, separate dining room and separate kitchen, ante-room, bathroom with shower, guest toilet and a small spa with sauna located. First floor 3 large bedrooms, a large panoramic terrace (16 sqm), which can be accessed from 2 bedrooms, 2 bathrooms (one with shower the other with bathtube). The attic level consists of a large room, a bathroom with shower and a separete toilet. At the basement garage for 2 cars, with direct access to the groundfloor. Partially furnished, fully equipped. Pets and smoking are not allowed. 2 months deposit required. ",,,,47.5305201,18.9915472,47.5305201,18.9915472,1025,2,4.232656445852275,5.833429758380729,7.650363132951896,5.3621220129214064,4.080801451096494,22.097773203925694
+75,0,1,0,3000,350,8.571428571,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Mártonhegyi út,"
+                6 rooms                            ",6,0,Semi detached house,0,1,0,0,1,6000,155,-1,Empty,1,0,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,1,1,-1,lotushouse.alberlet.hu,,,,47.4911299,18.9991458,47.4911299,18.9991458,1121,12,2.1337197128819954,3.9196912625625786,6.464662645593896,4.92170481683561,2.2285050443225147,19.90445594302133
+76,0,1,0,680,100,6.8,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Szegfű utca,"
+                2 rooms                 + 1 half room            ",2,1,Row house,0,1,0,1,0,1175,93,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,1,-1,-1,1,-1," 
+
+
+",,,,47.5482975,18.9665268,47.5482975,18.9665268,1028,2,6.690987724814002,8.549636316225403,10.236695062695388,7.938754646915592,6.798506874562778,24.691634538374565
+77,0,1,0,2500,250,10.0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Endrődi Sándor utca,"
+                6 rooms                            ",6,0,Semi detached house,0,1,0,0,1,5000,155,3,"Empty, equipped",1,1,0,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,-1,-1,1,-1,"Törökvész quite area between Bimbó and Endrődi Sándor street in beautiful green environment, recently renovated panoramic family twin house built in 1992 is available for a minimum of one year rent. Entry level there are spacious open style kitchen with living room and dining area, terrace and garden access and a guest toilet. First floor 3 bedrooms, bathroom with bathtube and a second toilet. Second floor additional living room, bedroom, bathroom with bath and a small kitchen. At the basement level there is a garage for one car and an additional parking lot for a second car, laundry room, shower and storage rooms are located. The house is suitable for welcoming guests and /or as a 2-generation house. Without furniture. Air condition, lots of built-in warderobes. Pets are not allowed. 2 months deposit required.   ",,,,47.523437,19.0067887,47.523437,19.0067887,1026,2,2.883384439401839,4.453663058745196,6.284496533815851,4.010114015762378,2.7924098973432327,20.719843346162858
+78,0,1,0,3800,580,6.551724137999999,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Mátyás király út,"
+                7 rooms                            ",7,0,House,0,1,0,0,0,7600,773,-1,"Empty, equipped",1,1,0,0,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,12,-1,-1,1,1,-1,"FOR RENT: in few minutes from NORMAFA(Svabhegy), on the MATYAS KIRALY with wonderful panorama, 580 sqm. It has large TERRACE and garden, tastefully designed, air-conditioning, pool, sauna, fireplace, water purification equipment.     
+Premises list: 5 bedroom, 3 living-room, kitchen,  dining room, 2 walk-in closet, 4 bathrooms, 2 guest toilets, swimming pool, sauna, storage rooms.            
+Next to the house is a covered grilling, barbecue houses.      
+3 garages are available.      
+The gardener takes care of orderliness of the garden.      
+It's suitable for embassy building, diplomatic residency, offic and also family home.      
+ONLY FOR LONG TERM (at least 1 year)!      
+It's available right now!      
+For rent need 2 months deposit and 1 month rent fee.",,,,47.5041523,18.9726126,47.5041523,18.9726126,1121,12,4.51102371694752,5.927307882423917,8.360962228428463,6.409638721163991,3.918523002476206,22.24800371845402
+79,0,1,0,5000,320,15.625,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Mandula utca,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,10000,155,3,"Furnished, equipped",0,1,1,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,-1,-1,-1,-1,1,1,"Close to Verhalom square in a quite green street in landscaped garden 3-story luxury modern newly built original Bauhaus villa is available for a minimum of 2 years rent. 320 sqm modern condiminium with 3 levels, and panoramic roof terrace. Entry level ante-room, bright spacious living room with fireplace and huge terrace plus dining area, large modern built-in kitchen with appliances, food storage, garderobe, guest toilet and a bedroom with bathroom are located. Upstairs there are 2 bedrooms and a bathroom, garderobe, plus a large terrace. Fantastic panoramic roof terrace with kitchen. Lower level there is a guest bedroom with bathroom, laundry room and garderobe are located. 70 sqm garage. Fully furnished and equipped. Floorplan will be sent by request. 2 months deposit required. ",,,,47.5197756,19.0260026,47.5197756,19.0260026,1025,2,1.3914042904618749,3.1823213603455587,4.800732417748488,2.515144506385725,2.045918170887004,19.25167981336924
+80,0,1,0,2500,210,11.9047619,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Szalonkales utca,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,5000,309,-1,Luxury,0,1,1,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,-1,1,-1,-1,1,1,"We offer a 210 sqm house with 4 levels in district 2. in Szalonkales utca. It is situated in a newly built building. The windows are facing the garden. -2 level:deep garage(2 place) -1 level: pool, gym, sauna, 2 storage -Ground: living room, kitchen, winter terrace, big terrace, wardrobe -1 level: 3 bedrooms, 1 barhroom, 2 balcony, 1 wardrobe. 2 level: 1 bedroom, 1 bathroom, balcony, kitchen. No Common cost. Utilities: -heating: Ft/month -water: 15000 Ft/month -current: 40.000 Ft/month Other informations: -lift in the house -alarm -Camera system outside and inside -pool -winter terrace -gym -sauna Pets are allowed.",,,,47.5354639,18.989625600000004,47.5354639,18.989625600000004,1025,2,4.56378863175809,6.307816183115682,8.02539920123854,5.727900091956974,4.6100069095059055,22.483172906672245
+81,0,1,0,5500,220,25.0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Nagybányai út,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,11000,155,3,"Partly furnished, equipped",0,1,0,1,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,-1,-1,1,1,"Next to the forest in beautiful green environment in a large ground, PANORAMIC, freshly renovated 3-storey family house awaits its firts tenant, for a minimum of one year rent. Entry level sunny and spacious living room with terrace access, separate dining room and separate kitchen, ante-room, bathroom with shower, guest toilet and a small spa with sauna located. First floor 3 large bedrooms, a large panoramic terrace (16 sqm), which can be accessed from 2 bedrooms, 2 bathrooms (one with shower the other with bathtube). The attic level consists of a large room, a bathroom with shower and a separete toilet. At the basement garage for 2 cars, with direct access to the groundfloor. Partially furnished, fully equipped. Pets and smoking are not allowed. 2 months deposit required. ",,,,47.5305201,18.9915472,47.5305201,18.9915472,1025,2,4.232656445852275,5.833429758380729,7.650363132951896,5.3621220129214064,4.080801451096494,22.097773203925694
+82,0,1,0,3000,350,8.571428571,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Mártonhegyi út,"
+                6 rooms                            ",6,0,Semi detached house,0,1,0,0,1,6000,155,-1,Empty,1,0,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,1,1,-1,lotushouse.alberlet.hu,,,,47.4911299,18.9991458,47.4911299,18.9991458,1121,12,2.1337197128819954,3.9196912625625786,6.464662645593896,4.92170481683561,2.2285050443225147,19.90445594302133
+83,0,1,0,680,100,6.8,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Szegfű utca,"
+                2 rooms                 + 1 half room            ",2,1,Row house,0,1,0,1,0,1175,93,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,1,-1,-1,1,-1," 
+
+
+",,,,47.5482975,18.9665268,47.5482975,18.9665268,1028,2,6.690987724814002,8.549636316225403,10.236695062695388,7.938754646915592,6.798506874562778,24.691634538374565
+84,0,1,0,2500,250,10.0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Endrődi Sándor utca,"
+                6 rooms                            ",6,0,Semi detached house,0,1,0,0,1,5000,155,3,"Empty, equipped",1,1,0,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,-1,-1,1,-1,"Törökvész quite area between Bimbó and Endrődi Sándor street in beautiful green environment, recently renovated panoramic family twin house built in 1992 is available for a minimum of one year rent. Entry level there are spacious open style kitchen with living room and dining area, terrace and garden access and a guest toilet. First floor 3 bedrooms, bathroom with bathtube and a second toilet. Second floor additional living room, bedroom, bathroom with bath and a small kitchen. At the basement level there is a garage for one car and an additional parking lot for a second car, laundry room, shower and storage rooms are located. The house is suitable for welcoming guests and /or as a 2-generation house. Without furniture. Air condition, lots of built-in warderobes. Pets are not allowed. 2 months deposit required.   ",,,,47.523437,19.0067887,47.523437,19.0067887,1026,2,2.883384439401839,4.453663058745196,6.284496533815851,4.010114015762378,2.7924098973432327,20.719843346162858
+85,0,1,0,3800,580,6.551724137999999,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Mátyás király út,"
+                7 rooms                            ",7,0,House,0,1,0,0,0,7600,773,-1,"Empty, equipped",1,1,0,0,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,12,-1,-1,1,1,-1,"FOR RENT: in few minutes from NORMAFA(Svabhegy), on the MATYAS KIRALY with wonderful panorama, 580 sqm. It has large TERRACE and garden, tastefully designed, air-conditioning, pool, sauna, fireplace, water purification equipment.     
+Premises list: 5 bedroom, 3 living-room, kitchen,  dining room, 2 walk-in closet, 4 bathrooms, 2 guest toilets, swimming pool, sauna, storage rooms.            
+Next to the house is a covered grilling, barbecue houses.      
+3 garages are available.      
+The gardener takes care of orderliness of the garden.      
+It's suitable for embassy building, diplomatic residency, offic and also family home.      
+ONLY FOR LONG TERM (at least 1 year)!      
+It's available right now!      
+For rent need 2 months deposit and 1 month rent fee.",,,,47.5041523,18.9726126,47.5041523,18.9726126,1121,12,4.51102371694752,5.927307882423917,8.360962228428463,6.409638721163991,3.918523002476206,22.24800371845402
+86,0,1,0,5000,320,15.625,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Mandula utca,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,10000,155,3,"Furnished, equipped",0,1,1,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,-1,-1,-1,-1,1,1,"Close to Verhalom square in a quite green street in landscaped garden 3-story luxury modern newly built original Bauhaus villa is available for a minimum of 2 years rent. 320 sqm modern condiminium with 3 levels, and panoramic roof terrace. Entry level ante-room, bright spacious living room with fireplace and huge terrace plus dining area, large modern built-in kitchen with appliances, food storage, garderobe, guest toilet and a bedroom with bathroom are located. Upstairs there are 2 bedrooms and a bathroom, garderobe, plus a large terrace. Fantastic panoramic roof terrace with kitchen. Lower level there is a guest bedroom with bathroom, laundry room and garderobe are located. 70 sqm garage. Fully furnished and equipped. Floorplan will be sent by request. 2 months deposit required. ",,,,47.5197756,19.0260026,47.5197756,19.0260026,1025,2,1.3914042904618749,3.1823213603455587,4.800732417748488,2.515144506385725,2.045918170887004,19.25167981336924
+87,0,1,0,2500,210,11.9047619,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Szalonkales utca,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,5000,309,-1,Luxury,0,1,1,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,-1,1,-1,-1,1,1,"We offer a 210 sqm house with 4 levels in district 2. in Szalonkales utca. It is situated in a newly built building. The windows are facing the garden. -2 level:deep garage(2 place) -1 level: pool, gym, sauna, 2 storage -Ground: living room, kitchen, winter terrace, big terrace, wardrobe -1 level: 3 bedrooms, 1 barhroom, 2 balcony, 1 wardrobe. 2 level: 1 bedroom, 1 bathroom, balcony, kitchen. No Common cost. Utilities: -heating: Ft/month -water: 15000 Ft/month -current: 40.000 Ft/month Other informations: -lift in the house -alarm -Camera system outside and inside -pool -winter terrace -gym -sauna Pets are allowed.",,,,47.5354639,18.989625600000004,47.5354639,18.989625600000004,1025,2,4.56378863175809,6.307816183115682,8.02539920123854,5.727900091956974,4.6100069095059055,22.483172906672245
+88,0,1,0,5500,220,25.0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Nagybányai út,"
+                5 rooms                            ",5,0,House,0,1,0,0,0,11000,155,3,"Partly furnished, equipped",0,1,0,1,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,-1,-1,1,1,"Next to the forest in beautiful green environment in a large ground, PANORAMIC, freshly renovated 3-storey family house awaits its firts tenant, for a minimum of one year rent. Entry level sunny and spacious living room with terrace access, separate dining room and separate kitchen, ante-room, bathroom with shower, guest toilet and a small spa with sauna located. First floor 3 large bedrooms, a large panoramic terrace (16 sqm), which can be accessed from 2 bedrooms, 2 bathrooms (one with shower the other with bathtube). The attic level consists of a large room, a bathroom with shower and a separete toilet. At the basement garage for 2 cars, with direct access to the groundfloor. Partially furnished, fully equipped. Pets and smoking are not allowed. 2 months deposit required. ",,,,47.5305201,18.9915472,47.5305201,18.9915472,1025,2,4.232656445852275,5.833429758380729,7.650363132951896,5.3621220129214064,4.080801451096494,22.097773203925694
+89,0,1,0,3000,350,8.571428571,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Mártonhegyi út,"
+                6 rooms                            ",6,0,Semi detached house,0,1,0,0,1,6000,155,-1,Empty,1,0,0,0,-1,-1,Overlooking the garden,0,0,1,0,0,0,0,0,0,0,12,1,-1,1,1,-1,lotushouse.alberlet.hu,,,,47.4911299,18.9991458,47.4911299,18.9991458,1121,12,2.1337197128819954,3.9196912625625786,6.464662645593896,4.92170481683561,2.2285050443225147,19.90445594302133
+90,0,1,0,680,100,6.8,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Szegfű utca,"
+                2 rooms                 + 1 half room            ",2,1,Row house,0,1,0,1,0,1175,93,-1,"Partly furnished, equipped",0,1,0,1,-1,-1,Street and courtyard,0,1,0,0,0,1,0,0,0,0,12,1,-1,-1,1,-1," 
+
+
+",,,,47.5482975,18.9665268,47.5482975,18.9665268,1028,2,6.690987724814002,8.549636316225403,10.236695062695388,7.938754646915592,6.798506874562778,24.691634538374565
+91,0,1,0,2500,250,10.0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Endrődi Sándor utca,"
+                6 rooms                            ",6,0,Semi detached house,0,1,0,0,1,5000,155,3,"Empty, equipped",1,1,0,0,-1,-1,Panoramic,0,0,0,1,0,0,0,0,0,0,12,-1,-1,-1,1,-1,"Törökvész quite area between Bimbó and Endrődi Sándor street in beautiful green environment, recently renovated panoramic family twin house built in 1992 is available for a minimum of one year rent. Entry level there are spacious open style kitchen with living room and dining area, terrace and garden access and a guest toilet. First floor 3 bedrooms, bathroom with bathtube and a second toilet. Second floor additional living room, bedroom, bathroom with bath and a small kitchen. At the basement level there is a garage for one car and an additional parking lot for a second car, laundry room, shower and storage rooms are located. The house is suitable for welcoming guests and /or as a 2-generation house. Without furniture. Air condition, lots of built-in warderobes. Pets are not allowed. 2 months deposit required.   ",,,,47.523437,19.0067887,47.523437,19.0067887,1026,2,2.883384439401839,4.453663058745196,6.284496533815851,4.010114015762378,2.7924098973432327,20.719843346162858
+92,0,1,0,3800,580,6.551724137999999,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Mátyás király út,"
+                7 rooms                            ",7,0,House,0,1,0,0,0,7600,773,-1,"Empty, equipped",1,1,0,0,-1,-1,View to the hills,0,0,0,0,0,0,0,0,0,1,12,-1,-1,1,1,-1,"FOR RENT: in few minutes from NORMAFA(Svabhegy), on the MATYAS KIRALY with wonderful panorama, 580 sqm. It has large TERRACE and garden, tastefully designed, air-conditioning, pool, sauna, fireplace, water purification equipment.     
+Premises list: 5 bedroom, 3 living-room, kitchen,  dining room, 2 walk-in closet, 4 bathrooms, 2 guest toilets, swimming pool, sauna, storage rooms.            
+Next to the house is a covered grilling, barbecue houses.      
+3 garages are available.      
+The gardener takes care of orderliness of the garden.      
+It's suitable for embassy building, diplomatic residency, offic and also family home.      
+ONLY FOR LONG TERM (at least 1 year)!      
+It's available right now!      
+For rent need 2 months deposit and 1 month rent fee.",,,,47.5041523,18.9726126,47.5041523,18.9726126,1121,12,4.51102371694752,5.927307882423917,8.360962228428463,6.409638721163991,3.918523002476206,22.24800371845402
