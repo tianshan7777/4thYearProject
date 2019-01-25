@@ -1,0 +1,1986 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2019-01-24T16:58:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/30082680",
+        "name": "Rákoshegy",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "958"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2432329,
+          47.4691577
+        ]
+      },
+      "id": "node/30082680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/60497044",
+        "name": "Százhalombatta",
+        "railway": "station",
+        "ref:mav": "244"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8989912,
+          47.3225559
+        ]
+      },
+      "id": "node/60497044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/60964563",
+        "name": "Érd felső",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "242"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9226244,
+          47.3812533
+        ]
+      },
+      "id": "node/60964563"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/60964564",
+        "name": "Tárnok",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "828"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8734765,
+          47.3653029
+        ]
+      },
+      "id": "node/60964564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/198841762",
+        "alt_name": "Nagyállomás",
+        "name": "Érd",
+        "railway": "station",
+        "ref:mav": "243"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9008123,
+          47.3699821
+        ]
+      },
+      "id": "node/198841762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/243751947",
+        "name": "Gödöllő",
+        "railway": "station",
+        "ref:mav": "921",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.3588077,
+          47.5919256
+        ]
+      },
+      "id": "node/243751947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/245275541",
+        "name": "Virágvölgy",
+        "old_name:1948-1990": "Előre",
+        "railway": "station",
+        "start_date": "1948",
+        "website": "http://gyermekvasut.hu/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9586708,
+          47.5059275
+        ]
+      },
+      "id": "node/245275541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280179036",
+        "name": "Clark Ádám tér",
+        "railway": "station",
+        "wheelchair": "limited",
+        "wheelchair:description": "Ask for assistence and let them lower the funicular to achieve an entrance height lower than 7 cm!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.039638,
+          47.4979025
+        ]
+      },
+      "id": "node/280179036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280179037",
+        "name": "Szent György tér",
+        "railway": "station",
+        "wheelchair": "limited",
+        "wheelchair:description": "Ask for wheelchair assistance at the cassa. The personel will assist wheelchair drivers entering the cable car."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0385742,
+          47.4976451
+        ]
+      },
+      "id": "node/280179037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280520003",
+        "name": "Kispest",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "283"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1568668,
+          47.4475635
+        ]
+      },
+      "id": "node/280520003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/338969500",
+        "name": "Hűvösvölgy",
+        "railway": "station",
+        "start_date": "1950",
+        "website": "http://gyermekvasut.hu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9638906,
+          47.5409124
+        ]
+      },
+      "id": "node/338969500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/364031494",
+        "name": "Hárs-hegy",
+        "railway": "station",
+        "start_date": "1950",
+        "website": "http://gyermekvasut.hu",
+        "wikidata": "Q1057136"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9611318,
+          47.5354941
+        ]
+      },
+      "id": "node/364031494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/364031496",
+        "name": "Szépjuhászné",
+        "old_name:1949-1990": "Ságvári-liget",
+        "railway": "station",
+        "start_date": "1949",
+        "website": "http://gyermekvasut.hu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9553079,
+          47.5283785
+        ]
+      },
+      "id": "node/364031496"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/364032001",
+        "name": "Csillebérc",
+        "old_name:1948-1990": "Úttörőváros",
+        "railway": "station",
+        "start_date": "1948",
+        "website": "http://gyermekvasut.hu/page.php?9",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9618417,
+          47.4981023
+        ]
+      },
+      "id": "node/364032001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/364032003",
+        "name": "Széchenyi-hegy",
+        "railway": "station",
+        "start_date": "1948",
+        "website": "http://gyermekvasut.hu/page.php?7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9765734,
+          47.4943024
+        ]
+      },
+      "id": "node/364032003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/454140034",
+        "name": "Kőbánya-Kispest",
+        "operator": "MÁV",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "281",
+        "website": "http://www.mav-start.hu",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1498354,
+          47.4637097
+        ]
+      },
+      "id": "node/454140034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/492615234",
+        "name": "Gyál",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "1144",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2198291,
+          47.3761869
+        ]
+      },
+      "id": "node/492615234"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/619786745",
+        "name": "Soroksár",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "287"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1229775,
+          47.4028166
+        ]
+      },
+      "id": "node/619786745"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/619786752",
+        "name": "Pestszentimre",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "1142",
+        "wheelchair": "no",
+        "wikidata": "Q18005412"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1873926,
+          47.4031897
+        ]
+      },
+      "id": "node/619786752"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/748766808",
+        "name": "Budapest-Déli pályaudvar",
+        "name:de": "Budapest-Südbahnhof",
+        "operator": "MÁV",
+        "railway": "station",
+        "railway:ref:DB": "XMBD",
+        "ref:ibnr": "5500007",
+        "wheelchair": "limited",
+        "wikidata": "Q764685",
+        "wikipedia": "hu:Déli pályaudvar (Budapest)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0250536,
+          47.4988779
+        ]
+      },
+      "id": "node/748766808"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1020421247",
+        "light_rail": "yes",
+        "name": "Csepel",
+        "operator": "MÁV-HÉV",
+        "public_transport": "stop_position",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0663592,
+          47.4217411
+        ]
+      },
+      "id": "node/1020421247"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1065129920",
+        "name": "Dunaharaszti",
+        "railway": "station",
+        "ref:mav": "454"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0968017,
+          47.352692
+        ]
+      },
+      "id": "node/1065129920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1144366612",
+        "name": "János-hegy",
+        "railway": "station",
+        "start_date": "1949",
+        "website": "http://gyermekvasut.hu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9508358,
+          47.5148408
+        ]
+      },
+      "id": "node/1144366612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1213304924",
+        "name": "Érd alsó",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "827"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9247769,
+          47.3800509
+        ]
+      },
+      "id": "node/1213304924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1245256722",
+        "name": "Pestszentlőrinc",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "282",
+        "wikidata": "Q18005416"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1823857,
+          47.4549243
+        ]
+      },
+      "id": "node/1245256722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1246730240",
+        "name": "Rákosszentmihály",
+        "railway": "station",
+        "wikidata": "Q18005422"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.146136,
+          47.5212264
+        ]
+      },
+      "id": "node/1246730240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1247235924",
+        "name": "Soroksár",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "287"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.122336,
+          47.4038488
+        ]
+      },
+      "id": "node/1247235924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1253800023",
+        "name": "Rákos",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "273",
+        "wheelchair": "no",
+        "wikidata": "Q12815863"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1732332,
+          47.4888391
+        ]
+      },
+      "id": "node/1253800023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1448177453",
+        "name": "Rákospalota-Újpest",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "279",
+        "train": "yes",
+        "wikidata": "Q3097464"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1124386,
+          47.5658638
+        ]
+      },
+      "id": "node/1448177453"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1547493306",
+        "name": "Ferencváros",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0908082,
+          47.4688946
+        ]
+      },
+      "id": "node/1547493306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1547493319",
+        "name": "Soroksári út",
+        "old_name": "Budapest-Soroksári út",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "276",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0841522,
+          47.4571365
+        ]
+      },
+      "id": "node/1547493319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1547493765",
+        "name": "Rákoshegy",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "958"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.245415,
+          47.4687487
+        ]
+      },
+      "id": "node/1547493765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1685033492",
+        "name": "Vecsés",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "902",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wheelchair:description": "Az állomás karfás liftel van el látva amitt sajnos megrongáltak. Forgalmi átjáró lehet külön engedéllyel átmenni."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2543855,
+          47.4101109
+        ]
+      },
+      "id": "node/1685033492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1687808908",
+        "name": "Gyömrő",
+        "railway": "station",
+        "ref:mav": "962"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.3947055,
+          47.4295289
+        ]
+      },
+      "id": "node/1687808908"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1687808915",
+        "name": "Maglód",
+        "railway": "station",
+        "ref:mav": "960"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.3396039,
+          47.4390574
+        ]
+      },
+      "id": "node/1687808915"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2699192783",
+        "name": "Rákosrendező",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "274",
+        "wikidata": "Q1252489"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0904504,
+          47.5264335
+        ]
+      },
+      "id": "node/2699192783"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2894347408",
+        "image": "https://image.ibb.co/mc1r8y/2018_05_12.jpg",
+        "name": "Kelenföld",
+        "operator": "MÁV",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref:DB": "XMBL",
+        "ref:mav": "3640",
+        "toilets:wheelchair": "no",
+        "uic_name": "Budapest-Kelenföld",
+        "uic_ref": "5500008",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0204391,
+          47.4644823
+        ]
+      },
+      "id": "node/2894347408"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2911992930",
+        "name": "Pilisvörösvár",
+        "railway": "station",
+        "ref:mav": "3671"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9024815,
+          47.6141281
+        ]
+      },
+      "id": "node/2911992930"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3010560233",
+        "alt_name": "Nyugati pályaudvar",
+        "internet_access": "wlan",
+        "name": "Budapest-Nyugati",
+        "name:zh": "西站",
+        "platforms": "17",
+        "railway": "station",
+        "railway:ref:DB": "XMBN",
+        "ref:mav": "269",
+        "website": "http://www.mav-start.hu",
+        "wheelchair": "yes",
+        "wikidata": "Q522868",
+        "wikipedia": "hu:Nyugati pályaudvar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0572624,
+          47.5105828
+        ]
+      },
+      "id": "node/3010560233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3141893115",
+        "addr:city": "Budapest",
+        "addr:housenumber": "1",
+        "addr:postcode": "1087",
+        "addr:street": "Baross tér",
+        "alt_name": "Keleti pályaudvar",
+        "internet_access": "wlan",
+        "name": "Budapest-Keleti pályaudvar",
+        "name:de": "Budapest Ostbahnhof",
+        "name:en": "Budapest Keleti Station",
+        "operator": "MÁV",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref:DB": "XMBK",
+        "short_name": "Budapest-Keleti pu.",
+        "toilets:wheelchair": "yes",
+        "tourism": "attraction",
+        "train": "yes",
+        "uic_name": "Budapest-Keleti",
+        "uic_ref": "5500003",
+        "website": "http://www.mav-start.hu",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0836705,
+          47.5004475
+        ]
+      },
+      "id": "node/3141893115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3359125106",
+        "name": "Dunakeszi",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "289",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1360495,
+          47.6257689
+        ]
+      },
+      "id": "node/3359125106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3543646137",
+        "name": "Gyömrő",
+        "railway": "station",
+        "ref:mav": "962"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.392837,
+          47.4297583
+        ]
+      },
+      "id": "node/3543646137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3543646140",
+        "name": "Gödöllő",
+        "railway": "station",
+        "ref:mav": "921",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.3587398,
+          47.5922282
+        ]
+      },
+      "id": "node/3543646140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3543646147",
+        "name": "Maglód",
+        "railway": "station",
+        "ref:mav": "960"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.3396519,
+          47.4391795
+        ]
+      },
+      "id": "node/3543646147"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3711240676",
+        "name": "Angyalföld",
+        "old_name": "Budapest-Angyalföld",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "ref:mav": "140"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0899465,
+          47.5497498
+        ]
+      },
+      "id": "node/3711240676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3729808134",
+        "name": "Pilisvörösvár",
+        "railway": "station",
+        "ref:mav": "3671"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9024465,
+          47.6140968
+        ]
+      },
+      "id": "node/3729808134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3987622756",
+        "name": "Pécel",
+        "railway": "station",
+        "ref:mav": "919",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.3388007,
+          47.4937888
+        ]
+      },
+      "id": "node/3987622756"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4039134892",
+        "access": "customers",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0959592,
+          47.5418696
+        ]
+      },
+      "id": "node/4039134892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774759",
+        "lines": "M1",
+        "name": "Mexikói út",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0908423,
+          47.5195892
+        ]
+      },
+      "id": "node/5217774759"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774760",
+        "lines": "M1",
+        "name": "Széchenyi fürdő",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0812828,
+          47.5175187
+        ]
+      },
+      "id": "node/5217774760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774761",
+        "lines": "M1",
+        "name": "Hősök tere",
+        "name:cs": "Náměstí Hrdinů",
+        "name:de": "Heldenplatz",
+        "name:en": "Heroes' Square",
+        "name:es": "Plaza de los Héroes",
+        "name:it": "Piazza degli Eroi",
+        "name:ko": "영웅광장",
+        "name:zh": "英雄广场",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0767982,
+          47.5142214
+        ]
+      },
+      "id": "node/5217774761"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774762",
+        "lines": "M1",
+        "name": "Bajza utca",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0725382,
+          47.5113872
+        ]
+      },
+      "id": "node/5217774762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774763",
+        "lines": "M1",
+        "name": "Kodály körönd",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0693865,
+          47.5092824
+        ]
+      },
+      "id": "node/5217774763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774764",
+        "lines": "M1",
+        "name": "Vörösmarty utca",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0663293,
+          47.507243
+        ]
+      },
+      "id": "node/5217774764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774765",
+        "lines": "M1",
+        "name": "Oktogon",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.062964,
+          47.5049614
+        ]
+      },
+      "id": "node/5217774765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774766",
+        "name": "Kőbánya-Kispest",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1478199,
+          47.4638164
+        ]
+      },
+      "id": "node/5217774766"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774767",
+        "name": "Határ út",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F01542",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.125694,
+          47.4658243
+        ]
+      },
+      "id": "node/5217774767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774768",
+        "name": "Pöttyös utca",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F01878",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1180258,
+          47.4682271
+        ]
+      },
+      "id": "node/5217774768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774769",
+        "name": "Ecseri út",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1108952,
+          47.4708139
+        ]
+      },
+      "id": "node/5217774769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774770",
+        "name": "Népliget",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F01283",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0999157,
+          47.4751095
+        ]
+      },
+      "id": "node/5217774770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774771",
+        "name": "Nagyvárad tér",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F01253",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0906275,
+          47.4785868
+        ]
+      },
+      "id": "node/5217774771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774772",
+        "name": "Klinikák",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F01232",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0779568,
+          47.483245
+        ]
+      },
+      "id": "node/5217774772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774773",
+        "name": "Corvin-negyed",
+        "old_name": "Ferenc körút",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F01188",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0717417,
+          47.4852953
+        ]
+      },
+      "id": "node/5217774773"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774774",
+        "name": "Ferenciek tere",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F00953",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0563219,
+          47.4924309
+        ]
+      },
+      "id": "node/5217774774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774775",
+        "lines": "M1",
+        "name": "Vörösmarty tér",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0503252,
+          47.4966816
+        ]
+      },
+      "id": "node/5217774775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774776",
+        "lines": "M1",
+        "name": "Bajcsy-Zsilinszky út",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0553621,
+          47.4999104
+        ]
+      },
+      "id": "node/5217774776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774777",
+        "lines": "M1",
+        "name": "Opera",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0589409,
+          47.5022917
+        ]
+      },
+      "id": "node/5217774777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774778",
+        "name": "Arany János utca",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F00956",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0546282,
+          47.5040859
+        ]
+      },
+      "id": "node/5217774778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774779",
+        "name": "Nyugati pályaudvar",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F00936",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0563709,
+          47.5111393
+        ]
+      },
+      "id": "node/5217774779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774780",
+        "name": "Lehel tér",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F02613",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0607745,
+          47.5182647
+        ]
+      },
+      "id": "node/5217774780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774781",
+        "name": "Kelenföld vasútállomás",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "056215",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0197874,
+          47.4643972
+        ]
+      },
+      "id": "node/5217774781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774782",
+        "name": "Bikás park",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "056217",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0327429,
+          47.4649847
+        ]
+      },
+      "id": "node/5217774782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774783",
+        "lines": "M4",
+        "name": "Újbuda-központ",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "056219",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0461696,
+          47.4731583
+        ]
+      },
+      "id": "node/5217774783"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774784",
+        "name": "Móricz Zsigmond körtér",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "056222",
+        "subway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0474018,
+          47.4769776
+        ]
+      },
+      "id": "node/5217774784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774785",
+        "addr:city": "Budapest",
+        "addr:postcode": "1111",
+        "addr:street": "Szent Gellért tér",
+        "level": "-2",
+        "name": "Szent Gellért tér",
+        "network": "M4 metró",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "056224",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0544711,
+          47.4829796
+        ]
+      },
+      "id": "node/5217774785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774786",
+        "lines": "M4",
+        "name": "Fővám tér",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "056225",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0577897,
+          47.4859323
+        ]
+      },
+      "id": "node/5217774786"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774787",
+        "name": "Kálvin tér",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F01290",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.062343,
+          47.4894786
+        ]
+      },
+      "id": "node/5217774787"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774788",
+        "name": "Rákóczi tér",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "056229",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0720019,
+          47.4927427
+        ]
+      },
+      "id": "node/5217774788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774789",
+        "name": "II. János Pál pápa tér",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "056231",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wheelchair:description": "Információt szeretnék "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0775125,
+          47.4958325
+        ]
+      },
+      "id": "node/5217774789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774790",
+        "lines": "M2",
+        "name": "Örs vezér tere",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1354732,
+          47.5028969
+        ]
+      },
+      "id": "node/5217774790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774791",
+        "lines": "M2",
+        "name": "Pillangó utca",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "transport": "subway",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1198733,
+          47.5012146
+        ]
+      },
+      "id": "node/5217774791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774792",
+        "layer": "-1",
+        "lines": "M2",
+        "name": "Puskás Ferenc Stadion",
+        "old_name": "Stadionok",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1059393,
+          47.5002918
+        ]
+      },
+      "id": "node/5217774792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774793",
+        "layer": "-4",
+        "lines": "M2",
+        "name": "Keleti pályaudvar",
+        "railway": "station",
+        "subway": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0809612,
+          47.4997811
+        ]
+      },
+      "id": "node/5217774793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774794",
+        "layer": "-2",
+        "lines": "M2",
+        "name": "Blaha Lujza tér",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0697633,
+          47.4968259
+        ]
+      },
+      "id": "node/5217774794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774795",
+        "layer": "-2",
+        "lines": "M2",
+        "name": "Astoria",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0613685,
+          47.4947263
+        ]
+      },
+      "id": "node/5217774795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774796",
+        "lines": "M2",
+        "name": "Deák Ferenc tér",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F00961",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0535972,
+          47.4983532
+        ]
+      },
+      "id": "node/5217774796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774797",
+        "layer": "-2",
+        "lines": "M2",
+        "name": "Kossuth Lajos tér",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0453645,
+          47.505686
+        ]
+      },
+      "id": "node/5217774797"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774798",
+        "colour": "red",
+        "layer": "-2",
+        "lines": "M2",
+        "name": "Batthyány tér",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "transport": "subway"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0377539,
+          47.5069427
+        ]
+      },
+      "id": "node/5217774798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774799",
+        "layer": "-2",
+        "lines": "M2",
+        "name": "Széll Kálmán tér",
+        "old_name": "Moszkva tér",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0263265,
+          47.5076989
+        ]
+      },
+      "id": "node/5217774799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217774800",
+        "layer": "-2",
+        "lines": "M2",
+        "name": "Déli pályaudvar",
+        "operator": "BKV",
+        "railway": "station",
+        "subway": "yes",
+        "wheelchair": "no",
+        "wheelchair:description": "Bejárat a Krisztina körút felől nem akadálymentes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0245936,
+          47.5008855
+        ]
+      },
+      "id": "node/5217774800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217848809",
+        "name": "Gyöngyösi utca",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F02684",
+        "subway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0733659,
+          47.5490546
+        ]
+      },
+      "id": "node/5217848809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217848810",
+        "layer": "-1",
+        "name": "Árpád híd",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F02637",
+        "subway": "yes",
+        "verified": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0668209,
+          47.5327527
+        ]
+      },
+      "id": "node/5217848810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217848811",
+        "name": "Dózsa György út",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F02681",
+        "subway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0635372,
+          47.5248671
+        ]
+      },
+      "id": "node/5217848811"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217848812",
+        "name": "Forgách utca",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F02682",
+        "subway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0694579,
+          47.5388814
+        ]
+      },
+      "id": "node/5217848812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217848813",
+        "name": "Újpest-Városkapu",
+        "operator": "BKV",
+        "railway": "station",
+        "ref:bkk": "F00897",
+        "subway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0804388,
+          47.5593652
+        ]
+      },
+      "id": "node/5217848813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5333649461",
+        "name": "Csomád",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2227045,
+          47.6355268
+        ]
+      },
+      "id": "node/5333649461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5333649462",
+        "name": "Fót",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1816987,
+          47.6113671
+        ]
+      },
+      "id": "node/5333649462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5566790333",
+        "addr:city": "Isaszeg",
+        "addr:housenumber": "1",
+        "addr:postcode": "2117",
+        "addr:street": "Rózsa utca",
+        "internet_access": "no",
+        "name": "Isaszeg",
+        "network": "MÁV",
+        "operator": "MÁV",
+        "railway": "station",
+        "ref:mav": "920",
+        "train": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.3892025,
+          47.5375176
+        ]
+      },
+      "id": "node/5566790333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5910582291",
+        "name": "Solymár",
+        "operator": "MÁV",
+        "railway": "station",
+        "ref:mav": "3670",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9494722,
+          47.5963712
+        ]
+      },
+      "id": "node/5910582291"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6137205675",
+        "name": "Óbuda",
+        "operator": "MÁV",
+        "railway": "station",
+        "ref:mav": "3668"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0327128,
+          47.5691195
+        ]
+      },
+      "id": "node/6137205675"
+    }
+  ]
+}
