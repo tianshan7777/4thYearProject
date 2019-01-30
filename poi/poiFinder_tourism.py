@@ -21,9 +21,12 @@ for feature in data['features']:
 	print(feature['geometry']['type'])
 	shape.append(feature['geometry']['type'])
 
-	if feature['geometry']['type'] == 'Polygon' or feature['geometry']['type'] == 'LineString':
+	if feature['geometry']['type'] == 'Polygon':
 		print(feature['geometry']['coordinates'][0][0])
 		coord.append(feature['geometry']['coordinates'][0][0])
+	elif feature['geometry']['type'] == 'LineString':
+		print(feature['geometry']['coordinates'][0])
+		coord.append(feature['geometry']['coordinates'][0])
 	elif feature['geometry']['type'] == 'MultiPolygon':
 		print(feature['geometry']['coordinates'][0][0][0])
 		coord.append(feature['geometry']['coordinates'][0][0][0])

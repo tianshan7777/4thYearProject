@@ -6236,108 +6236,108 @@
 6234,Polygon,library,"[19.0558065, 47.5710528]"
 6235,Polygon,nightclub,"[19.1027917, 47.4760346]"
 6236,Polygon,university,"[19.0924949, 47.4798909]"
-6237,LineString,parking_entrance,18.9596092
-6238,LineString,bench,18.9586001
-6239,LineString,bench,18.9600937
-6240,LineString,bench,18.9586222
-6241,LineString,bench,18.960069
-6242,LineString,bench,18.9600206
-6243,LineString,bench,18.9586128
-6244,LineString,bench,18.9600561
-6245,LineString,bench,18.9586428
-6246,LineString,bench,18.9600315
-6247,LineString,bench,18.9600813
-6248,LineString,bench,18.9585902
-6249,LineString,bench,18.9600433
-6250,LineString,bench,18.9586317
-6251,LineString,bench,18.9601408
-6252,LineString,bench,18.9600689
-6253,LineString,bench,18.960161
-6254,LineString,bench,18.9600314
-6255,LineString,bench,18.960084
-6256,LineString,bench,18.9600969
-6257,LineString,bench,18.9600566
-6258,LineString,bench,18.9601828
-6259,LineString,bench,18.9601296
-6260,LineString,bench,18.960171
-6261,LineString,bench,18.9601492
-6262,LineString,bench,18.9600168
-6263,LineString,bench,18.9600448
-6264,LineString,bench,18.9601212
-6265,LineString,bench,18.9601684
-6266,LineString,bench,18.9601947
-6267,LineString,bench,18.960308
-6268,LineString,bench,18.9602065
-6269,LineString,bench,18.9601813
-6270,LineString,bench,18.960282
-6271,LineString,bench,18.9602199
-6272,LineString,bench,18.960268
-6273,LineString,bench,18.9602311
-6274,LineString,bench,18.9602568
-6275,LineString,bench,18.9602932
-6276,LineString,bench,18.9602445
-6277,LineString,bench,18.9603061
-6278,LineString,bench,18.9601786
-6279,LineString,bench,18.9602795
-6280,LineString,bench,18.9601901
-6281,LineString,bench,18.9602401
-6282,LineString,bench,18.9602658
-6283,LineString,bench,18.9601648
-6284,LineString,bench,18.960224
-6285,LineString,bench,18.9602154
-6286,LineString,bench,18.9602518
-6287,LineString,bench,18.9602024
-6288,LineString,bench,18.960294
-6289,LineString,bench,19.0720967
-6290,LineString,bench,19.0567807
-6291,LineString,bench,19.0568296
-6292,LineString,bench,19.0568326
-6293,LineString,bench,19.0578587
-6294,LineString,bench,19.0459805
-6295,LineString,bench,19.0459163
-6296,LineString,bench,19.0475637
-6297,LineString,bench,19.0422272
-6298,LineString,bench,19.0708693
-6299,LineString,bench,18.9995463
-6300,LineString,bench,18.9994727
-6301,LineString,bench,19.123113
-6302,LineString,bench,19.0423244
-6303,LineString,bench,19.0423145
-6304,LineString,bench,19.0773282
-6305,LineString,bench,19.0773814
-6306,LineString,nightclub,19.0779538
-6307,LineString,nightclub,19.0776716
-6308,LineString,nightclub,19.078792
-6309,LineString,nightclub,19.0783823
-6310,LineString,nightclub,19.0778252
-6311,LineString,nightclub,19.0776657
-6312,LineString,nightclub,19.0776127
-6313,LineString,nightclub,19.0776385
-6314,LineString,nightclub,19.0776467
-6315,LineString,nightclub,19.0777322
-6316,LineString,nightclub,19.0764894
-6317,LineString,nightclub,19.0771596
-6318,LineString,university,19.0681582
-6319,LineString,university,19.0683346
-6320,LineString,university,19.0666435
-6321,LineString,university,19.0682632
-6322,LineString,university,19.0669631
-6323,LineString,university,19.0803414
-6324,LineString,university,19.0827886
-6325,LineString,university,19.0828388
-6326,LineString,university,19.0796643
-6327,LineString,university,19.0824464
-6328,LineString,university,19.082172
-6329,LineString,university,19.0842845
-6330,LineString,university,19.0824944
-6331,LineString,university,19.0819294
-6332,LineString,university,19.0823506
-6333,LineString,school,19.0168572
-6334,LineString,school,19.0173818
-6335,LineString,school,19.0174141
-6336,LineString,library,19.0557723
-6337,LineString,nightclub,19.1027099
-6338,LineString,place_of_worship,19.3981197
+6237,LineString,parking_entrance,"[18.9596092, 47.5650418]"
+6238,LineString,bench,"[18.9586001, 47.4914375]"
+6239,LineString,bench,"[18.9600937, 47.4973247]"
+6240,LineString,bench,"[18.9586222, 47.4914351]"
+6241,LineString,bench,"[18.960069, 47.4973288]"
+6242,LineString,bench,"[18.9600206, 47.4973381]"
+6243,LineString,bench,"[18.9586128, 47.4914364]"
+6244,LineString,bench,"[18.9600561, 47.4973311]"
+6245,LineString,bench,"[18.9586428, 47.4914324]"
+6246,LineString,bench,"[18.9600315, 47.4973349]"
+6247,LineString,bench,"[18.9600813, 47.4973269]"
+6248,LineString,bench,"[18.9585902, 47.4914399]"
+6249,LineString,bench,"[18.9600433, 47.497333]"
+6250,LineString,bench,"[18.9586317, 47.4914346]"
+6251,LineString,bench,"[18.9601408, 47.4970667]"
+6252,LineString,bench,"[18.9600689, 47.4972357]"
+6253,LineString,bench,"[18.960161, 47.4970777]"
+6254,LineString,bench,"[18.9600314, 47.4972398]"
+6255,LineString,bench,"[18.960084, 47.4972327]"
+6256,LineString,bench,"[18.9600969, 47.4972308]"
+6257,LineString,bench,"[18.9600566, 47.4972368]"
+6258,LineString,bench,"[18.9601828, 47.4970876]"
+6259,LineString,bench,"[18.9601296, 47.4970618]"
+6260,LineString,bench,"[18.960171, 47.4970827]"
+6261,LineString,bench,"[18.9601492, 47.4970728]"
+6262,LineString,bench,"[18.9600168, 47.4972421]"
+6263,LineString,bench,"[18.9600448, 47.4972387]"
+6264,LineString,bench,"[18.9601212, 47.4970544]"
+6265,LineString,bench,"[18.9601684, 47.4971485]"
+6266,LineString,bench,"[18.9601947, 47.4971534]"
+6267,LineString,bench,"[18.960308, 47.4971816]"
+6268,LineString,bench,"[18.9602065, 47.4971569]"
+6269,LineString,bench,"[18.9601813, 47.4971512]"
+6270,LineString,bench,"[18.960282, 47.4971755]"
+6271,LineString,bench,"[18.9602199, 47.4971599]"
+6272,LineString,bench,"[18.960268, 47.4971728]"
+6273,LineString,bench,"[18.9602311, 47.4971622]"
+6274,LineString,bench,"[18.9602568, 47.4971687]"
+6275,LineString,bench,"[18.9602932, 47.4971789]"
+6276,LineString,bench,"[18.9602445, 47.4971649]"
+6277,LineString,bench,"[18.9603061, 47.4973051]"
+6278,LineString,bench,"[18.9601786, 47.4972839]"
+6279,LineString,bench,"[18.9602795, 47.4973046]"
+6280,LineString,bench,"[18.9601901, 47.4972874]"
+6281,LineString,bench,"[18.9602401, 47.4972973]"
+6282,LineString,bench,"[18.9602658, 47.4973022]"
+6283,LineString,bench,"[18.9601648, 47.4972833]"
+6284,LineString,bench,"[18.960224, 47.4972925]"
+6285,LineString,bench,"[18.9602154, 47.4972909]"
+6286,LineString,bench,"[18.9602518, 47.4972999]"
+6287,LineString,bench,"[18.9602024, 47.4972893]"
+6288,LineString,bench,"[18.960294, 47.4973059]"
+6289,LineString,bench,"[19.0720967, 47.5007753]"
+6290,LineString,bench,"[19.0567807, 47.4788981]"
+6291,LineString,bench,"[19.0568296, 47.4788896]"
+6292,LineString,bench,"[19.0568326, 47.4788738]"
+6293,LineString,bench,"[19.0578587, 47.4856874]"
+6294,LineString,bench,"[19.0459805, 47.5433378]"
+6295,LineString,bench,"[19.0459163, 47.5429924]"
+6296,LineString,bench,"[19.0475637, 47.6172696]"
+6297,LineString,bench,"[19.0422272, 47.496264]"
+6298,LineString,bench,"[19.0708693, 47.4861262]"
+6299,LineString,bench,"[18.9995463, 47.4710713]"
+6300,LineString,bench,"[18.9994727, 47.4711558]"
+6301,LineString,bench,"[19.123113, 47.4670371]"
+6302,LineString,bench,"[19.0423244, 47.4948567]"
+6303,LineString,bench,"[19.0423145, 47.4948257]"
+6304,LineString,bench,"[19.0773282, 47.4676541]"
+6305,LineString,bench,"[19.0773814, 47.4674023]"
+6306,LineString,nightclub,"[19.0779538, 47.467719]"
+6307,LineString,nightclub,"[19.0776716, 47.467657]"
+6308,LineString,nightclub,"[19.078792, 47.4678915]"
+6309,LineString,nightclub,"[19.0783823, 47.4678988]"
+6310,LineString,nightclub,"[19.0778252, 47.4673438]"
+6311,LineString,nightclub,"[19.0776657, 47.4673699]"
+6312,LineString,nightclub,"[19.0776127, 47.4674415]"
+6313,LineString,nightclub,"[19.0776385, 47.4674074]"
+6314,LineString,nightclub,"[19.0776467, 47.467919]"
+6315,LineString,nightclub,"[19.0777322, 47.4678581]"
+6316,LineString,nightclub,"[19.0764894, 47.4679193]"
+6317,LineString,nightclub,"[19.0771596, 47.4679477]"
+6318,LineString,university,"[19.0681582, 47.4869392]"
+6319,LineString,university,"[19.0683346, 47.4890803]"
+6320,LineString,university,"[19.0666435, 47.4886543]"
+6321,LineString,university,"[19.0682632, 47.4874436]"
+6322,LineString,university,"[19.0669631, 47.4873395]"
+6323,LineString,university,"[19.0803414, 47.4837278]"
+6324,LineString,university,"[19.0827886, 47.4827468]"
+6325,LineString,university,"[19.0828388, 47.4837289]"
+6326,LineString,university,"[19.0796643, 47.4827394]"
+6327,LineString,university,"[19.0824464, 47.4827517]"
+6328,LineString,university,"[19.082172, 47.483586]"
+6329,LineString,university,"[19.0842845, 47.4854884]"
+6330,LineString,university,"[19.0824944, 47.485095]"
+6331,LineString,university,"[19.0819294, 47.4848667]"
+6332,LineString,university,"[19.0823506, 47.4846435]"
+6333,LineString,school,"[19.0168572, 47.5726386]"
+6334,LineString,school,"[19.0173818, 47.5726252]"
+6335,LineString,school,"[19.0174141, 47.5725889]"
+6336,LineString,library,"[19.0557723, 47.5708676]"
+6337,LineString,nightclub,"[19.1027099, 47.4761854]"
+6338,LineString,place_of_worship,"[19.3981197, 47.4256583]"
 6339,Point,courthouse,"[19.0519431, 47.5096142]"
 6340,Point,bank,"[19.0521913, 47.5043232]"
 6341,Point,public_building,"[19.0494273, 47.4978942]"
