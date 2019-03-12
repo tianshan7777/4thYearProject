@@ -12,7 +12,7 @@ total_adj_r2 = []
 #List all the attributes that both ingatlan and alberlet have
 attributes = ['apartment', 'house', 'number_of_whole_rooms', 'floor', 'number_of_half_rooms', 'furnish_furnished', 'furnish_partly_furnished', 'view_garden', 'view_panoramic', 'view_street', 'balcony', 'lift', 'air_conditioner', 'utility_double_comfort', 'heating_gas', 'heating_wall_heating', 'heating_combination', 'heating_ceiling', 'heating_central_heating', 'heating_electric', 'heating_floor', 'heating_circulating', 'heating_district', 'available_immediately', 'condition_of_property_renovated', 'parking']
 
-my_list = list(combinations(attributes, 20))
+my_list = list(combinations(attributes, 19))
 
 my_list = [list(item) for item in my_list]
 
@@ -49,11 +49,11 @@ for item in my_list:
 max_r2 = total_r2.index(max(total_r2))
 max_adj_r2 = total_adj_r2.index(max(total_adj_r2))
 
-print('all combinations:', my_list, '\n')
+#print('all combinations:', my_list, '\n')
 
-print('all R square:', total_r2, '\n')
+#print('all R square:', total_r2, '\n')
 
-print('all adj R square:', total_adj_r2, '\n')
+#print('all adj R square:', total_adj_r2, '\n')
 
 print('max R square', max(total_r2), 'index', max_r2, '\n')
 print('max adjusted R sqaure', max(total_adj_r2), 'index', max_adj_r2, '\n')
@@ -61,5 +61,4 @@ print('max adjusted R sqaure', max(total_adj_r2), 'index', max_adj_r2, '\n')
 print('max R square combination:', my_list[max_r2], '\n')
 print('max ajd R square combination:', my_list[max_adj_r2], '\n')
 
-print(my_list)
 

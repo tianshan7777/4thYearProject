@@ -1,0 +1,11 @@
+max R square 0.21625879684296329 index 69927 
+
+max adjusted R sqaure 0.20899839564355627 index 69927 
+
+max R square combination: ['apartment', 'house', 'number_of_whole_rooms', 'floor', 'number_of_half_rooms', 'furnish_furnished', 'view_panoramic', 'view_street', 'balcony', 'lift', 'air_conditioner', 'heating_gas', 'heating_wall_heating', 'heating_central_heating', 'heating_electric', 'heating_floor', 'heating_circulating', 'heating_district', 'condition_of_property_renovated'] 
+
+max ajd R square combination: ['apartment', 'house', 'number_of_whole_rooms', 'floor', 'number_of_half_rooms', 'furnish_furnished', 'view_panoramic', 'view_street', 'balcony', 'lift', 'air_conditioner', 'heating_gas', 'heating_wall_heating', 'heating_central_heating', 'heating_electric', 'heating_floor', 'heating_circulating', 'heating_district', 'condition_of_property_renovated'] 
+
+eduroam-int-dhcp-97-47-243:analysis tianshan$ 
+
+\\19 both
