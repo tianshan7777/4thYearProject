@@ -1,0 +1,872 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    \usepackage{mathrsfs}
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+    \definecolor{ansi-default-inverse-fg}{HTML}{FFFFFF}
+    \definecolor{ansi-default-inverse-bg}{HTML}{000000}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatibility definitions
+    \def\gt{>}
+    \def\lt{<}
+    \let\Oldtex\TeX
+    \let\Oldlatex\LaTeX
+    \renewcommand{\TeX}{\textrm{\Oldtex}}
+    \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
+    % Document parameters
+    % Document title
+    \title{q0\_multi\_analysis\_basic\_coefficient\_analysis}
+    
+    
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \#This notebook is for analysing coefficients table for basic features
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{statsmodels}\PY{n+nn}{.}\PY{n+nn}{api} \PY{k}{as} \PY{n+nn}{sm}
+        \PY{k+kn}{from} \PY{n+nn}{statsmodels}\PY{n+nn}{.}\PY{n+nn}{formula}\PY{n+nn}{.}\PY{n+nn}{api} \PY{k}{import} \PY{n}{ols}
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        \PY{c+c1}{\PYZsh{}OLS}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{model\PYZus{}selection} \PY{k}{import} \PY{n}{KFold}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{linear\PYZus{}model} \PY{k}{import} \PY{n}{LinearRegression}\PY{p}{,} \PY{n}{LassoLarsIC}
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{from} \PY{n+nn}{IPython}\PY{n+nn}{.}\PY{n+nn}{display} \PY{k}{import} \PY{n}{HTML}\PY{p}{,} \PY{n}{display}
+        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+        \PY{k+kn}{import} \PY{n+nn}{seaborn} \PY{k}{as} \PY{n+nn}{sns}
+        \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{c+c1}{\PYZsh{}Load data}
+        \PY{n}{data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rent\PYZus{}clean.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+/usr/local/lib/python3.7/site-packages/IPython/core/interactiveshell.py:3020: DtypeWarning: Columns (39,50,111) have mixed types. Specify dtype option on import or set low\_memory=False.
+  interactivity=interactivity, compiler=compiler, result=result)
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{c+c1}{\PYZsh{} basic specifications}
+        \PY{c+c1}{\PYZsh{} fit our model with .fit() and show results}
+        \PY{c+c1}{\PYZsh{} we use statsmodels\PYZsq{} formula API to invoke the syntax below,}
+        \PY{c+c1}{\PYZsh{} where we write out the formula using \PYZti{}}
+        \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{ols}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} apartment + number\PYZus{}of\PYZus{}whole\PYZus{}rooms + number\PYZus{}of\PYZus{}half\PYZus{}rooms + floor}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} summarize our model}
+        \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+        \PY{n}{HTML}\PY{p}{(}
+        \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+            \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}3}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.027
+Model:                            OLS   Adj. R-squared:                  0.026
+Method:                 Least Squares   F-statistic:                     66.96
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):           5.56e-56
+Time:                        19:25:40   Log-Likelihood:                -27654.
+No. Observations:                9759   AIC:                         5.532e+04
+Df Residuals:                    9754   BIC:                         5.535e+04
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept                 7.5535      0.478     15.789      0.000       6.616       8.491
+apartment                 3.4394      0.454      7.571      0.000       2.549       4.330
+number\_of\_whole\_rooms     0.3656      0.044      8.383      0.000       0.280       0.451
+number\_of\_half\_rooms     -0.6910      0.080     -8.674      0.000      -0.847      -0.535
+floor                     0.1015      0.020      5.098      0.000       0.062       0.141
+==============================================================================
+Omnibus:                     3759.012   Durbin-Watson:                   1.830
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            22684.120
+Skew:                           1.736   Prob(JB):                         0.00
+Kurtosis:                       9.613   Cond. No.                         61.3
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c+c1}{\PYZsh{} basic specifications + basic decorations }
+        \PY{c+c1}{\PYZsh{} fit our model with .fit() and show results}
+        \PY{c+c1}{\PYZsh{} we use statsmodels\PYZsq{} formula API to invoke the syntax below,}
+        \PY{c+c1}{\PYZsh{} where we write out the formula using \PYZti{}}
+        \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{ols}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} apartment + number\PYZus{}of\PYZus{}whole\PYZus{}rooms + number\PYZus{}of\PYZus{}half\PYZus{}rooms + floor + lift + air\PYZus{}conditioner + furnish\PYZus{}furnished}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} summarize our model}
+        \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+        \PY{n}{HTML}\PY{p}{(}
+        \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+            \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}5}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.192
+Model:                            OLS   Adj. R-squared:                  0.190
+Method:                 Least Squares   F-statistic:                     131.2
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          8.10e-174
+Time:                        19:25:41   Log-Likelihood:                -10873.
+No. Observations:                3884   AIC:                         2.176e+04
+Df Residuals:                    3876   BIC:                         2.181e+04
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept                 7.5150      2.335      3.218      0.001       2.936      12.094
+apartment                 1.2193      2.316      0.527      0.599      -3.321       5.759
+number\_of\_whole\_rooms     0.2682      0.071      3.772      0.000       0.129       0.408
+number\_of\_half\_rooms     -0.7394      0.123     -6.022      0.000      -0.980      -0.499
+floor                    -0.0971      0.036     -2.719      0.007      -0.167      -0.027
+lift                      1.5103      0.153      9.894      0.000       1.211       1.810
+air\_conditioner           2.6617      0.140     18.967      0.000       2.387       2.937
+furnish\_furnished         1.4416      0.137     10.517      0.000       1.173       1.710
+==============================================================================
+Omnibus:                     1208.688   Durbin-Watson:                   1.897
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5225.850
+Skew:                           1.459   Prob(JB):                         0.00
+Kurtosis:                       7.876   Cond. No.                         214.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{c+c1}{\PYZsh{} basic specifications + basic decoration + basic view}
+        \PY{c+c1}{\PYZsh{} fit our model with .fit() and show results}
+        \PY{c+c1}{\PYZsh{} we use statsmodels\PYZsq{} formula API to invoke the syntax below,}
+        \PY{c+c1}{\PYZsh{} where we write out the formula using \PYZti{}}
+        \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{ols}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} apartment + number\PYZus{}of\PYZus{}whole\PYZus{}rooms + number\PYZus{}of\PYZus{}half\PYZus{}rooms + floor + lift + air\PYZus{}conditioner + furnish\PYZus{}furnished + view\PYZus{}garden + view\PYZus{}panoramic + view\PYZus{}street}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} summarize our model}
+        \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+        \PY{n}{HTML}\PY{p}{(}
+        \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+            \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}7}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.204
+Model:                            OLS   Adj. R-squared:                  0.202
+Method:                 Least Squares   F-statistic:                     99.21
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          1.61e-183
+Time:                        19:25:43   Log-Likelihood:                -10843.
+No. Observations:                3884   AIC:                         2.171e+04
+Df Residuals:                    3873   BIC:                         2.178e+04
+Df Model:                          10                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept                 7.4605      2.332      3.199      0.001       2.888      12.033
+apartment                 1.4430      2.301      0.627      0.531      -3.069       5.955
+number\_of\_whole\_rooms     0.1945      0.072      2.702      0.007       0.053       0.336
+number\_of\_half\_rooms     -0.7711      0.122     -6.316      0.000      -1.011      -0.532
+floor                    -0.1618      0.037     -4.372      0.000      -0.234      -0.089
+lift                      1.6742      0.153     10.942      0.000       1.374       1.974
+air\_conditioner           2.5117      0.141     17.827      0.000       2.235       2.788
+furnish\_furnished         1.5203      0.137     11.134      0.000       1.253       1.788
+view\_garden               0.1154      0.230      0.501      0.616      -0.336       0.567
+view\_panoramic            0.9902      0.242      4.099      0.000       0.517       1.464
+view\_street              -0.4058      0.221     -1.836      0.066      -0.839       0.027
+==============================================================================
+Omnibus:                     1225.532   Durbin-Watson:                   1.891
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             5420.430
+Skew:                           1.473   Prob(JB):                         0.00
+Kurtosis:                       7.982   Cond. No.                         216.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{c+c1}{\PYZsh{} basic specifications + basic decoration + basic view + district}
+        \PY{c+c1}{\PYZsh{} fit our model with .fit() and show results}
+        \PY{c+c1}{\PYZsh{} we use statsmodels\PYZsq{} formula API to invoke the syntax below,}
+        \PY{c+c1}{\PYZsh{} where we write out the formula using \PYZti{}}
+        \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{ols}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} apartment + number\PYZus{}of\PYZus{}whole\PYZus{}rooms + number\PYZus{}of\PYZus{}half\PYZus{}rooms + floor + lift + air\PYZus{}conditioner + furnish\PYZus{}furnished + view\PYZus{}garden + view\PYZus{}panoramic + view\PYZus{}street + district\PYZus{}i + district\PYZus{}ii + district\PYZus{}iii + district\PYZus{}iv + district\PYZus{}v + district\PYZus{}vi + district\PYZus{}vii + district\PYZus{}viii + district\PYZus{}ix + district\PYZus{}x + district\PYZus{}xi + district\PYZus{}xii + district\PYZus{}xiii + district\PYZus{}xiv + district\PYZus{}xv + district\PYZus{}xvi + district\PYZus{}xvii + district\PYZus{}xviii + district\PYZus{}xix + district\PYZus{}xx + district\PYZus{}xxi + district\PYZus{}xxii + district\PYZus{}xxiii}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} summarize our model}
+        \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+        \PY{n}{HTML}\PY{p}{(}
+        \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+            \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}9}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.273
+Model:                            OLS   Adj. R-squared:                  0.267
+Method:                 Least Squares   F-statistic:                     45.17
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          1.71e-238
+Time:                        19:25:44   Log-Likelihood:                -10667.
+No. Observations:                3884   AIC:                         2.140e+04
+Df Residuals:                    3851   BIC:                         2.161e+04
+Df Model:                          32                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept                 7.6594      2.152      3.559      0.000       3.440      11.879
+apartment                 0.7633      2.212      0.345      0.730      -3.573       5.100
+number\_of\_whole\_rooms    -0.0129      0.071     -0.181      0.856      -0.152       0.126
+number\_of\_half\_rooms     -0.6513      0.118     -5.506      0.000      -0.883      -0.419
+floor                    -0.0990      0.037     -2.691      0.007      -0.171      -0.027
+lift                      1.1416      0.154      7.433      0.000       0.840       1.443
+air\_conditioner           2.3603      0.136     17.322      0.000       2.093       2.627
+furnish\_furnished         1.1659      0.135      8.608      0.000       0.900       1.431
+view\_garden               0.2122      0.223      0.953      0.340      -0.224       0.648
+view\_panoramic            1.0495      0.238      4.402      0.000       0.582       1.517
+view\_street              -0.5403      0.214     -2.529      0.011      -0.959      -0.121
+district\_i                2.8384      0.327      8.692      0.000       2.198       3.479
+district\_ii               1.6910      0.257      6.584      0.000       1.187       2.195
+district\_iii              0.6489      0.349      1.857      0.063      -0.036       1.334
+district\_iv              -1.0297      0.609     -1.692      0.091      -2.223       0.164
+district\_v                3.5066      0.250     14.015      0.000       3.016       3.997
+district\_vi               2.6088      0.245     10.639      0.000       2.128       3.090
+district\_vii              1.0378      0.284      3.651      0.000       0.480       1.595
+district\_viii             0.5681      0.285      1.992      0.046       0.009       1.127
+district\_ix               0.8450      0.287      2.947      0.003       0.283       1.407
+district\_x               -1.1226      0.538     -2.088      0.037      -2.177      -0.069
+district\_xi               0.6602      0.279      2.368      0.018       0.114       1.207
+district\_xii              0.8861      0.317      2.794      0.005       0.264       1.508
+district\_xiii             0.6879      0.257      2.680      0.007       0.185       1.191
+district\_xiv             -0.2983      0.315     -0.947      0.344      -0.916       0.319
+district\_xv               0.0736      0.607      0.121      0.903      -1.116       1.263
+district\_xvi             -0.5274      0.926     -0.570      0.569      -2.343       1.288
+district\_xvii            -0.1558      1.166     -0.134      0.894      -2.441       2.130
+district\_xviii           -1.2444      0.708     -1.757      0.079      -2.633       0.144
+district\_xix              0.3720      0.898      0.414      0.679      -1.389       2.133
+district\_xx              -1.1135      1.062     -1.048      0.295      -3.196       0.969
+district\_xxi             -0.0272      0.925     -0.029      0.977      -1.841       1.786
+district\_xxii            -1.8423      0.926     -1.990      0.047      -3.657      -0.027
+district\_xxiii           -1.4038      1.825     -0.769      0.442      -4.982       2.174
+==============================================================================
+Omnibus:                     1289.638   Durbin-Watson:                   1.896
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             7151.887
+Skew:                           1.477   Prob(JB):                         0.00
+Kurtosis:                       8.956   Cond. No.                     4.70e+15
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 3.09e-27. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{c+c1}{\PYZsh{} basic specifications + basic decoration + basic view + district + heating }
+         \PY{c+c1}{\PYZsh{} fit our model with .fit() and show results}
+         \PY{c+c1}{\PYZsh{} we use statsmodels\PYZsq{} formula API to invoke the syntax below,}
+         \PY{c+c1}{\PYZsh{} where we write out the formula using \PYZti{}}
+         \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{ols}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} apartment + number\PYZus{}of\PYZus{}whole\PYZus{}rooms + number\PYZus{}of\PYZus{}half\PYZus{}rooms + floor + lift + air\PYZus{}conditioner + furnish\PYZus{}furnished + view\PYZus{}garden + view\PYZus{}panoramic + view\PYZus{}street + district\PYZus{}i + district\PYZus{}ii + district\PYZus{}iii + district\PYZus{}iv + district\PYZus{}v + district\PYZus{}vi + district\PYZus{}vii + district\PYZus{}viii + district\PYZus{}ix + district\PYZus{}x + district\PYZus{}xi + district\PYZus{}xii + district\PYZus{}xiii + district\PYZus{}xiv + district\PYZus{}xv + district\PYZus{}xvi + district\PYZus{}xvii + district\PYZus{}xviii + district\PYZus{}xix + district\PYZus{}xx + district\PYZus{}xxi + district\PYZus{}xxii + district\PYZus{}xxiii + heating\PYZus{}gas + heating\PYZus{}wall\PYZus{}heating + heating\PYZus{}combination + heating\PYZus{}ceiling + heating\PYZus{}central\PYZus{}heating + heating\PYZus{}electric + heating\PYZus{}floor + heating\PYZus{}circulating + heating\PYZus{}district}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} summarize our model}
+         \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+         \PY{n}{HTML}\PY{p}{(}
+         \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+             \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+         \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}11}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.290
+Model:                            OLS   Adj. R-squared:                  0.282
+Method:                 Least Squares   F-statistic:                     38.21
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          3.46e-250
+Time:                        19:25:46   Log-Likelihood:                -10621.
+No. Observations:                3884   AIC:                         2.133e+04
+Df Residuals:                    3842   BIC:                         2.159e+04
+Df Model:                          41                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+Intercept                   7.5204      2.133      3.526      0.000       3.338      11.702
+apartment                   1.6317      2.194      0.744      0.457      -2.670       5.934
+number\_of\_whole\_rooms       0.0088      0.073      0.120      0.904      -0.134       0.152
+number\_of\_half\_rooms       -0.5998      0.118     -5.093      0.000      -0.831      -0.369
+floor                      -0.0841      0.037     -2.253      0.024      -0.157      -0.011
+lift                        1.0693      0.161      6.627      0.000       0.753       1.386
+air\_conditioner             2.3191      0.138     16.769      0.000       2.048       2.590
+furnish\_furnished           1.1662      0.134      8.690      0.000       0.903       1.429
+view\_garden                 0.4136      0.223      1.857      0.063      -0.023       0.850
+view\_panoramic              1.1484      0.238      4.834      0.000       0.683       1.614
+view\_street                -0.3475      0.214     -1.625      0.104      -0.767       0.072
+district\_i                  2.6961      0.326      8.265      0.000       2.057       3.336
+district\_ii                 1.6075      0.257      6.248      0.000       1.103       2.112
+district\_iii                0.6956      0.346      2.008      0.045       0.016       1.375
+district\_iv                -0.6227      0.609     -1.023      0.306      -1.816       0.571
+district\_v                  3.3325      0.252     13.216      0.000       2.838       3.827
+district\_vi                 2.4097      0.248      9.722      0.000       1.924       2.896
+district\_vii                0.8697      0.286      3.045      0.002       0.310       1.430
+district\_viii               0.4382      0.286      1.531      0.126      -0.123       0.999
+district\_ix                 0.6978      0.286      2.438      0.015       0.137       1.259
+district\_x                 -0.8594      0.536     -1.605      0.109      -1.909       0.191
+district\_xi                 0.7358      0.277      2.660      0.008       0.194       1.278
+district\_xii                0.7677      0.316      2.433      0.015       0.149       1.386
+district\_xiii               0.6780      0.255      2.657      0.008       0.178       1.178
+district\_xiv               -0.3437      0.312     -1.101      0.271      -0.956       0.268
+district\_xv                 0.2997      0.603      0.497      0.619      -0.883       1.483
+district\_xvi               -0.5614      0.917     -0.612      0.541      -2.360       1.237
+district\_xvii               0.2798      1.160      0.241      0.809      -1.994       2.553
+district\_xviii             -1.1046      0.702     -1.573      0.116      -2.481       0.272
+district\_xix                0.5264      0.890      0.591      0.554      -1.219       2.272
+district\_xx                -1.1520      1.052     -1.095      0.274      -3.215       0.911
+district\_xxi                0.1549      0.918      0.169      0.866      -1.645       1.955
+district\_xxii              -2.0945      0.920     -2.277      0.023      -3.898      -0.291
+district\_xxiii             -1.9306      1.831     -1.054      0.292      -5.520       1.659
+heating\_gas                -0.9720      0.249     -3.898      0.000      -1.461      -0.483
+heating\_wall\_heating        1.6450      1.097      1.500      0.134      -0.505       3.795
+heating\_combination        -1.1453      0.188     -6.089      0.000      -1.514      -0.777
+heating\_ceiling             0.1284      1.215      0.106      0.916      -2.254       2.511
+heating\_central\_heating    -0.8871      0.194     -4.572      0.000      -1.268      -0.507
+heating\_electric            0.4973      0.397      1.252      0.211      -0.281       1.276
+heating\_floor               3.8884      1.203      3.232      0.001       1.529       6.247
+heating\_circulating         0.8414      0.523      1.608      0.108      -0.184       1.867
+heating\_district           -1.7662      0.302     -5.844      0.000      -2.359      -1.174
+==============================================================================
+Omnibus:                     1317.409   Durbin-Watson:                   1.880
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             8015.113
+Skew:                           1.481   Prob(JB):                         0.00
+Kurtosis:                       9.384   Cond. No.                     7.72e+15
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.16e-27. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{(}\PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{size(sqm)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number of half rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{size(sqm)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{half\PYZus{}room\PYZus{}1.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_13_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{(}\PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number of half rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{half\PYZus{}room\PYZus{}3.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_14_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}15}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+         \PY{n}{sns}\PY{o}{.}\PY{n}{boxplot}\PY{p}{(}\PY{n}{x} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}total}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{y} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{data} \PY{o}{=} \PY{n}{data}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{half\PYZus{}room\PYZus{}2.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_15_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}16}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+         \PY{n}{sns}\PY{o}{.}\PY{n}{boxplot}\PY{p}{(}\PY{n}{x} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}total}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{y} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{data} \PY{o}{=} \PY{n}{data}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{half\PYZus{}room\PYZus{}4.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_16_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}17}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{(}\PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{utilities\PYZus{}fee\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number of half rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{utilities fee per sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{half\PYZus{}room\PYZus{}5.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_17_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{scatterplot}\PY{p}{(}\PY{n}{x} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{longitude}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{y}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{latitude}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{half\PYZus{}room\PYZus{}6.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_18_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}19}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{(}\PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price per sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor\PYZus{}1.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_19_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}20}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{catplot}\PY{p}{(}\PY{n}{x} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{floor}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{y}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{lift}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{kind}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{swarm}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor\PYZus{}2.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_20_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}21}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{(}\PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{size(sqm)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{size(sqm)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor\PYZus{}3.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_21_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}22}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize} \PY{o}{=} \PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{(}\PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number of half rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize} \PY{o}{=} \PY{l+m+mi}{14}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor\PYZus{}5.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_22_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}23}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{catplot}\PY{p}{(}\PY{n}{y}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{heating\PYZus{}total}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{condition\PYZus{}of\PYZus{}property}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{kind}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{count}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{palette}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{pastel}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{,} \PY{n}{height}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{aspect}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{;}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}1.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_23_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}24}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+         \PY{n}{sns}\PY{o}{.}\PY{n}{boxplot}\PY{p}{(}\PY{n}{x}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{heating\PYZus{}total}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{y}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{utilities\PYZus{}fee\PYZus{}per\PYZus{}sqm}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{,} \PY{n}{palette}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Set3}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}2.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{q0_multi_analysis_basic_coefficient_analysis_files/q0_multi_analysis_basic_coefficient_analysis_24_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} 
+\end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}

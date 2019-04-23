@@ -1,0 +1,1255 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    \usepackage{mathrsfs}
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+    \definecolor{ansi-default-inverse-fg}{HTML}{FFFFFF}
+    \definecolor{ansi-default-inverse-bg}{HTML}{000000}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatibility definitions
+    \def\gt{>}
+    \def\lt{<}
+    \let\Oldtex\TeX
+    \let\Oldlatex\LaTeX
+    \renewcommand{\TeX}{\textrm{\Oldtex}}
+    \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
+    % Document parameters
+    % Document title
+    \title{q0\_multi\_analysis\_basic\_model}
+    
+    
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \#This notebook is for building model on the features selected with
+basic features
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{statsmodels}\PY{n+nn}{.}\PY{n+nn}{api} \PY{k}{as} \PY{n+nn}{sm}
+        \PY{k+kn}{from} \PY{n+nn}{statsmodels}\PY{n+nn}{.}\PY{n+nn}{formula}\PY{n+nn}{.}\PY{n+nn}{api} \PY{k}{import} \PY{n}{ols}
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        \PY{c+c1}{\PYZsh{}OLS}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{model\PYZus{}selection} \PY{k}{import} \PY{n}{KFold}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{linear\PYZus{}model} \PY{k}{import} \PY{n}{LinearRegression}\PY{p}{,} \PY{n}{LassoCV}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{feature\PYZus{}selection} \PY{k}{import} \PY{n}{SelectFromModel}
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{from} \PY{n+nn}{IPython}\PY{n+nn}{.}\PY{n+nn}{display} \PY{k}{import} \PY{n}{HTML}\PY{p}{,} \PY{n}{display}
+        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+        \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{c+c1}{\PYZsh{}Load data}
+        \PY{n}{data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rent\PYZus{}clean.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+/usr/local/lib/python3.7/site-packages/IPython/core/interactiveshell.py:3020: DtypeWarning: Columns (39,50,111) have mixed types. Specify dtype option on import or set low\_memory=False.
+  interactivity=interactivity, compiler=compiler, result=result)
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{c+c1}{\PYZsh{}All}
+        \PY{n}{test} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}circulating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}garden}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}viii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}central\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+        \PY{n}{test} \PY{o}{=} \PY{n}{test}\PY{o}{.}\PY{n}{dropna}\PY{p}{(}\PY{p}{)}
+        
+        \PY{n}{X} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}circulating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}garden}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}viii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}central\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+        \PY{n}{y} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+        
+        \PY{n}{scores} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+        \PY{n}{cv} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{42}\PY{p}{,} \PY{n}{shuffle} \PY{o}{=} \PY{k+kc}{False}\PY{p}{)}
+        \PY{k}{for} \PY{n}{train\PYZus{}index}\PY{p}{,} \PY{n}{test\PYZus{}index} \PY{o+ow}{in} \PY{n}{cv}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{n}{X}\PY{p}{)}\PY{p}{:}
+            \PY{c+c1}{\PYZsh{}print(\PYZsq{}Train Index:\PYZsq{}, train\PYZus{}index, \PYZsq{}\PYZbs{}n\PYZsq{})}
+            \PY{c+c1}{\PYZsh{}print(\PYZsq{}Test Index:\PYZsq{}, test\PYZus{}index)}
+            
+            \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{]}\PY{p}{,} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}
+            \PY{n}{my\PYZus{}model} \PY{o}{=} \PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+            \PY{n}{scores}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{)}
+        
+        \PY{n}{r\PYZus{}square} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{scores}\PY{p}{)}
+        \PY{n}{adj\PYZus{}r} \PY{o}{=} \PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r\PYZus{}square}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{n}{X}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+        
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{r\PYZus{}square}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Adjusted R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{adj\PYZus{}r}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+/usr/local/lib/python3.7/site-packages/sklearn/linear\_model/base.py:485: RuntimeWarning: internal gelsd driver lwork query error, required iwork dimension not returned. This is likely the result of LAPACK bug 0038, fixed in LAPACK 3.2.2 (released July 21, 2010). Falling back to 'gelss' driver.
+  linalg.lstsq(X, y)
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+R Square: 0.2402839365617501 
+
+Adjusted R Square: 0.23456733930183593 
+
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{ols}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} apartment + number\PYZus{}of\PYZus{}whole\PYZus{}rooms + number\PYZus{}of\PYZus{}half\PYZus{}rooms + floor + lift + air\PYZus{}conditioner + furnish\PYZus{}furnished + view\PYZus{}garden + view\PYZus{}panoramic + view\PYZus{}street + heating\PYZus{}gas + heating\PYZus{}wall\PYZus{}heating + heating\PYZus{}combination + heating\PYZus{}ceiling + heating\PYZus{}central\PYZus{}heating + heating\PYZus{}electric + heating\PYZus{}floor + heating\PYZus{}circulating + heating\PYZus{}district + district\PYZus{}i + district\PYZus{}ii + district\PYZus{}iii + district\PYZus{}iv + district\PYZus{}v + district\PYZus{}vi + district\PYZus{}vii + district\PYZus{}viii + district\PYZus{}ix + district\PYZus{}x + district\PYZus{}xi + district\PYZus{}xii + district\PYZus{}xiii + district\PYZus{}xiv + district\PYZus{}xv + district\PYZus{}xvi + district\PYZus{}xvii + district\PYZus{}xviii + district\PYZus{}xix + district\PYZus{}xx + district\PYZus{}xxi + district\PYZus{}xxii + district\PYZus{}xxiii}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} summarize our model}
+        \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+        \PY{n}{HTML}\PY{p}{(}
+        \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+            \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{} \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}4}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.290
+Model:                            OLS   Adj. R-squared:                  0.282
+Method:                 Least Squares   F-statistic:                     38.21
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          3.46e-250
+Time:                        19:24:30   Log-Likelihood:                -10621.
+No. Observations:                3884   AIC:                         2.133e+04
+Df Residuals:                    3842   BIC:                         2.159e+04
+Df Model:                          41                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+Intercept                   7.5204      2.133      3.526      0.000       3.338      11.702
+apartment                   1.6317      2.194      0.744      0.457      -2.670       5.934
+number\_of\_whole\_rooms       0.0088      0.073      0.120      0.904      -0.134       0.152
+number\_of\_half\_rooms       -0.5998      0.118     -5.093      0.000      -0.831      -0.369
+floor                      -0.0841      0.037     -2.253      0.024      -0.157      -0.011
+lift                        1.0693      0.161      6.627      0.000       0.753       1.386
+air\_conditioner             2.3191      0.138     16.769      0.000       2.048       2.590
+furnish\_furnished           1.1662      0.134      8.690      0.000       0.903       1.429
+view\_garden                 0.4136      0.223      1.857      0.063      -0.023       0.850
+view\_panoramic              1.1484      0.238      4.834      0.000       0.683       1.614
+view\_street                -0.3475      0.214     -1.625      0.104      -0.767       0.072
+heating\_gas                -0.9720      0.249     -3.898      0.000      -1.461      -0.483
+heating\_wall\_heating        1.6450      1.097      1.500      0.134      -0.505       3.795
+heating\_combination        -1.1453      0.188     -6.089      0.000      -1.514      -0.777
+heating\_ceiling             0.1284      1.215      0.106      0.916      -2.254       2.511
+heating\_central\_heating    -0.8871      0.194     -4.572      0.000      -1.268      -0.507
+heating\_electric            0.4973      0.397      1.252      0.211      -0.281       1.276
+heating\_floor               3.8884      1.203      3.232      0.001       1.529       6.247
+heating\_circulating         0.8414      0.523      1.608      0.108      -0.184       1.867
+heating\_district           -1.7662      0.302     -5.844      0.000      -2.359      -1.174
+district\_i                  2.6961      0.326      8.265      0.000       2.057       3.336
+district\_ii                 1.6075      0.257      6.248      0.000       1.103       2.112
+district\_iii                0.6956      0.346      2.008      0.045       0.016       1.375
+district\_iv                -0.6227      0.609     -1.023      0.306      -1.816       0.571
+district\_v                  3.3325      0.252     13.216      0.000       2.838       3.827
+district\_vi                 2.4097      0.248      9.722      0.000       1.924       2.896
+district\_vii                0.8697      0.286      3.045      0.002       0.310       1.430
+district\_viii               0.4382      0.286      1.531      0.126      -0.123       0.999
+district\_ix                 0.6978      0.286      2.438      0.015       0.137       1.259
+district\_x                 -0.8594      0.536     -1.605      0.109      -1.909       0.191
+district\_xi                 0.7358      0.277      2.660      0.008       0.194       1.278
+district\_xii                0.7677      0.316      2.433      0.015       0.149       1.386
+district\_xiii               0.6780      0.255      2.657      0.008       0.178       1.178
+district\_xiv               -0.3437      0.312     -1.101      0.271      -0.956       0.268
+district\_xv                 0.2997      0.603      0.497      0.619      -0.883       1.483
+district\_xvi               -0.5614      0.917     -0.612      0.541      -2.360       1.237
+district\_xvii               0.2798      1.160      0.241      0.809      -1.994       2.553
+district\_xviii             -1.1046      0.702     -1.573      0.116      -2.481       0.272
+district\_xix                0.5264      0.890      0.591      0.554      -1.219       2.272
+district\_xx                -1.1520      1.052     -1.095      0.274      -3.215       0.911
+district\_xxi                0.1549      0.918      0.169      0.866      -1.645       1.955
+district\_xxii              -2.0945      0.920     -2.277      0.023      -3.898      -0.291
+district\_xxiii             -1.9306      1.831     -1.054      0.292      -5.520       1.659
+==============================================================================
+Omnibus:                     1317.409   Durbin-Watson:                   1.880
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             8015.113
+Skew:                           1.481   Prob(JB):                         0.00
+Kurtosis:                       9.384   Cond. No.                     7.72e+15
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.16e-27. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{c+c1}{\PYZsh{}Selected from Model}
+        \PY{n}{my\PYZus{}model} \PY{o}{=} \PY{n}{SelectFromModel}\PY{p}{(}\PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+        \PY{n}{new\PYZus{}model} \PY{o}{=} \PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+        \PY{n}{X\PYZus{}new} \PY{o}{=} \PY{n}{new\PYZus{}model}\PY{o}{.}\PY{n}{transform}\PY{p}{(}\PY{n}{X}\PY{p}{)}
+        \PY{n}{feature\PYZus{}idx} \PY{o}{=} \PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{get\PYZus{}support}\PY{p}{(}\PY{p}{)}
+        \PY{n}{feature\PYZus{}name} \PY{o}{=} \PY{n}{X}\PY{o}{.}\PY{n}{columns}\PY{p}{[}\PY{n}{feature\PYZus{}idx}\PY{p}{]}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{feature\PYZus{}name}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Index(['district\_v', 'air\_conditioner', 'district\_i', 'district\_vi',
+       'heating\_floor', 'furnish\_furnished', 'view\_panoramic', 'district\_iv',
+       'district\_xviii', 'district\_x', 'district\_xxii', 'heating\_combination',
+       'heating\_district'],
+      dtype='object')
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{test} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+               \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+               \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+               \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+        \PY{n}{test} \PY{o}{=} \PY{n}{test}\PY{o}{.}\PY{n}{dropna}\PY{p}{(}\PY{p}{)}
+        
+        \PY{n}{X} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+               \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+               \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+               \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+        \PY{n}{y} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+        
+        \PY{c+c1}{\PYZsh{}10 fold}
+        \PY{n}{scores} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+        \PY{n}{cv} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{42}\PY{p}{,} \PY{n}{shuffle} \PY{o}{=} \PY{k+kc}{False}\PY{p}{)}
+        \PY{k}{for} \PY{n}{train\PYZus{}index}\PY{p}{,} \PY{n}{test\PYZus{}index} \PY{o+ow}{in} \PY{n}{cv}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{n}{X}\PY{p}{)}\PY{p}{:}
+            \PY{c+c1}{\PYZsh{}print(\PYZsq{}Train Index:\PYZsq{}, train\PYZus{}index, \PYZsq{}\PYZbs{}n\PYZsq{})}
+            \PY{c+c1}{\PYZsh{}print(\PYZsq{}Test Index:\PYZsq{}, test\PYZus{}index)}
+            
+            \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{]}\PY{p}{,} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}
+            \PY{n}{my\PYZus{}model} \PY{o}{=} \PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+            \PY{n}{scores}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{)}
+        
+        \PY{n}{r\PYZus{}square} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{scores}\PY{p}{)}
+        \PY{n}{adj\PYZus{}r} \PY{o}{=} \PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r\PYZus{}square}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{n}{X}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+        
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{r\PYZus{}square}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Adjusted R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{adj\PYZus{}r}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+R Square: 0.18988538149264717 
+
+Adjusted R Square: 0.18845311030529555 
+
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{OLS}\PY{o}{.}\PY{n}{from\PYZus{}formula}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} district\PYZus{}v + air\PYZus{}conditioner + district\PYZus{}i + district\PYZus{}vi + heating\PYZus{}floor + furnish\PYZus{}furnished + view\PYZus{}panoramic + district\PYZus{}iv + district\PYZus{}xviii + district\PYZus{}x + district\PYZus{}xxii + heating\PYZus{}combination + heating\PYZus{}district}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} summarize our model}
+        \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+        \PY{n}{HTML}\PY{p}{(}
+        \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+            \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}8}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.247
+Model:                            OLS   Adj. R-squared:                  0.245
+Method:                 Least Squares   F-statistic:                     185.1
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):               0.00
+Time:                        19:24:45   Log-Likelihood:                -20160.
+No. Observations:                7367   AIC:                         4.035e+04
+Df Residuals:                    7353   BIC:                         4.045e+04
+Df Model:                          13                                         
+Covariance Type:            nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               9.2356      0.089    104.161      0.000       9.062       9.409
+district\_v              3.0440      0.137     22.270      0.000       2.776       3.312
+air\_conditioner         2.3937      0.095     25.229      0.000       2.208       2.580
+district\_i              1.7361      0.223      7.778      0.000       1.299       2.174
+district\_vi             1.7417      0.138     12.587      0.000       1.470       2.013
+heating\_floor           5.0021      0.464     10.789      0.000       4.093       5.911
+furnish\_furnished       1.4136      0.094     15.009      0.000       1.229       1.598
+view\_panoramic          1.3108      0.119     11.036      0.000       1.078       1.544
+district\_iv            -1.4892      0.436     -3.417      0.001      -2.344      -0.635
+district\_xviii         -1.7471      0.561     -3.115      0.002      -2.847      -0.648
+district\_x             -1.6209      0.394     -4.118      0.000      -2.392      -0.849
+district\_xxii          -2.7447      0.663     -4.138      0.000      -4.045      -1.444
+heating\_combination    -0.5508      0.112     -4.932      0.000      -0.770      -0.332
+heating\_district       -1.3640      0.230     -5.918      0.000      -1.816      -0.912
+==============================================================================
+Omnibus:                     2986.895   Durbin-Watson:                   1.860
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            29405.612
+Skew:                           1.668   Prob(JB):                         0.00
+Kurtosis:                      12.201   Cond. No.                         20.5
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{c+c1}{\PYZsh{}Pure Lasso}
+         \PY{n}{test} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}circulating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}garden}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}viii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}central\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{test} \PY{o}{=} \PY{n}{test}\PY{o}{.}\PY{n}{dropna}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{X} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}circulating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}garden}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}viii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}central\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{y} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         
+         \PY{c+c1}{\PYZsh{}10 fold}
+         \PY{n}{scores} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{n}{cv} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{42}\PY{p}{,} \PY{n}{shuffle} \PY{o}{=} \PY{k+kc}{False}\PY{p}{)}
+         \PY{k}{for} \PY{n}{train\PYZus{}index}\PY{p}{,} \PY{n}{test\PYZus{}index} \PY{o+ow}{in} \PY{n}{cv}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{n}{X}\PY{p}{)}\PY{p}{:}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Train Index:\PYZsq{}, train\PYZus{}index, \PYZsq{}\PYZbs{}n\PYZsq{})}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Test Index:\PYZsq{}, test\PYZus{}index)}
+             
+             \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{]}\PY{p}{,} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}
+             \PY{n}{my\PYZus{}model} \PY{o}{=} \PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+             \PY{n}{scores}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{)}
+         
+         \PY{n}{r\PYZus{}square} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{scores}\PY{p}{)}
+         \PY{n}{adj\PYZus{}r} \PY{o}{=} \PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r\PYZus{}square}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{n}{X}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{r\PYZus{}square}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Adjusted R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{adj\PYZus{}r}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+R Square: 0.24028393656175012 
+
+Adjusted R Square: 0.23456733930183604 
+
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{OLS}\PY{o}{.}\PY{n}{from\PYZus{}formula}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} district\PYZus{}v + air\PYZus{}conditioner + district\PYZus{}i + district\PYZus{}vi + heating\PYZus{}floor + furnish\PYZus{}furnished + lift + view\PYZus{}panoramic + district\PYZus{}ii + heating\PYZus{}circulating + heating\PYZus{}electric + view\PYZus{}garden + district\PYZus{}vii + district\PYZus{}xii + district\PYZus{}xi + number\PYZus{}of\PYZus{}whole\PYZus{}rooms + floor + district\PYZus{}viii + view\PYZus{}street + number\PYZus{}of\PYZus{}half\PYZus{}rooms + district\PYZus{}iv + district\PYZus{}xiv + heating\PYZus{}gas + heating\PYZus{}central\PYZus{}heating + district\PYZus{}xviii + district\PYZus{}x + district\PYZus{}xxii + heating\PYZus{}district + heating\PYZus{}combination}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} summarize our model}
+         \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+         \PY{n}{HTML}\PY{p}{(}
+         \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+             \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+         \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}11}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.288
+Model:                            OLS   Adj. R-squared:                  0.283
+Method:                 Least Squares   F-statistic:                     53.72
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          3.88e-258
+Time:                        19:24:52   Log-Likelihood:                -10626.
+No. Observations:                3884   AIC:                         2.131e+04
+Df Residuals:                    3854   BIC:                         2.150e+04
+Df Model:                          29                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+Intercept                   9.7118      0.339     28.624      0.000       9.047      10.377
+district\_v                  2.7185      0.217     12.551      0.000       2.294       3.143
+air\_conditioner             2.3365      0.137     17.001      0.000       2.067       2.606
+district\_i                  2.0889      0.312      6.700      0.000       1.478       2.700
+district\_vi                 1.8053      0.213      8.468      0.000       1.387       2.223
+heating\_floor               3.8593      1.202      3.210      0.001       1.502       6.217
+furnish\_furnished           1.1791      0.133      8.856      0.000       0.918       1.440
+lift                        1.1065      0.159      6.971      0.000       0.795       1.418
+view\_panoramic              1.1747      0.236      4.979      0.000       0.712       1.637
+district\_ii                 1.0157      0.240      4.225      0.000       0.544       1.487
+heating\_circulating         0.8555      0.522      1.639      0.101      -0.168       1.879
+heating\_electric            0.4901      0.396      1.238      0.216      -0.286       1.266
+view\_garden                 0.4172      0.221      1.886      0.059      -0.017       0.851
+district\_vii                0.2779      0.265      1.050      0.294      -0.241       0.797
+district\_xii                0.1823      0.305      0.597      0.551      -0.416       0.781
+district\_xi                 0.1440      0.259      0.556      0.578      -0.364       0.651
+number\_of\_whole\_rooms       0.0076      0.072      0.105      0.916      -0.134       0.150
+floor                      -0.0797      0.037     -2.146      0.032      -0.153      -0.007
+district\_viii              -0.1591      0.263     -0.605      0.545      -0.675       0.357
+view\_street                -0.3335      0.212     -1.572      0.116      -0.749       0.082
+number\_of\_half\_rooms       -0.6106      0.117     -5.199      0.000      -0.841      -0.380
+district\_iv                -1.2078      0.623     -1.940      0.052      -2.428       0.013
+district\_xiv               -0.9220      0.303     -3.042      0.002      -1.516      -0.328
+heating\_gas                -1.0068      0.247     -4.074      0.000      -1.491      -0.522
+heating\_central\_heating    -0.9129      0.191     -4.771      0.000      -1.288      -0.538
+district\_xviii             -1.6883      0.722     -2.338      0.019      -3.104      -0.272
+district\_x                 -1.4435      0.544     -2.653      0.008      -2.510      -0.377
+district\_xxii              -2.6680      0.954     -2.797      0.005      -4.538      -0.798
+heating\_district           -1.8002      0.295     -6.095      0.000      -2.379      -1.221
+heating\_combination        -1.1617      0.185     -6.263      0.000      -1.525      -0.798
+==============================================================================
+Omnibus:                     1312.194   Durbin-Watson:                   1.883
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             7924.685
+Skew:                           1.477   Prob(JB):                         0.00
+Kurtosis:                       9.344   Cond. No.                         82.7
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{c+c1}{\PYZsh{}Lasso with AIC}
+         \PY{n}{test} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}wall\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{apartment}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}circulating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}garden}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xvii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}viii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}central\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}  \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xvi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xx}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxiii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{test} \PY{o}{=} \PY{n}{test}\PY{o}{.}\PY{n}{dropna}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{X} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}wall\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{apartment}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}circulating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}garden}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xvii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}viii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}central\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}  \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xvi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xx}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxiii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{y} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         
+         \PY{c+c1}{\PYZsh{}10 fold}
+         \PY{n}{scores} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{n}{cv} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{42}\PY{p}{,} \PY{n}{shuffle} \PY{o}{=} \PY{k+kc}{False}\PY{p}{)}
+         \PY{k}{for} \PY{n}{train\PYZus{}index}\PY{p}{,} \PY{n}{test\PYZus{}index} \PY{o+ow}{in} \PY{n}{cv}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{n}{X}\PY{p}{)}\PY{p}{:}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Train Index:\PYZsq{}, train\PYZus{}index, \PYZsq{}\PYZbs{}n\PYZsq{})}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Test Index:\PYZsq{}, test\PYZus{}index)}
+             
+             \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{]}\PY{p}{,} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}
+             \PY{n}{my\PYZus{}model} \PY{o}{=} \PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+             \PY{n}{scores}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{)}
+         
+         \PY{n}{r\PYZus{}square} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{scores}\PY{p}{)}
+         \PY{n}{adj\PYZus{}r} \PY{o}{=} \PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r\PYZus{}square}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{n}{X}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{r\PYZus{}square}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Adjusted R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{adj\PYZus{}r}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+R Square: 0.2371391889221918 
+
+Adjusted R Square: 0.23043878396826634 
+
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{OLS}\PY{o}{.}\PY{n}{from\PYZus{}formula}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} heating\PYZus{}floor + district\PYZus{}v + air\PYZus{}conditioner + district\PYZus{}i + district\PYZus{}vi + heating\PYZus{}wall\PYZus{}heating + furnish\PYZus{}furnished + lift + view\PYZus{}panoramic + district\PYZus{}ii + apartment + heating\PYZus{}circulating + heating\PYZus{}electric + view\PYZus{}garden + district\PYZus{}vii + floor + district\PYZus{}xvii + district\PYZus{}viii + district\PYZus{}xv + district\PYZus{}xxi + view\PYZus{}street + number\PYZus{}of\PYZus{}half\PYZus{}rooms + heating\PYZus{}central\PYZus{}heating + heating\PYZus{}gas + heating\PYZus{}combination + district\PYZus{}xiv + district\PYZus{}xvi + district\PYZus{}iv + district\PYZus{}x + district\PYZus{}xx + heating\PYZus{}district + district\PYZus{}xviii + district\PYZus{}xxii + district\PYZus{}xxiii}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} summarize our model}
+         \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+         \PY{n}{HTML}\PY{p}{(}
+         \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+             \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+         \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}14}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}15}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.285
+Model:                            OLS   Adj. R-squared:                  0.279
+Method:                 Least Squares   F-statistic:                     45.44
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          1.99e-252
+Time:                        19:24:55   Log-Likelihood:                -10736.
+No. Observations:                3906   AIC:                         2.154e+04
+Df Residuals:                    3871   BIC:                         2.176e+04
+Df Model:                          34                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+Intercept                   8.3123      2.225      3.735      0.000       3.949      12.675
+heating\_floor               3.9085      1.218      3.209      0.001       1.521       6.296
+district\_v                  2.7195      0.209     13.002      0.000       2.309       3.130
+air\_conditioner             2.3361      0.136     17.177      0.000       2.070       2.603
+district\_i                  2.0003      0.307      6.519      0.000       1.399       2.602
+district\_vi                 1.7274      0.206      8.402      0.000       1.324       2.131
+heating\_wall\_heating        1.6788      1.110      1.512      0.131      -0.498       3.855
+furnish\_furnished           1.1227      0.133      8.456      0.000       0.862       1.383
+lift                        1.0771      0.160      6.725      0.000       0.763       1.391
+view\_panoramic              1.1455      0.237      4.824      0.000       0.680       1.611
+district\_ii                 0.8830      0.227      3.893      0.000       0.438       1.328
+apartment                   1.5483      2.213      0.699      0.484      -2.791       5.888
+heating\_circulating         0.8627      0.528      1.635      0.102      -0.172       1.897
+heating\_electric            0.5109      0.399      1.280      0.201      -0.271       1.293
+view\_garden                 0.4196      0.225      1.868      0.062      -0.021       0.860
+district\_vii                0.1788      0.260      0.687      0.492      -0.331       0.689
+floor                      -0.0900      0.037     -2.419      0.016      -0.163      -0.017
+district\_xvii              -0.4095      1.220     -0.336      0.737      -2.801       1.982
+district\_viii              -0.2701      0.259     -1.043      0.297      -0.778       0.238
+district\_xv                -0.5108      0.616     -0.829      0.407      -1.718       0.697
+district\_xxi               -0.5591      0.962     -0.581      0.561      -2.445       1.327
+view\_street                -0.3224      0.215     -1.497      0.135      -0.745       0.100
+number\_of\_half\_rooms       -0.6070      0.114     -5.348      0.000      -0.830      -0.384
+heating\_central\_heating    -0.8241      0.194     -4.249      0.000      -1.204      -0.444
+heating\_gas                -0.9638      0.249     -3.871      0.000      -1.452      -0.476
+heating\_combination        -1.1333      0.188     -6.027      0.000      -1.502      -0.765
+district\_xiv               -1.0527      0.298     -3.529      0.000      -1.637      -0.468
+district\_xvi               -1.2653      0.961     -1.317      0.188      -3.149       0.618
+district\_iv                -1.3296      0.628     -2.117      0.034      -2.561      -0.098
+district\_x                 -1.5686      0.548     -2.862      0.004      -2.643      -0.494
+district\_xx                -1.8522      1.103     -1.679      0.093      -4.016       0.311
+heating\_district           -1.7246      0.300     -5.742      0.000      -2.313      -1.136
+district\_xviii             -1.8216      0.729     -2.499      0.013      -3.251      -0.392
+district\_xxii              -2.8028      0.963     -2.912      0.004      -4.690      -0.916
+district\_xxiii             -2.6078      1.908     -1.366      0.172      -6.349       1.134
+==============================================================================
+Omnibus:                     1615.387   Durbin-Watson:                   1.871
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            15320.429
+Skew:                           1.710   Prob(JB):                         0.00
+Kurtosis:                      12.080   Cond. No.                         191.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}16}]:} \PY{c+c1}{\PYZsh{}Lasso with BIC}
+         \PY{n}{test} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}wall\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{test} \PY{o}{=} \PY{n}{test}\PY{o}{.}\PY{n}{dropna}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{X} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}wall\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{y} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         
+         \PY{c+c1}{\PYZsh{}10 fold}
+         \PY{n}{scores} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{n}{cv} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{42}\PY{p}{,} \PY{n}{shuffle} \PY{o}{=} \PY{k+kc}{False}\PY{p}{)}
+         \PY{k}{for} \PY{n}{train\PYZus{}index}\PY{p}{,} \PY{n}{test\PYZus{}index} \PY{o+ow}{in} \PY{n}{cv}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{n}{X}\PY{p}{)}\PY{p}{:}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Train Index:\PYZsq{}, train\PYZus{}index, \PYZsq{}\PYZbs{}n\PYZsq{})}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Test Index:\PYZsq{}, test\PYZus{}index)}
+             
+             \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{]}\PY{p}{,} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}
+             \PY{n}{my\PYZus{}model} \PY{o}{=} \PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+             \PY{n}{scores}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{)}
+         
+         \PY{n}{r\PYZus{}square} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{scores}\PY{p}{)}
+         \PY{n}{adj\PYZus{}r} \PY{o}{=} \PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r\PYZus{}square}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{n}{X}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{r\PYZus{}square}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Adjusted R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{adj\PYZus{}r}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+R Square: 0.2412344351434467 
+
+Adjusted R Square: 0.23724991979911358 
+
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}17}]:} \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{OLS}\PY{o}{.}\PY{n}{from\PYZus{}formula}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} district\PYZus{}v + air\PYZus{}conditioner + heating\PYZus{}floor + district\PYZus{}i + district\PYZus{}vi + furnish\PYZus{}furnished + lift + view\PYZus{}panoramic + district\PYZus{}ii + heating\PYZus{}electric + heating\PYZus{}wall\PYZus{}heating + number\PYZus{}of\PYZus{}whole\PYZus{}rooms + heating\PYZus{}combination + district\PYZus{}iv + view\PYZus{}street + number\PYZus{}of\PYZus{}half\PYZus{}rooms + district\PYZus{}xiv + district\PYZus{}xviii + district\PYZus{}x + district\PYZus{}xxii + heating\PYZus{}district}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} summarize our model}
+         \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+         \PY{n}{HTML}\PY{p}{(}
+         \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+             \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+         \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}17}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.277
+Model:                            OLS   Adj. R-squared:                  0.273
+Method:                 Least Squares   F-statistic:                     72.78
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          8.71e-262
+Time:                        19:25:03   Log-Likelihood:                -11072.
+No. Observations:                4021   AIC:                         2.219e+04
+Df Residuals:                    3999   BIC:                         2.233e+04
+Df Model:                          21                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept                 9.2682      0.218     42.599      0.000       8.842       9.695
+district\_v                2.7970      0.196     14.288      0.000       2.413       3.181
+air\_conditioner           2.2532      0.133     16.910      0.000       1.992       2.514
+heating\_floor             4.5340      1.215      3.733      0.000       2.153       6.915
+district\_i                2.0617      0.296      6.972      0.000       1.482       2.641
+district\_vi               1.9112      0.191     10.011      0.000       1.537       2.286
+furnish\_furnished         1.1522      0.132      8.745      0.000       0.894       1.410
+lift                      0.9813      0.141      6.935      0.000       0.704       1.259
+view\_panoramic            0.8191      0.169      4.859      0.000       0.489       1.150
+district\_ii               1.1394      0.217      5.260      0.000       0.715       1.564
+heating\_electric          1.2784      0.375      3.408      0.001       0.543       2.014
+heating\_wall\_heating      2.2047      1.106      1.993      0.046       0.036       4.374
+number\_of\_whole\_rooms     0.0518      0.070      0.737      0.461      -0.086       0.189
+heating\_combination      -0.5117      0.139     -3.688      0.000      -0.784      -0.240
+district\_iv              -1.2253      0.612     -2.003      0.045      -2.425      -0.026
+view\_street              -0.7104      0.138     -5.139      0.000      -0.981      -0.439
+number\_of\_half\_rooms     -0.5994      0.117     -5.141      0.000      -0.828      -0.371
+district\_xiv             -0.9776      0.288     -3.391      0.001      -1.543      -0.412
+district\_xviii           -1.8963      0.728     -2.604      0.009      -3.324      -0.469
+district\_x               -1.6598      0.541     -3.071      0.002      -2.719      -0.600
+district\_xxii            -2.1988      0.933     -2.357      0.018      -4.028      -0.370
+heating\_district         -1.2651      0.257     -4.929      0.000      -1.768      -0.762
+==============================================================================
+Omnibus:                     1316.129   Durbin-Watson:                   1.892
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             7498.567
+Skew:                           1.444   Prob(JB):                         0.00
+Kurtosis:                       9.034   Cond. No.                         57.4
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}19}]:} \PY{c+c1}{\PYZsh{}Correlation}
+         \PY{n}{test} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{test} \PY{o}{=} \PY{n}{test}\PY{o}{.}\PY{n}{dropna}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{X} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{y} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         
+         \PY{c+c1}{\PYZsh{}10 fold}
+         \PY{n}{scores} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{n}{cv} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{42}\PY{p}{,} \PY{n}{shuffle} \PY{o}{=} \PY{k+kc}{False}\PY{p}{)}
+         \PY{k}{for} \PY{n}{train\PYZus{}index}\PY{p}{,} \PY{n}{test\PYZus{}index} \PY{o+ow}{in} \PY{n}{cv}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{n}{X}\PY{p}{)}\PY{p}{:}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Train Index:\PYZsq{}, train\PYZus{}index, \PYZsq{}\PYZbs{}n\PYZsq{})}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Test Index:\PYZsq{}, test\PYZus{}index)}
+             
+             \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{]}\PY{p}{,} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}
+             \PY{n}{my\PYZus{}model} \PY{o}{=} \PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+             \PY{n}{scores}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{)}
+         
+         \PY{n}{r\PYZus{}square} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{scores}\PY{p}{)}
+         \PY{n}{adj\PYZus{}r} \PY{o}{=} \PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r\PYZus{}square}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{n}{X}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{r\PYZus{}square}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Adjusted R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{adj\PYZus{}r}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+R Square: 0.2150462381244369 
+
+Adjusted R Square: 0.21289246127718542 
+
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}20}]:} \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{OLS}\PY{o}{.}\PY{n}{from\PYZus{}formula}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} number\PYZus{}of\PYZus{}whole\PYZus{}rooms + number\PYZus{}of\PYZus{}half\PYZus{}rooms + lift + air\PYZus{}conditioner + furnish\PYZus{}furnished + view\PYZus{}panoramic + heating\PYZus{}gas + heating\PYZus{}district + district\PYZus{}v + district\PYZus{}vi + district\PYZus{}xiv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} summarize our model}
+         \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+         \PY{n}{HTML}\PY{p}{(}
+         \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+             \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+         \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}20}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}21}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.246
+Model:                            OLS   Adj. R-squared:                  0.244
+Method:                 Least Squares   F-statistic:                     118.7
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          1.05e-235
+Time:                        19:25:06   Log-Likelihood:                -11156.
+No. Observations:                4021   AIC:                         2.234e+04
+Df Residuals:                    4009   BIC:                         2.241e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept                 9.0506      0.226     40.006      0.000       8.607       9.494
+number\_of\_whole\_rooms     0.0275      0.069      0.396      0.692      -0.109       0.164
+number\_of\_half\_rooms     -0.6798      0.118     -5.737      0.000      -0.912      -0.447
+lift                      1.0334      0.144      7.177      0.000       0.751       1.316
+air\_conditioner           2.3157      0.138     16.831      0.000       2.046       2.585
+furnish\_furnished         1.1353      0.134      8.482      0.000       0.873       1.398
+view\_panoramic            1.3700      0.156      8.782      0.000       1.064       1.676
+heating\_gas              -0.0740      0.199     -0.371      0.711      -0.465       0.317
+heating\_district         -1.6415      0.254     -6.474      0.000      -2.139      -1.144
+district\_v                2.4052      0.193     12.433      0.000       2.026       2.784
+district\_vi               1.6307      0.190      8.594      0.000       1.259       2.003
+district\_xiv             -1.0611      0.291     -3.647      0.000      -1.631      -0.491
+==============================================================================
+Omnibus:                     1275.737   Durbin-Watson:                   1.892
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             6434.403
+Skew:                           1.436   Prob(JB):                         0.00
+Kurtosis:                       8.492   Cond. No.                         13.8
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}22}]:} \PY{c+c1}{\PYZsh{}Random Forest}
+         \PY{n}{test} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}central\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}garden}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{test} \PY{o}{=} \PY{n}{test}\PY{o}{.}\PY{n}{dropna}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{X} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}whole\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number\PYZus{}of\PYZus{}half\PYZus{}rooms}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}street}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}central\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}garden}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}gas}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}electric}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{y} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         
+         \PY{c+c1}{\PYZsh{}10 fold}
+         \PY{n}{scores} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{n}{cv} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{42}\PY{p}{,} \PY{n}{shuffle} \PY{o}{=} \PY{k+kc}{False}\PY{p}{)}
+         \PY{k}{for} \PY{n}{train\PYZus{}index}\PY{p}{,} \PY{n}{test\PYZus{}index} \PY{o+ow}{in} \PY{n}{cv}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{n}{X}\PY{p}{)}\PY{p}{:}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Train Index:\PYZsq{}, train\PYZus{}index, \PYZsq{}\PYZbs{}n\PYZsq{})}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Test Index:\PYZsq{}, test\PYZus{}index)}
+             
+             \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{]}\PY{p}{,} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}
+             \PY{n}{my\PYZus{}model} \PY{o}{=} \PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+             \PY{n}{scores}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{)}
+         
+         \PY{n}{r\PYZus{}square} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{scores}\PY{p}{)}
+         \PY{n}{adj\PYZus{}r} \PY{o}{=} \PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r\PYZus{}square}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{n}{X}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{r\PYZus{}square}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Adjusted R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{adj\PYZus{}r}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+R Square: 0.23600315259664092 
+
+Adjusted R Square: 0.23204769389923807 
+
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}23}]:} \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{OLS}\PY{o}{.}\PY{n}{from\PYZus{}formula}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{} floor + air\PYZus{}conditioner + number\PYZus{}of\PYZus{}whole\PYZus{}rooms + number\PYZus{}of\PYZus{}half\PYZus{}rooms + heating\PYZus{}combination + view\PYZus{}street + district\PYZus{}v + furnish\PYZus{}furnished + lift + heating\PYZus{}central\PYZus{}heating + view\PYZus{}garden + view\PYZus{}panoramic + district\PYZus{}vi + district\PYZus{}i + heating\PYZus{}gas + district\PYZus{}ii + heating\PYZus{}district + district\PYZus{}xiii + heating\PYZus{}electric + district\PYZus{}vii}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} summarize our model}
+         \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+         \PY{n}{HTML}\PY{p}{(}
+         \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+             \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+         \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}23}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}24}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.280
+Model:                            OLS   Adj. R-squared:                  0.276
+Method:                 Least Squares   F-statistic:                     75.11
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          3.22e-257
+Time:                        19:25:08   Log-Likelihood:                -10648.
+No. Observations:                3884   AIC:                         2.134e+04
+Df Residuals:                    3863   BIC:                         2.147e+04
+Df Model:                          20                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+Intercept                   9.4608      0.323     29.273      0.000       8.827      10.094
+floor                      -0.0917      0.037     -2.496      0.013      -0.164      -0.020
+air\_conditioner             2.3901      0.137     17.435      0.000       2.121       2.659
+number\_of\_whole\_rooms       0.0325      0.072      0.452      0.651      -0.109       0.174
+number\_of\_half\_rooms       -0.6193      0.117     -5.272      0.000      -0.850      -0.389
+heating\_combination        -1.2359      0.185     -6.682      0.000      -1.599      -0.873
+view\_street                -0.3202      0.213     -1.504      0.133      -0.737       0.097
+district\_v                  2.9191      0.205     14.206      0.000       2.516       3.322
+furnish\_furnished           1.1900      0.132      8.981      0.000       0.930       1.450
+lift                        1.1454      0.159      7.217      0.000       0.834       1.457
+heating\_central\_heating    -1.0077      0.191     -5.274      0.000      -1.382      -0.633
+view\_garden                 0.4394      0.222      1.982      0.047       0.005       0.874
+view\_panoramic              1.2657      0.235      5.394      0.000       0.806       1.726
+district\_vi                 2.0192      0.200     10.084      0.000       1.627       2.412
+district\_i                  2.3143      0.302      7.657      0.000       1.722       2.907
+heating\_gas                -0.9836      0.239     -4.111      0.000      -1.453      -0.514
+district\_ii                 1.2001      0.224      5.358      0.000       0.761       1.639
+heating\_district           -2.0055      0.289     -6.947      0.000      -2.571      -1.439
+district\_xiii               0.2969      0.214      1.388      0.165      -0.122       0.716
+heating\_electric            0.4485      0.396      1.133      0.257      -0.328       1.225
+district\_vii                0.4926      0.253      1.947      0.052      -0.003       0.989
+==============================================================================
+Omnibus:                     1299.570   Durbin-Watson:                   1.880
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             7625.023
+Skew:                           1.470   Prob(JB):                         0.00
+Kurtosis:                       9.203   Cond. No.                         31.8
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}25}]:} \PY{c+c1}{\PYZsh{}RFE}
+         \PY{n}{test} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}wall\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xvi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xx}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxiii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{test} \PY{o}{=} \PY{n}{test}\PY{o}{.}\PY{n}{dropna}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{X} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{lift}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{air\PYZus{}conditioner}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{furnish\PYZus{}furnished}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{view\PYZus{}panoramic}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}wall\PYZus{}heating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}combination}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}floor}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{heating\PYZus{}district}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}i}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}ii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}iv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}vi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xiv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xvi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xviii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xx}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{district\PYZus{}xxiii}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         \PY{n}{y} \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{price\PYZus{}per\PYZus{}sqm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         
+         \PY{c+c1}{\PYZsh{}10 fold}
+         \PY{n}{scores} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{n}{cv} \PY{o}{=} \PY{n}{KFold}\PY{p}{(}\PY{n}{n\PYZus{}splits} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{42}\PY{p}{,} \PY{n}{shuffle} \PY{o}{=} \PY{k+kc}{False}\PY{p}{)}
+         \PY{k}{for} \PY{n}{train\PYZus{}index}\PY{p}{,} \PY{n}{test\PYZus{}index} \PY{o+ow}{in} \PY{n}{cv}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{n}{X}\PY{p}{)}\PY{p}{:}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Train Index:\PYZsq{}, train\PYZus{}index, \PYZsq{}\PYZbs{}n\PYZsq{})}
+             \PY{c+c1}{\PYZsh{}print(\PYZsq{}Test Index:\PYZsq{}, test\PYZus{}index)}
+             
+             \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{o}{.}\PY{n}{tolist}\PY{p}{(}\PY{p}{)}\PY{p}{]}\PY{p}{,} \PY{n}{X}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{train\PYZus{}index}\PY{p}{]}\PY{p}{,} \PY{n}{y}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{test\PYZus{}index}\PY{p}{]}
+             \PY{n}{my\PYZus{}model} \PY{o}{=} \PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+             \PY{n}{scores}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{my\PYZus{}model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{)}
+         
+         \PY{n}{r\PYZus{}square} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{scores}\PY{p}{)}
+         \PY{n}{adj\PYZus{}r} \PY{o}{=} \PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{r\PYZus{}square}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{y}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{n}{X}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{r\PYZus{}square}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Adjusted R Square:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{adj\PYZus{}r}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+R Square: 0.2275664004882712 
+
+Adjusted R Square: 0.22374152502646505 
+
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}26}]:} \PY{n}{housing\PYZus{}model} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{OLS}\PY{o}{.}\PY{n}{from\PYZus{}formula}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{price\PYZus{}per\PYZus{}sqm \PYZti{}  lift + air\PYZus{}conditioner + furnish\PYZus{}furnished + view\PYZus{}panoramic + heating\PYZus{}wall\PYZus{}heating + heating\PYZus{}combination + heating\PYZus{}floor + heating\PYZus{}district + district\PYZus{}i + district\PYZus{}ii + district\PYZus{}iv + district\PYZus{}v + district\PYZus{}vi  + district\PYZus{}x + district\PYZus{}xiv + district\PYZus{}xvi + district\PYZus{}xviii + district\PYZus{}xx + district\PYZus{}xxii + district\PYZus{}xxiii}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{data}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} summarize our model}
+         \PY{n}{housing\PYZus{}model\PYZus{}summary} \PY{o}{=} \PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} convert our table to HTML and add colors to headers for explanatory purposes}
+         \PY{n}{HTML}\PY{p}{(}
+         \PY{p}{(}\PY{n}{housing\PYZus{}model\PYZus{}summary}
+             \PY{o}{.}\PY{n}{as\PYZus{}html}\PY{p}{(}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}  Adj. R\PYZhy{}squared:    \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}aec7e8;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{} Adj. R\PYZhy{}squared: \PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ffbb78;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}coef\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}c7e9c0;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}std err\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}bcbddc;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}P\PYZgt{}|t|\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}[0.025\PYZlt{}/th\PYZgt{}    \PYZlt{}th style=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{background\PYZhy{}color:\PYZsh{}ff9896;}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}0.975]\PYZlt{}/th\PYZgt{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+         \PY{p}{)}
+\end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}26}]:} <IPython.core.display.HTML object>
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}27}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{housing\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          price\_per\_sqm   R-squared:                       0.263
+Model:                            OLS   Adj. R-squared:                  0.259
+Method:                 Least Squares   F-statistic:                     71.97
+Date:                Fri, 19 Apr 2019   Prob (F-statistic):          4.40e-249
+Time:                        19:25:10   Log-Likelihood:                -11260.
+No. Observations:                4060   AIC:                         2.256e+04
+Df Residuals:                    4039   BIC:                         2.269e+04
+Df Model:                          20                                         
+Covariance Type:            nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+Intercept                8.9611      0.167     53.755      0.000       8.634       9.288
+lift                     0.9229      0.143      6.466      0.000       0.643       1.203
+air\_conditioner          2.2743      0.131     17.338      0.000       2.017       2.532
+furnish\_furnished        1.1616      0.132      8.810      0.000       0.903       1.420
+view\_panoramic           1.1235      0.156      7.203      0.000       0.818       1.429
+heating\_wall\_heating     2.2512      1.128      1.996      0.046       0.041       4.462
+heating\_combination     -0.6605      0.136     -4.868      0.000      -0.926      -0.394
+heating\_floor            4.4650      1.238      3.606      0.000       2.038       6.892
+heating\_district        -1.5011      0.259     -5.794      0.000      -2.009      -0.993
+district\_i               2.0736      0.300      6.905      0.000       1.485       2.662
+district\_ii              1.1928      0.217      5.506      0.000       0.768       1.617
+district\_iv             -1.3677      0.608     -2.250      0.025      -2.559      -0.176
+district\_v               2.8489      0.198     14.416      0.000       2.461       3.236
+district\_vi              1.9562      0.194     10.088      0.000       1.576       2.336
+district\_x              -1.7975      0.551     -3.262      0.001      -2.878      -0.717
+district\_xiv            -0.9409      0.292     -3.217      0.001      -1.514      -0.368
+district\_xvi            -1.0393      0.924     -1.125      0.261      -2.851       0.772
+district\_xviii          -2.1597      0.742     -2.911      0.004      -3.614      -0.705
+district\_xx             -2.1157      1.126     -1.879      0.060      -4.323       0.092
+district\_xxii           -2.2261      0.952     -2.339      0.019      -4.092      -0.360
+district\_xxiii          -2.3486      1.744     -1.347      0.178      -5.768       1.070
+==============================================================================
+Omnibus:                     1586.634   Durbin-Watson:                   1.877
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            13360.119
+Skew:                           1.634   Prob(JB):                         0.00
+Kurtosis:                      11.264   Cond. No.                         46.2
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} 
+\end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
